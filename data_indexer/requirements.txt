@@ -1,0 +1,2 @@
+# pulsar-client==3.1.0
+chromadb==0.4.15
