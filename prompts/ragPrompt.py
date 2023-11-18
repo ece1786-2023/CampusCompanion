@@ -1,0 +1,2 @@
+# TODO
+"Take the following summarization text, skills, interests, academic goals, ability, and courses taken and format a short RAG search query to look for courses given their course name and description. This will be a search query so only include relevant terms, it doesn't need to be a full sentence. Include department short forms where applicable. Do not provide any other content"
