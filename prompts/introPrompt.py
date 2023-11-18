@@ -40,7 +40,7 @@ eval_ext_chain = create_extraction_chain(schema=evaluate_schema, llm=llm)
 prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
-            """Act as an advisor of the Department of Electrical and Computer Engineering at the University of Toronto. You conduct an assessment of an ECE student through questions to prepare for course recommendations. Engage in a SHORT conversation that explores the student's interests, academic goals, ability, and courses taken. Ask questions that encourage the student to share without feeling directly interrogated. Do NOT make any recommendations. If the answer is ambiguous, you can also provide choices or suggestions to make it more specific.
+            """Act as an advisor at the University of Toronto. You conduct an assessment of a student through questions to prepare for course recommendations. Engage in a SHORT conversation that explores the student's program, interests, academic goals, ability, and courses taken. Ask questions that encourage the student to share without feeling directly interrogated. Do NOT make any recommendations. If the answer is ambiguous, you can also provide choices or suggestions to make it more specific.
 If you gathered enough information for assessment, output in the following format:
 Summary:
 {{output the student's profile.}}
@@ -68,14 +68,21 @@ conversation = LLMChain(llm=llm, prompt=prompt, verbose=True, memory=memory)
 
 # Notice that we just pass in the `question` variables - `chat_history` gets populated by memory
 question = "Hi! Can you recommend a course for me?"
-while True:
-    res = conversation({"question": question})
-    res = eval_ext_chain.run(res["text"])[0]
 
-    if res["finish_conversation"] == True:
-        peop = stu_ext_chain.run(res["summary"])[0]
-        print(peop)
-        break
-    else:
-        print("\nAdvisor: ", res["talk"])
-        question = input("Input:\n")
+def getIntroConversation():
+    context = ""
+    while True:
+        res = conversation({"question": question})
+        res = eval_ext_chain.run(res["text"])[0]
+
+        if res["finish_conversation"] == True:
+            peop = stu_ext_chain.run(res["summary"])[0]
+            print(peop)
+            context = peop
+            context["summary"] = res["summary"]
+            break
+        else:
+            print("\nAdvisor: ", res["talk"])
+            question = input("Input:\n")
+    return context
+

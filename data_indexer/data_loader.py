@@ -45,6 +45,3 @@ def load_database():
 
     document_collection.add(documents=documents, metadatas=metadatas, ids=ids)
     print('Successfully Index Course Data')
-
-
-load_database()
