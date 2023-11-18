@@ -86,3 +86,5 @@ def getIntroConversation():
             question = input("Input:\n")
     return context
 
+if __name__ == "__main__":
+    getIntroConversation()
