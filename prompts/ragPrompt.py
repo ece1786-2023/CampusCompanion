@@ -1,2 +1,49 @@
-# TODO
-"Take the following summarization text, skills, interests, academic goals, ability, and courses taken and format a short RAG search query to look for courses given their course name and description. This will be a search query so only include relevant terms, it doesn't need to be a full sentence. Include department short forms where applicable. Do not provide any other content"
+from openai import OpenAI
+import csv
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+OPENAI_KEY = os.getenv('OPENAI_KEY')
+client = OpenAI(
+    api_key=OPENAI_KEY
+)
+
+def getRAGCall(content):
+    response = client.chat.completions.create(
+            model="gpt-4",
+            messages=[
+                {
+                "role": "user",
+                "content": content
+                },
+                {
+                "role": "assistant",
+                "content":  "Format a RAG search query to look for other similar courses based on the following summarization text, skills, interests, academic goals, and courses taken. This will be a search query so only include relevant terms, it doesn't need to be a full sentence. The output MUST include department code"
+                }
+            ],
+            temperature=0.9,
+            max_tokens=256,
+            top_p=0.75,
+            frequency_penalty=0,
+            presence_penalty=0
+            )
+    output = response.choices[0].message.content.strip()
+    return output
+
+
+def main():
+   
+
+    # Example of using the language chain
+    user_input = "{'interests': 'Logic and Machine Learning', 'goal': 'graduate program in Electrical and Computer Engineering', 'ability': 'completed courses in Trustworthy Machine Learning and an Introduction to Artificial Intelligence', 'summary': 'The student is enrolled in a graduate program in Electrical and Computer Engineering with an interest in Logic and Machine Learning. They have completed courses in Trustworthy Machine Learning and an Introduction to Artificial Intelligence.'}"
+    query = getRAGCall(user_input)
+    
+    print("Generated RAG search query:")
+    print(query)
+
+if __name__ == "__main__":
+    main()
+
+
