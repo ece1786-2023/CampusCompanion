@@ -10,7 +10,7 @@ client = OpenAI(
     api_key=OPENAI_KEY
 )
 
-def getRAGCall(content):
+def getRAGQuery(content):
     response = client.chat.completions.create(
             model="gpt-4",
             messages=[
@@ -30,17 +30,15 @@ def getRAGCall(content):
             presence_penalty=0
             )
     output = response.choices[0].message.content.strip()
+    print("Generated RAG search query:")
+    print(output)
     return output
 
 
 def main():
-   
-
     # Example of using the language chain
     user_input = "{'interests': 'Logic and Machine Learning', 'goal': 'graduate program in Electrical and Computer Engineering', 'ability': 'completed courses in Trustworthy Machine Learning and an Introduction to Artificial Intelligence', 'summary': 'The student is enrolled in a graduate program in Electrical and Computer Engineering with an interest in Logic and Machine Learning. They have completed courses in Trustworthy Machine Learning and an Introduction to Artificial Intelligence.'}"
-    query = getRAGCall(user_input)
-    
-    print("Generated RAG search query:")
+    query = getRAGQuery(user_input)
     print(query)
 
 if __name__ == "__main__":

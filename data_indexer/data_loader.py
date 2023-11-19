@@ -2,7 +2,7 @@ import chromadb
 from chromadb.config import Settings
 
 def split_course_data():
-    file_path = 'CourseData.txt' 
+    file_path = './data_indexer/CourseData.txt' 
     with open(file_path, 'r', encoding='utf-8') as file:
         chunks = []
         current_chunk = []
@@ -34,7 +34,8 @@ def load_database():
         ids.append(str(i+1))
         documents.append(course_description)
         metadatas.append(metadata)
-
+    print('Number of Courses:')
+    print(len(documents))
     collection_status = False
     while collection_status != True:
         try:
