@@ -13,6 +13,12 @@ def searchRAG(query):
 
     results = document_collection.query(query_texts=query, n_results=20)
     result_documents = results["documents"][0]
-    # print("RAG Search Results:")
-    # print(result_documents)
-    return result_documents
+    print("RAG Search Results:")
+    courseStr = ""
+    i = 0
+    for elem in result_documents:
+        i+= 1
+        courseStr += str(i) + ".) " + elem
+        courseStr += '\n\n'
+    print(courseStr)
+    return courseStr

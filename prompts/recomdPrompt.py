@@ -15,7 +15,8 @@ from langchain.prompts import (
     SystemMessagePromptTemplate,
 )
 from langchain.chains import create_extraction_chain
-import json
+from json import dumps
+
 
 llm = ChatOpenAI(model_name="gpt-4-1106-preview")
 
@@ -61,9 +62,9 @@ def getRecommendation(course_context, student_context, llm):
     if type(course_context) is list:
         course_context = ",".join(course_context)
     elif type(course_context) is dict:
-        course_context = json.dumps(course_context)
+        course_context = dumps(course_context)
     if type(student_context) is dict:
-        student_context = json.dumps(student_context)
+        student_context = dumps(student_context)
 
     # print(course_context)
     # print(student_context)

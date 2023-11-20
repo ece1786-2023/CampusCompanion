@@ -73,15 +73,18 @@ TALK:
         res = conversation({"question": question})
         res = eval_ext_chain.run(res["text"])[0]
 
-        if res["finish_conversation"] == True:
-            if "summary" in res:
+        if "finish_conversation" in res and res["finish_conversation"] == True:
+            if ("summary" in res):
                 peop = stu_ext_chain.run(res["summary"])[0]
-                print(peop)
                 context = peop
                 context["summary"] = res["summary"]
+                print(context)
             else:
-                # Error Handling
-                context["summary"] = res
+                # Error Handling 
+                if isinstance(context, dict):
+                    context["summary"] = res
+                else:
+                    context += "Summary" + str(res)
             break
         else:
             print("\nAdvisor: ", res["talk"])
