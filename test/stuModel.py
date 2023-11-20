@@ -26,14 +26,13 @@ class StuModel:
         self.experience = profile["experience"]
         self.extra_info = profile["extra_info"]
 
-        print(self.degree_program)
-        print(self.department)
-        print(self.course_taken)
-        print(self.course_to_take)
-        print(self.interest)
-        print(self.academic_goal)
-        print(self.experience)
-        print(self.extra_info)
+        # print("program:", self.degree_program)
+        # print("department:", self.department)
+        # print("course_taken:", self.course_taken)
+        # print("interest:", self.interest)
+        # print("academic_goal:", self.academic_goal)
+        # print("experience:", self.experience)
+        # print("extra_info:", self.extra_info)
 
         self.llm = llm
         self.memory = ConversationBufferMemory(return_messages=True)
@@ -58,7 +57,6 @@ class StuModel:
         )
 
     def getResponse(self, message):
-        print(message)
         response = self.chain.invoke({"input": message})
         self.memory.save_context({"input": message}, {"output": response.content})
         print("\nStudent: ", response.content)
@@ -100,14 +98,18 @@ Score 10: The answer is completely accurate and aligns perfectly with the refere
         )
         return score
 
-    def eval_eval_recommd(self, recommend_list):
-        criterion = {"contain": "Does the input course contained in the output?"}
+    def eval_recommd(self, recommend_list):
+        criterion = {
+            "contain": "Does the name of the input course contained in the output?"
+        }
 
         eval_chain = load_evaluator(
             EvaluatorType.CRITERIA,
             criteria=criterion,
         )
         recommed_courses = [course["name"] for course in recommend_list]
+
+        hit = 0
         for course in self.course_to_take:
             query = course
             eval_result = eval_chain.evaluate_strings(
