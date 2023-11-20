@@ -37,7 +37,7 @@ def getRAGQuery(content):
 
 def main():
     # Example of using the language chain
-    user_input = "{'interests': 'Logic and Machine Learning', 'goal': 'graduate program in Electrical and Computer Engineering', 'ability': 'completed courses in Trustworthy Machine Learning and an Introduction to Artificial Intelligence', 'summary': 'The student is enrolled in a graduate program in Electrical and Computer Engineering with an interest in Logic and Machine Learning. They have completed courses in Trustworthy Machine Learning and an Introduction to Artificial Intelligence.'}"
+    user_input = "{'interests': 'Logic and Machine Learning', 'goal': 'graduate program in Electrical and Computer Engineering', 'experience': 'completed courses in Trustworthy Machine Learning and an Introduction to Artificial Intelligence', 'summary': 'The student is enrolled in a graduate program in Electrical and Computer Engineering with an interest in Logic and Machine Learning. They have completed courses in Trustworthy Machine Learning and an Introduction to Artificial Intelligence.'}"
     query = getRAGQuery(user_input)
     print(query)
 

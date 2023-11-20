@@ -12,17 +12,17 @@ from langchain.prompts import (
 )
 from langchain.chains import create_extraction_chain
 
-def getIntroConversation():
+def getIntroConversation(student = None):
     llm = ChatOpenAI(model_name="gpt-4-1106-preview")
 
     student_schema = {
         "properties": {
             "interests": {"type": "string"},
             "goal": {"type": "string"},
-            "ability": {"type": "string"},
+            "experience": {"type": "string"},
             "extra_info": {"type": "string"},
         },
-        "required": ["interests", "goal", "ability"],
+        "required": ["interests", "goal", "experience"],
     }
 
     evaluate_schema = {
@@ -41,7 +41,7 @@ def getIntroConversation():
     prompt = ChatPromptTemplate(
         messages=[
             SystemMessagePromptTemplate.from_template(
-                """Act as an advisor at the University of Toronto. You conduct an assessment of a student through questions to prepare for course recommendations. Engage in a SHORT conversation that explores the student's program, interests, academic goals, ability, and courses taken. Ask questions that encourage the student to share without feeling directly interrogated. Do NOT make any recommendations. If the answer is ambiguous, you can also provide choices or suggestions to make it more specific.
+                """Act as an advisor at the University of Toronto. You conduct an assessment of a student through questions to prepare for course recommendations. Engage in a SHORT conversation that explores the student's program, interests, academic goals, experience, and courses taken. Ask questions that encourage the student to share without feeling directly interrogated. Do NOT make any recommendations. If the answer is ambiguous, you can also provide choices or suggestions to make it more specific.
     If you gathered enough information for assessment, output in the following format:
     Summary:
     {{output the student's profile.}}
@@ -65,7 +65,7 @@ def getIntroConversation():
     memory = ConversationBufferMemory(
         llm=llm, memory_key="chat_history", return_messages=True
     )
-    conversation = LLMChain(llm=llm, prompt=prompt, verbose=True, memory=memory)
+    conversation = LLMChain(llm=llm, prompt=prompt, verbose=False, memory=memory)
 
     # Notice that we just pass in the `question` variables - `chat_history` gets populated by memory
     question = "Hi! Can you recommend a course for me?"
@@ -88,7 +88,10 @@ def getIntroConversation():
             break
         else:
             print("\nAdvisor: ", res["talk"])
-            question = input("Input:\n")
+            if student is None:
+                question = input("Input:\n")
+            else:
+                question = student.getResponse(res["talk"])
     return context
 
 if __name__ == "__main__":
