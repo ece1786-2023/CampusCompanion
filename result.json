@@ -1,0 +1,32 @@
+[
+    {
+        "code": "ECE1784H",
+        "name": "Trustworthy Machine Learning",
+        "score": 95,
+        "reason": "This course aligns directly with the student's background in software engineering and experience with AI tools and trustworthy ML, enhancing their technical knowledge in AI."
+    },
+    {
+        "code": "ECE1779H",
+        "name": "Introduction to Cloud Computing",
+        "score": 90,
+        "reason": "Given the student's interest in deepening their technical knowledge, particularly in cloud computing, this course with its hands-on programming assignments is highly relevant."
+    },
+    {
+        "code": "ECE1724H",
+        "name": "Special Topics in Software Systems: Artificial Intelligence",
+        "score": 85,
+        "reason": "This course offers an exploration of AI, which is pertinent to the student's job and interests, and allows for hands-on research and presentations."
+    },
+    {
+        "code": "CSC300H1",
+        "name": "Computers and Society",
+        "score": 75,
+        "reason": "This course will help the student develop their business acumen by understanding the ethical and societal impacts of computing, including AI, which is central to their interests and career."
+    },
+    {
+        "code": "HPS321H1",
+        "name": "Understanding Engineering Practice: From Design to Entrepreneurship",
+        "score": 70,
+        "reason": "While this course is less technical, it will help the student in expanding their business acumen by covering the nature of engineering practice from design to entrepreneurship."
+    }
+]

@@ -46,3 +46,7 @@ def load_database():
 
     document_collection.add(documents=documents, metadatas=metadatas, ids=ids)
     print('Successfully Index Course Data')
+
+if __name__ == "__main__":
+    load_database()
+    print("Done")

@@ -15,6 +15,7 @@ from langchain.prompts import (
     SystemMessagePromptTemplate,
 )
 from langchain.chains import create_extraction_chain
+from json import dumps
 
 
 llm = ChatOpenAI(model_name="gpt-4-1106-preview")
@@ -35,7 +36,7 @@ course_ext_chain = create_extraction_chain(schema=course_schema, llm=llm)
 prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
-            """Act as an advisor at the University of Toronto. You select five courses from the provided course list as recommended course candidates based on both student and course information. Next, you score all the course candidates between 0 and 100 based on their alignment with the student's personal interests, relevance to their academic goals, and suitability to their academic abilities. Finally, output the sorted list of courses and their corresponding scores. Do not ask questions or provide anything else.
+            """Act as an advisor at the University of Toronto. You select five courses from the provided course list as recommended course candidates based on both student and course information. Next, you score all the course candidates between 0 and 100 based on their alignment with the student's personal interests, relevance to their academic goals, and suitability to their experience. Finally, output the sorted list of courses and their corresponding scores. Do not ask questions or provide anything else.
 At last, Output in the following format if you can make recommendations:
 Success!
 [1. {{course code #1}} {{course name #1}}; {{score #1}}; {{reason #1}}
@@ -66,12 +67,12 @@ def getRecommendation(course_context, student_context):
     # qa_chain = load_qa_chain(OpenAI(model_name="gpt4-1106-preview"),  prompt=prompt, memory=memory)
 
     # qa_chain = LLMChain(llm=llm, prompt=prompt)
-
+    str_student_context = dumps(student_context)
     context = (
         "Course information:\n"
         + course_context
         + "\nStudent information:\n"
-        + student_context
+        + str_student_context
     )
     question = "Hi! Can you recommend courses for me?"
     recommendation_list = []
@@ -87,7 +88,7 @@ def getRecommendation(course_context, student_context):
         )
         inputs = {"input_documents": context, "question": question}
         res = chain.invoke(inputs)
-        memory.save_context(inputs, {"output": res.content})
+        memory.save_context({"question": question}, {"output": res.content})
         if "Success!" in res.content:
             recomd = res.content.split("Success!")[1]
             recommendation_list = course_ext_chain.run(recomd)

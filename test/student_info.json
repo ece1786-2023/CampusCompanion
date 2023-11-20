@@ -1,0 +1,20 @@
+[
+  {
+    "degree_program": "Master of Science (MSc)",
+    "department": "Department of Applied Physics",
+    "interest": "Quantum Physics and Chess",
+    "academic_goal": "Aim to delve into the world of quantum mechanics and quantum computation. Looking forward to pursuing a PhD after this.",
+    "course_taken": "JPH311H1 - From Universal Gravity to Quantum Information: The Making of Modern Physics; CHM196H1 - The Quantum World and Its Classical Limit; PHY198H1 - Physics at the Cutting Edge; PHY489H1 - Introduction to High Energy Physics; PHL356H1 - Philosophy of Physics; PHY491H1 - Current Interpretations of Quantum Mechanics; PHY483H1 - Relativity Theory I; PHY357H1 - Nuclear and Particle Physics.",
+    "experience": "BSc in Physics. Research assistant at the School's Quantum lab working on the Quantum Key Distribution. Internship at NASA working on quantum computing",
+    "extra_info": "Achieved the ranking of Master in the FIDE World Chess Rankings."
+  },
+  {
+    "degree_program": "Bachelor of Science (BSc)",
+    "department": "Department of Anthropology",
+    "interest": "Cultural anthropology and landscape photography",
+    "academic_goal": "Aim to have in-depth knowledge in cultural anthropology with photography. Plan to pursue a career as a cultural documentarian.",
+    "course_taken": "Introduction to Cultural Anthropology; SOC280H1 Sociology of Culture; \nSocial Theory; SOC251H1 Contemporary Sociological Theory; \nVisual Sociology; SOC331H1 Sociology of Technology; \nPhotojournalism; SOC331H1 Sociology of Technology",
+    "experience": "High School Diploma in Arts. Volunteered in local community outreach programs focused on diverse cultures. Interned at a local news agency as a photojournalist.",
+    "extra_info": "Winner of the local 'Cultural Diversity' photography contest. Member of school's photography club."
+  }
+]
