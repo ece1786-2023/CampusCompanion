@@ -7,12 +7,13 @@ from langchain.prompts import (
     MessagesPlaceholder,
     SystemMessagePromptTemplate,
 )
-from langchain.evaluation import load_evaluator
+from langchain.evaluation import load_evaluator, EvaluatorType
 from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 
 import json
 
 W = {"interest": 0.3, "academic_goal": 0.3, "experience": 0.4}
+
 
 class StuModel:
     def __init__(self, llm, profile):
@@ -57,6 +58,7 @@ class StuModel:
         )
 
     def getResponse(self, message):
+        print(message)
         response = self.chain.invoke({"input": message})
         self.memory.save_context({"input": message}, {"output": response.content})
         print("\nStudent: ", response.content)
@@ -98,5 +100,19 @@ Score 10: The answer is completely accurate and aligns perfectly with the refere
         )
         return score
 
-    def eval_course(self, course):
-        pass
+    def eval_eval_recommd(self, recommend_list):
+        criterion = {"contain": "Does the input course contained in the output?"}
+
+        eval_chain = load_evaluator(
+            EvaluatorType.CRITERIA,
+            criteria=criterion,
+        )
+        recommed_courses = [course["name"] for course in recommend_list]
+        for course in self.course_to_take:
+            query = course
+            eval_result = eval_chain.evaluate_strings(
+                prediction=recommed_courses, input=query
+            )
+            hit += eval_result["score"]
+            print(eval_result)
+        return hit / len(self.course_to_take)

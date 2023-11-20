@@ -12,9 +12,8 @@ from langchain.prompts import (
 )
 from langchain.chains import create_extraction_chain
 
-def getIntroConversation(student = None):
-    llm = ChatOpenAI(model_name="gpt-4-1106-preview")
 
+def getIntroConversation(llm, student=None):
     student_schema = {
         "properties": {
             "interests": {"type": "string"},
@@ -36,22 +35,21 @@ def getIntroConversation(student = None):
     stu_ext_chain = create_extraction_chain(schema=student_schema, llm=llm)
     eval_ext_chain = create_extraction_chain(schema=evaluate_schema, llm=llm)
 
-
     # Prompt
     prompt = ChatPromptTemplate(
         messages=[
             SystemMessagePromptTemplate.from_template(
-                """Act as an advisor at the University of Toronto. You conduct an assessment of a student through questions to prepare for course recommendations. Engage in a SHORT conversation that explores the student's program, interests, academic goals, experience, and courses taken. Ask questions that encourage the student to share without feeling directly interrogated. Do NOT make any recommendations. If the answer is ambiguous, you can also provide choices or suggestions to make it more specific.
-    If you gathered enough information for assessment, output in the following format:
-    Summary:
-    {{output the student's profile.}}
-    Talk:
-    End the conversation.
-    Otherwise, use the following format:
-    Summary:
-    {{summarize what new information you learned about the student from the answer to the system.}}
-    TALK:
-    {{keep chatting with the student.}}
+                """Act as an advisor at the University of Toronto. Engage in a short conversation to conduct an assessment of a student through questions to prepare for course recommendations. You need to explore the student's degree program, department, interests, academic goals, courses taken and research, volunteer, industry experience. Ask questions that encourage the student to share without feeling directly interrogated. Do NOT make any recommendations. If the answer is ambiguous, you can also provide choices or suggestions to make it more specific.
+If you gathered enough information for assessment, output in the following format:
+Summary:
+{{output the student's profile, incluing interst, academic goal, experience, course taken.}}
+Talk:
+End the conversation.
+Otherwise, use the following format:
+Summary:
+{{summarize what new information you learned about the student from the answer to the system.}}
+TALK:
+{{keep chatting with the student.}}
     """
             ),
             # The `variable_name` here is what must align with memory
@@ -70,20 +68,19 @@ def getIntroConversation(student = None):
     # Notice that we just pass in the `question` variables - `chat_history` gets populated by memory
     question = "Hi! Can you recommend a course for me?"
 
-
     context = ""
     while True:
         res = conversation({"question": question})
         res = eval_ext_chain.run(res["text"])[0]
 
         if res["finish_conversation"] == True:
-            if ("summary" in res):
+            if "summary" in res:
                 peop = stu_ext_chain.run(res["summary"])[0]
                 print(peop)
                 context = peop
                 context["summary"] = res["summary"]
             else:
-                # Error Handling 
+                # Error Handling
                 context["summary"] = res
             break
         else:
@@ -94,5 +91,7 @@ def getIntroConversation(student = None):
                 question = student.getResponse(res["talk"])
     return context
 
+
 if __name__ == "__main__":
-    getIntroConversation()
+    llm = ChatOpenAI(model_name="gpt-4-1106-preview")
+    getIntroConversation(llm)

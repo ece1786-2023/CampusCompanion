@@ -15,7 +15,7 @@ from langchain.prompts import (
     SystemMessagePromptTemplate,
 )
 from langchain.chains import create_extraction_chain
-
+import json
 
 llm = ChatOpenAI(model_name="gpt-4-1106-preview")
 
@@ -28,8 +28,6 @@ course_schema = {
     },
     "required": ["code", "name", "score", "reason"],
 }
-course_ext_chain = create_extraction_chain(schema=course_schema, llm=llm)
-
 
 # Prompt
 prompt = ChatPromptTemplate(
@@ -59,13 +57,23 @@ Fail!
 )
 
 
-def getRecommendation(course_context, student_context):
+def getRecommendation(course_context, student_context, llm):
+    if type(course_context) is list:
+        course_context = ",".join(course_context)
+    elif type(course_context) is dict:
+        course_context = json.dumps(course_context)
+    if type(student_context) is dict:
+        student_context = json.dumps(student_context)
+
+    # print(course_context)
+    # print(student_context)
     # using Stuff chain?
     # https://python.langchain.com/docs/modules/chains/document/stuff
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True, input_key="question")
     # qa_chain = load_qa_chain(OpenAI(model_name="gpt4-1106-preview"),  prompt=prompt, memory=memory)
 
     # qa_chain = LLMChain(llm=llm, prompt=prompt)
+    course_ext_chain = create_extraction_chain(schema=course_schema, llm=llm)
 
     context = (
         "Course information:\n"

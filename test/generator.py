@@ -12,6 +12,7 @@ from langchain_experimental.tabular_synthetic_data.prompts import (
 import json
 import sys
 import time
+
 sys.path.append("..")
 from prompts.ragPrompt import getRAGQuery
 from search.search_client import searchRAG
@@ -70,7 +71,7 @@ def generate(num_runs=5, save_json=False, file_path="student_info.json"):
     # transfer to real courses
     getCoursePrompt = PromptTemplate(
         input_variables=["course_list", "course_taken"],
-        template="For each course in the target, find one course that is the same as or most similar to it in context. Do not output the original course in the target or anything else.\nOutput format: {{course_code #1}} {{course_name #1}}; {{course_code #2}} {{course_name #2}};...;{{course_code #n}} {{course_name #n}}\n\ntarget:\n{course_taken}\n\ncontext:\n{course_list}",
+        template="For each course in the target, find another course that is the same as or most similar to it in context. If no such course exists, skip it. Do not output the original course in the target or anything else.\nOutput format: {{course_code #1}} {{course_name #1}}; {{course_code #2}} {{course_name #2}};...;{{course_code #n}} {{course_name #n}}\n\ntarget:\n{course_taken}\n\ncontext:\n{course_list}",
     )
 
     for stu in synthetic_results:
