@@ -30915,7 +30915,6 @@ An engineering-based course which covers advanced semiconductor diode lasers. Ba
 Distributed feedback lasers; high power performance, high-temperature operation, spatial and spectral hole burning, modulation speed
 Vertical Cavity Surface emitting lasers; Thermal impedance, beam stabilization, uniformity across large arrays, ultra low threshold current realization
 Multi-section Hybrid Lasers; tuneability, reliability, high output power, modulation.
-Top
 
 ECE1461H - Advanced Laser Processing
 This course provides the fundamentals of laser processing and advanced topics in application areas pertinent to photonics, electronics, medical, automotive, aerospace, and general manufacturing industries. Topics include cw to ultrafast laser systems, common approaches to beam delivery systems, and fundamentals of laser interactions with insulators, conductors, dielectrics, plasma, and soft tissues. Photothermal and photochemical processes and heat-flow models are discussed in the context of traditional applications such as welding, cutting, marking, etching and rapid-prototyping. Advanced and emerging application areas are photolithography, corneal sculpturing, refractive-index control in glasses, micromachining, semiconductor annealing, circuit-board processing, laser-induced breakdown spectroscopy, photonic-components, and surface texturing.
@@ -31002,3 +31001,2371 @@ Convex optimization methods based on Linear Matrix Inequalities (LMIs) have dram
 ECE1660H - Risk-Aware and Stochastic Control Theory with Learning
 Prerequisites: ECE411 (or equivalent). It is recommended that students have taken rigorous mathematical courses in control theory and probability theory. Students may wish to take linear control theory (e.g., ECE 557) and random processes (e.g., ECE 537) concurrently. Courses from the mathematics department including Introduction to Real Analysis (MAT337) would be helpful.
 The related areas of risk-aware control theory, stochastic control theory, and reinforcement learning are becoming ever more important in the modern age of data. In lectures, we focus on studying mathematical foundations and the pros and cons of existing methods to highlight research gaps (e.g., quality-of-approximation guarantees vs. scalability to high-dimensional systems). Lecture topics include introductions to measure theory, Borel spaces, continuous-state Markov decision processes (MDPs), finite-horizon MDP problems, stochastic safety analysis, solution methods via value iteration, risk functionals, risk-aware control theory, and parametric approximation methods. The exploration of additional topics and applications related to stochastic control and reinforcement learning is encouraged through literature critiques and research projects. This course is designed to practice and enhance creative thinking skills and to launch and inspire your research.
+
+BME205H1 - Fundamentals of Biomedical Engineering
+Credit Value: 0.50
+Hours: 25.6L/12.8T/19.2P
+Introduction to connecting engineering and biological
+approaches to solve problems in medicine, science, and
+technology. Emphasis is placed on demonstrating the
+connection between organ level function with cellular
+mechanisms. Topics may include, but are not limited to:
+design principles of biological systems, medical devices,
+overviews of anatomy and physiology, and cellular
+mechanisms as they relate to biotechnological and
+medical technology applications. Laboratories will provide
+hands-on experiences with selected concepts and
+encourage students to understand how to connect their
+own vital and physiologic signs to current medical
+technologies.
+Exclusion: CHE353H1 or BIO130H1
+Total AUs: 41.60
+
+BME330H1 - Patents in Biology and Medical Devices
+Credit Value: 0.50
+Hours: 38.4L
+The emphasis of the course is on applying the logic of
+patents to diverse cases of products through biology and
+biomedical engineering. A commercial context will be ever
+present the case studies. Students will work in teams on
+these problems in class. Students will learn to apply tests
+for obviousness, inventiveness, novelty and enablement
+based on the use of these tests in technology patents in
+144
+Biomaterials and Biomedical Engineering
+the past. Claim construction will be introduced towards the
+end of the course to learn how technologies can be
+protected in considering a patent. There will be papers for
+reading in this course but no textbook. This course is
+designed for senior undergraduate students (3-4 year).
+Prerequisite: CHE353H1 or BME205H1
+Total AUs: 38.40
+
+BME331H1 - Physiological Control Systems
+Credit Value: 0.50
+Hours: 38.4L/12.8T/12.8P
+Introduces physiological concepts and selected
+physiological control systems present in the human body,
+and proposes quantitative modeling approaches for these
+systems. Topics covered will include (1) the endocrine
+system and its subsystems, including glucose regulation
+and the stress response, (2) the cardiovascular system
+and related aspects such as cardiac output, venous
+return, control of blood flow by the tissues, and nervous
+regulation of circulation, and (3) the nervous and
+musculoskeletal systems, including the control of
+voluntary motion. Linear control theory will be used to
+develop skills in system modeling and examine concepts
+of system response and system control in the context of a
+healthy human body.
+Total AUs: 51.20
+
+BME344H1 - Modeling, Dynamics, and Control of Biological Systems
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+Introduction to modeling of physiological control systems
+present in the human body, combining physiology, linear
+system modeling and linear control theory. Topics include:
+representation of physical systems using differential
+equations and linearization of these dynamic models;
+graphical representation of the control systems/plants;
+Laplace transforms; transfer functions; performance of
+dynamic systems; time and frequency analysis;
+observability and controllability; and close-loop controller
+design.
+Prerequisite: MAT185H1 or equivalent;MAT292H1 or
+equivalent
+Corequisite: BME350H1
+Total AUs: 44.80
+
+BME346H1 - Biomedical Engineering Technologies
+Credit Value: 0.50
+Hours: 25.6L/51.2P
+An introduction to the principles and design of
+fundamental technologies used in biomedical engineering
+research. Topics may include but are not limited to tissue
+culture; spectroscopy; electrophoresis; PCR, genomics,
+sequencing technologies, and gene expression
+measurement; protein expression assays and tagging
+strategies; fluorescence labeling tools, microscopy, and
+high content imaging; DNA manipulation and transfection,
+RNAi, and other genetic and molecular tools for
+transformation of organisms. Laboratories will provide
+hands-on experience with selected technologies. Students
+will engage in a major design project in which they will
+design an experimental plan to investigate a specific
+research question, also of their design, utilizing available
+laboratory technologies.
+Prerequisite: BME205H1
+Exclusion: BME340H1, BME440H1
+Total AUs: 51.20
+
+BME350H1 - Biomedical Systems Engineering I: Organ Systems
+Credit Value: 0.50
+Hours: 38.4L/25.6T/12.8P
+An introduction to human anatomy and physiology with
+selected focus on the nervous, cardiovascular, respiratory,
+renal, and endocrine systems. The structures and
+mechanisms responsible for proper function of these
+complex systems will be examined in the healthy and
+diseased human body. The integration of different organ
+systems will be stressed, with a specific focus on the
+structure-function relationship. Application of biomedical
+engineering technologies in maintaining homeostasis will
+also be discussed.
+Prerequisite: BME205H1
+Corequisite: BME395H1
+Total AUs: 57.60
+
+BME352H1 - Biomaterials and Biocompatibility
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+An introduction to the science of biomaterials, focusing on
+polymeric biomaterials and biocompatibility. Topics
+include biomaterial surface analysis, hydrogel rheology
+and swelling, protein adsorption, cell adhesion and
+migration and the foreign body response. Primary focus is
+on implantable biomaterials but some attention will be
+given to applications of biomaterials in biotechnology and
+drug delivery. Specific device or other examples as well
+as the research literature will be used to illustrate the topic
+at hand.
+Prerequisite: BME205H1/CHE353H1
+Exclusion: MSE452H1
+Total AUs: 51.20
+
+BME358H1 - Molecular Biophysics
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+145
+Biomaterials and Biomedical Engineering
+Topics to be covered will include: Building blocks of the
+living cell; thermodynamics of living systems: interactions
+and kinetic energy, equilibrium and non-equilibrium
+processes, entropy, temperature, free energy and
+chemical potential ; diffusion and friction in liquids,
+Brownian motion; membrane potential, ion pumps and
+nerve cells; light and molecules: photon absorption and
+fluorescence; light microscope, fluorescence as a window
+into cells, optogenetics and fluorescent reporters; twophoton excitation and fluorescence resonance energy
+transfer; the eye, image formation, and color vision;
+structural color in animals.
+Prerequisite: BME205H1
+Total AUs: 44.80
+
+BME395H1 - Biomedical Systems Engineering II: Cells and Tissues
+Credit Value: 0.50
+Hours: 25.6L/25.6T/12.8P
+Tissue engineering is largely based on concepts that
+emerged from developmental biology. This course
+provides an introduction to the study of animal
+development, both at the cellular and molecular levels.
+Topics include developmental patterning, differential gene
+expression, morphogenesis, stem cells, repair and
+regeneration.
+Corequisite: BME350H1
+Exclusion: CHE353H1
+
+BME396H1 - Biomedical Systems Engineering III: Molecules and Cells
+Credit Value: 0.50
+Hours: 38.4L/12.8T/38.4P
+Understanding diversity of cell behaviour at the molecular
+level. Through discussion of molecular dynamics in living
+cells in the context of varied microenvironments, develop
+an understanding of cellular behaviour based on
+intracellular events in response to extracellular stimuli.
+Specific topics include receptor-ligand interatctions,
+morphogens, signal transduction, cell growth &
+differentiation, cell adhesion and migration, trafficking, and
+mechanotransduction. Examples from in vitro culture
+systems and model organisms in vivo are used to support
+discussions.
+Prerequisite: BME350H1, BME395H1
+Total AUs: 64.00
+
+BME410H1 - Regenerative Engineering
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+The course encompasses the new multidisciplinary area
+of Regenerative Engineering by integrating various
+components of Regenerative Medicine, Clinical
+Engineering, Human Biology & Physiology, Advanced
+Biomaterials, Tissue Engineering, and Stem Cell and
+Developmental Biology, bringing all these disciplines into
+the clinical perspective of translational medicine. The
+course starts with the key concepts of stem cell biology
+and their properties at the cellular and subcellular levels
+working our way to complex tissues and organs. In the
+first half of the course, 2D and 3D tissue and organ
+formation will be our main focus. In the second half, we
+will discuss the integration of medical devices,
+technologies and treatments into healthcare as well as
+clinical trial logistics, ethics and processes. The course
+materials will integrate cutting-edge research in
+regenerative medicine and current clinical trials by inviting
+scientists and clinicians as guest lecturers. Students will
+be given the rare opportunity to incorporate into their
+written assignments experiment-based learning via
+participation in workshops, tours of research facilities,
+seminars and independent projects integrated into the
+course during the semester.
+Prerequisite: BME396H1
+Total AUs: 44.80
+
+BME428H1 - Biomedical Systems Engineering IV: Computational Systems Biology
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+Through systematic mathematical analysis of biological
+networks, this course derives design principles that are
+cornerstones for the understanding of complex natural
+biological systems and the engineering of synthetic
+biological systems. Course material includes:
+transcriptional networks, autoregulation, feed-forward
+loops, global network structure, protein networks,
+robustness, kinetic proofreading and optimality. After
+completion of the course, students should be able to use
+quantitative reasoning to analyze biological systems and
+construct mathematical models to describe biological
+systems.
+Prerequisite: BME350H1, BME395H1, BME396H1
+Total AUs: 51.20
+
+BME435H1 - Biostatistics
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+This is intended to provide students interested in
+biomedical research with an introduction to core statistical
+concepts and methods, including experimental design.
+The course also provides a good foundation in the use of
+discovery tools provided by a data analysis and
+visualization software. The topics covered will include: i)
+Importance of being uncertain; ii) Error bars; iii)
+Significance, p-values and t-tests; iv) Power and sample
+size; v) Visualizing samples with box plots; vi) Comparing
+samples; vii) Non parametric tests; viii) Designing
+comparative experiments; ix) Analysis of variance and
+blocking; x) Replication; xi) Two-factor designs; xii)
+Association, correlation and causation; xiii) Simple linear
+regression; xiv) Regression diagnostics. The concepts will
+146. Biomaterials and Biomedical Engineering
+be illustrated with realistic examples that are commonly
+encountered by biomedical researchers (as opposed to
+the simpler examples described in entry-level textbooks).
+The statistical softwares used in this course are JMP and
+R Studio.
+Total AUs: 44.80
+
+BME440H1 - Biomedical Engineering Technology and Investigation
+Credit Value: 0.50
+Hours: 25.6L/51.2P
+Fundamental biomedical research technologies with
+specific focus on cellular and molecular methodologies.
+Examples include DNA and protein analysis and isolation,
+microscopy, cell culture and cellular assays. Combines
+both theoretical concepts and hand-on practical
+experience via lectures and wet labs, respectively.
+Specific applications as applied to biotechnology and
+medicine will also be outlined and discussed.
+Prerequisite: CHE353H1
+Total AUs: 51.20
+
+BME445H1 - Neural Bioelectricity
+Credit Value: 0.50
+Hours: 38.4L/12.8T/16.2P
+Generation, transmission and the significance of
+bioelectricity in neural networks of the brain. Topics
+covered include: (i) Basic features of neural systems. (ii)
+Ionic transport mechanisms in cellular membranes. (iii)
+Propagation of electricity in neural cables. (iv)
+Extracellular electric fields. (v) Neural networks,
+neuroplasticity and biological clocks. (vi) Learning and
+memory in artificial neural networks. Laboratory
+experiences include: (a) Biological measurements of body
+surface potentials (EEG and EMG). (b) Experiments on
+computer models of generation and propagation of
+neuronal electrical activities. (c) Investigation of learning in
+artificial neural networks. This course was previously
+offered as ECE445H1.
+Prerequisite: ECE159H1/ECE110H1
+Total AUs: 54.40
+
+BME455H1 - Cellular and Molecular
+Bioengineering II
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Engineering and biophysical tools are used to integrate
+and enhance our understanding of animal cell behaviour
+from the molecular to the tissue level. Quantitative
+methods are used to mathematically model the biology of
+cell growth, division and differentiation to tissue formation.
+Specific topics include receptor-ligand interactions, cell
+adhesion and migration, signal transduction, cell growth
+and differentiation. Examples from the literature are used
+to highlight applications in cellular and tissue engineering.
+Prerequisite: CHE353H1 and CHE354H1
+Total AUs: 54.40
+
+BME460H1 - Biomaterial and Medical
+Device Product Development
+Credit Value: 0.50
+Hours: 25.6L/25.6T
+The objective of this course is to provide students with
+strategies by which they can "reverse engineer" medical
+device products intended for use as implantable devices
+or in contact with body tissue and fluids. A top down
+approach will be taken where the regulatory path for
+product approval and associated costs with product
+development and validation are reviewed for different
+biomaterials and devices. This path is then assessed in
+the context of product specific reimbursement, safety,
+competitive positioning and regulatory concerns. Students
+will be required to use their existing knowledge of
+biomaterials and biocompatibility to frame the questions,
+challenges and opportunities with a mind to reengineering products in order to capitalize on niche
+regulatory pathways. The resulting regulatory path gives a
+good idea of the kind of trial design the product must
+prevail in and ultimately the design characteristics of the
+device itself. The United States and Europe will be
+contrasted with respect to both their regulatory
+environment and reimbursement. Lastly, quantitative
+product development risks estimates are considered in
+choosing a product path strategy for proof of concept and
+approval.
+Prerequisite: MSE352H1
+Total AUs: 38.40
+
+BME489H1 - Biomedical Systems Engineering Design
+Credit Value: 0.50
+Hours: 12.8L/51.2T
+A capstone design project that provides students in the
+Biomedical Systems Engineering option with an
+opportunity to intergrate and apply their technical
+knowledge and communication skills to solve real-world
+biomedical engineering design challenges. Students will
+work in small groups on projects that evolve from clinical
+partners, biomedical/clinical research and teaching labs,
+and commercial partners. At the end of the course,
+students submit a final design report and a poster for
+public exhibition.
+Prerequisite: BME205H1
+Recommended Preparation: BME225H1
+Total AUs: 51.20
+
+BME498Y1 - Biomedical Engineering Capstone Design
+Credit Value: 1.00
+Hours: 25.6L/12.8T/38.4P
+147
+Biomaterials and Biomedical Engineering
+In this project-based design course, teams of students
+from diverse engineering disciplines (enrolled in the
+biomedical engineering minor) will engage in the
+biomedical technology design process to identify, invent
+and implement a solution to an unmet clinical need
+defined by external clients and experts. This course
+emphasizes "hands-on" practicums and lectures to
+support a student-driven design project. The UG Office
+will reach out in the summer to 4th year BME Minor
+students regarding course registration. For A&S students,
+approval to register in the course must be obtained from
+the course instructor by completing the application
+available through the BME UG Office.
+Total AUs: 44.80
+
+BME520H1 - Imaging Case Studies in Clinical Engineering
+Credit Value: 0.50
+Hours: 25.6L/12.8T/25.6P
+An introduction to current practices in modern radiology -
+the detection and assessment of various human diseases
+using specialized imaging tools (e.g., MRI, CT, ultrasound,
+and nuclear imaging) from the perspective of the enduser, the clinician. Course content will include lectures
+delivered by radiologists describing normal anatomy and
+physiology as well as tissue pathophysiology (i.e.,
+disease). Visualization and characterization using medical
+imaging will be described, with core lecture material
+complemented by industry representative guest lectures
+where challenges and opportunities in the development of
+new medical imaging technologies for niche applications
+will be discussed.
+Note: BME520H1 will not be offered for the 2018-19
+academic year.
+Prerequisite: BME595H1
+Total AUs: 44.80
+
+BME530H1 - Human Whole Body Biomechanics
+Credit Value: 0.50
+Hours: 25.6L/25.6P
+An introduction to the principles of human body
+movement. Specific topics include the dynamics of human
+motion and the neural motor system, with a focus on the
+positive/negative adaptability of the motor system.
+Students will experience basic techniques of capturing
+and analyzing human motion. Engineering applications
+and the field of rehabilitation engineering will be
+emphasized using other experimental materials. This
+course is designed for senior undergraduate and graduate
+students.
+Total AUs: 38.40
+
+BME595H1 - Medical Imaging
+Credit Value: 0.50
+Hours: 25.6L/12.8T/38.4P
+An introductory course to medical imaging and is
+designed as a final year course for engineers. The main
+clinical imaging modalities are covered: magnetic
+resonance imaging, ultrasound imaging, x-ray and
+computed tomography, nuclear medicine, and clinical
+optical imaging. Emphasis is placed on the underlying
+physical and mathematical concepts behind each
+modality, and applications are discussed in the context of
+how different modalities complement one another in the
+clinical setting. Early year engineering concepts are
+extensively used, including: basic electromagnetics
+theory, fields and waves, signals and systems, digital
+signal processing, differential equations and calculus, and
+probability and random processes. The laboratories
+involve image reconstruction and analysis for the various
+imaging modalities and a live animal imaging session.
+Total AUs: 51.20
+
+APS100H1 - Orientation to Engineering
+Credit Value: 0.25
+Hours: 12.8L/12.8T
+This course is designed to help students transition into
+first-year engineering studies and to develop and apply a
+greater understanding of the academic learning
+environment, the field of engineering, and how the
+fundamental mathematics and sciences are used in an
+engineering context. Topics covered include: study skills,
+time management, problem solving, successful teamwork,
+effective communications, exam preparation, stress
+management and wellness, undergraduate research,
+extra- and co-curricular involvement, engineering
+disciplines and career opportunities, and applications of
+math and science in engineering.
+Total AUs: 19.20
+
+APS106H1 - Fundamentals of Computer Programming
+Credit Value: 0.50
+Hours: 38.4L/12.8T/25.6P
+An introduction to computer systems and software. Topics
+include the representation of information, algorithms,
+programming languages, operating systems and software
+engineering. Emphasis is on the design of algorithms and
+their implementation in software. Students will develop a
+competency in the Python programming language.
+Laboratory exercises will explore the concepts of both
+Structure-based and Object-Oriented programming using
+examples drawn from mathematics and engineering
+applications.
+Total AUs: 57.60
+
+APS110H1 - Engineering Chemistry and Materials Science
+Credit Value: 0.50
+Hours: 38.4L/12.8T/12.8P
+This course is structured around the principle of the
+structure-property relationship. This relationship refers to
+an understanding of the microstructure of a solid, that is,
+the nature of the bonds between atoms and the spatial
+arrangement of atoms, which permits the explanation of
+observed behaviour. Observed materials behaviour
+includes mechanical, electrical, magnetic, optical, and
+corrosive behaviour. Topics covered in this course
+include: structure of the atom, models of the atom,
+electronic configuration, the electromagnetic spectrum,
+band theory, atomic bonding, optical transparency of
+solids, magnetic properties, molecular bonding, hybridized
+orbitals, crystal systems, lattices and structures,
+crystallographic notation, imperfections in solids, reaction
+rates, activation energy, solid-state diffusion, materials
+thermodynamics, free energy, and phase equilibrium.
+Total AUs: 51.20
+153 Chemical Engineering and Applied Chemistry
+
+APS112H1 - Engineering Strategies & Practice II
+Credit Value: 0.50
+Hours: 25.6L/25.6P
+This course introduces and provides a framework for the
+design process, problem solving and project
+management. Students are introduced to communication
+as an integral component of engineering practice. The
+course is a vehicle for practicing team skills and
+developing communications skills. Building on the first
+course, this second course in the two Engineering
+Strategies and Practice course sequence introduces
+students to project management and to the design
+process in greater depth. Students work in teams on a
+term length design project. Students will write a series of
+technical reports and give a team based design project
+presentation.
+Total AUs: 38.40
+
+BME331H1 - Physiological Control Systems
+Credit Value: 0.50
+Hours: 38.4L/12.8T/12.8P
+Introduces physiological concepts and selected
+physiological control systems present in the human body,
+and proposes quantitative modeling approaches for these
+systems. Topics covered will include (1) the endocrine
+system and its subsystems, including glucose regulation
+and the stress response, (2) the cardiovascular system
+and related aspects such as cardiac output, venous
+return, control of blood flow by the tissues, and nervous
+regulation of circulation, and (3) the nervous and
+musculoskeletal systems, including the control of
+voluntary motion. Linear control theory will be used to
+develop skills in system modeling and examine concepts
+of system response and system control in the context of a
+healthy human body.
+Total AUs: 51.20
+
+BME412H1 - Introduction to Biomolecular Engineering
+Credit Value: 0.50
+Hours: 38.4L
+Introduces the mechanics and dynamics of the operation
+of life at the molecular level by teaching how to design
+new proteins, DNA, and RNA. Introduces the
+fundamentals of biomolecular structure, function,
+thermodynamics, and kinetics. Covers a broad range of
+computational and experimental techniques, including
+atomistic simulations, bioinformatics, machine learning,
+high-throughput screening, and gene editing.
+Enrolment Limits: 30
+Total AUs: 38.40
+
+BME440H1 - Biomedical Engineering Technology and Investigation
+Credit Value: 0.50
+Hours: 25.6L/51.2P
+Fundamental biomedical research technologies with
+specific focus on cellular and molecular methodologies.
+Examples include DNA and protein analysis and isolation,
+microscopy, cell culture and cellular assays. Combines
+both theoretical concepts and hand-on practical
+experience via lectures and wet labs, respectively.
+Specific applications as applied to biotechnology and
+medicine will also be outlined and discussed.
+Prerequisite: CHE353H1
+Total AUs: 51.20
+
+BME455H1 - Cellular and Molecular Bioengineering II
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Engineering and biophysical tools are used to integrate
+and enhance our understanding of animal cell behaviour
+from the molecular to the tissue level. Quantitative
+methods are used to mathematically model the biology of
+cell growth, division and differentiation to tissue formation.
+Specific topics include receptor-ligand interactions, cell
+adhesion and migration, signal transduction, cell growth
+and differentiation. Examples from the literature are used
+to highlight applications in cellular and tissue engineering.
+Prerequisite: CHE353H1 and CHE354H1
+Total AUs: 54.40
+
+CHE112H1 - Physical Chemistry
+Credit Value: 0.50
+Hours: 38.4L/12.8T/12.8P
+A course in physical chemistry. Topics discussed include
+systems and their states, stoichiometry, the properties of
+gases, the laws of chemical thermodynamics (calculations
+involving internal energy, enthalpy, free energy, and
+entropy), phase equilibrium, chemical equilibrium, ionic
+equilibrium, acids and bases, solutions, colligative
+properties, electrochemistry, and corrosion.
+Total AUs: 51.20
+154 Chemical Engineering and Applied Chemistry
+
+CHE113H1 - Concepts in Chemical Engineering
+Credit Value: 0.50
+Hours: 38.4L/25.6T/25.6P
+This course provides first year students with an overview
+of the chemical industry, the chemical engineering
+profession, and introduces key concepts for the upcoming
+years of study. The chemical industry is the interface
+between natural resources (minerals, oil, gas, agricultural
+products, etc.) and the consumers of the higher value
+products derived therefrom. This diverse industry has both
+high volume-low unit value and low volume-high unit value
+products, and the manufacture of each type of product
+has its own challenges. The chemical engineering
+profession applies the scientific fundamentals through two
+key concepts: Unit Operations as well as Flux. The
+fundamental elements of stoichiometry and reaction
+kinetics are further extended to cover the concepts of
+yield, conversion and their specific applications to
+continuous and batch reactor systems. Analysis of
+electrical circuits is introduced, leading to nodal analysis
+of circuits. The application of resistance in series and
+capacitance is extended into chemical engineering
+problems involved, heat transfer, mass transfer and
+momentum transfer, as well as reaction engineering. The
+laboratory will reinforce these key chemical engineering
+principles.
+Total AUs: 64.00
+
+CHE191H1 - Introduction to Chemical Engineering and Applied Chemistry
+Credit Value: 0.15
+Hours: 12.8L
+This is a seminar series that will introduce students to the
+community, upper-year experience, and core fields of
+Chemical Engineering and Applied Chemistry. Seminar
+presenters will represent the major areas in Chemical
+Engineering and Applied Chemistry and will also be drawn
+from an array of groups, including students, staff, faculty,
+and alumni. The format will vary and may include
+application examples, case studies, career opportunities,
+and research talks. The purpose of the seminar series is
+to provide first year students with some understanding of
+the various options within the Department to enable them
+to make educated choices as they progress through the
+program. This course will be offered on a credit/no credit
+basis.
+Total AUs: 12.80
+
+CHE204H1 - Chemical Engineering and Applied Chemistry- Laboratory I
+Credit Value: 0.50
+Hours: 12.8L/37.6P
+This laboratory course will survey aspects of inorganic,
+organic and analytical chemistry from a practical point of
+view in a comprehensive laboratory experience. Theory,
+where applicable, will be interwoven within the
+laboratories or given as self-taught modules. Topics to be
+covered are inorganic and organic synthesis and analysis
+and will include elements of process and industrial
+chemistry and practice (including Green Chemistry).
+Total AUs: 32.00
+
+CHE205H1 - Chemical Engineering and Applied Chemistry- Laboratory II
+Credit Value: 0.50
+Hours: 12.8L/37.6P
+This laboratory course will survey aspects of inorganic,
+organic and analytical chemistry from a practical point of
+view in a comprehensive laboratory experience. Theory,
+where applicable, will be interwoven within the
+laboratories or given as self-taught modules. Topics to be
+covered are inorganic and organic synthesis and analysis
+and will include elements of process and industrial
+chemistry and practice (including Green Chemistry).
+Total AUs: 32.00
+
+CHE208H1 - Process Engineering
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+An introduction to mass and energy (heat) balances in
+open systems. A quantitative treatment of selected
+processes of fundamental industrial and environmental
+significance involving phase equilibria, reaction and
+transport phenomena under both steady state and
+unsteady state conditions. Examples will be drawn from
+the chemical and materials processing industries, the
+energy and resource industries and environmental
+remediation and waste management.
+Prerequisite: MAT188H1
+Total AUs: 51.20
+
+CHE210H1 - Heat and Mass Transfer
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+Fundamentals of heat and transfer, including conduction,
+convective heat transfer, natural convection, design of
+heat exchangers, Fick's law of diffusion, analysis of mass
+transfer problems using Fick's law and mass balances,
+and effect of chemical reactions on mass transfer.
+Particular attention is focused on convective heat and
+mass transfer coefficients as obtained in laminar flow, or
+from turbulent heat transfer correlations and analogies.
+Prerequisite: CHE221H1
+Total AUs: 51.20
+
+CHE211H1 - Fluid Mechanics
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+155 Chemical Engineering and Applied Chemistry
+Fundamentals of fluid mechanics including hydrostatics,
+manometry, Bernoulli's equation, integral mass, linear
+momentum and energy balances, engineering energy
+equation, Moody chart, pipe flow calculations, flow
+measurement instruments and pumps, dimensional
+analysis, differential analysis of laminar viscous flow, and
+brief introductions to particle systems, turbulent 1low, nonNewtonian fluids and flow in porous systems.
+Total AUs: 51.20
+
+CHE213H1 - Applied Chemistry II - Organic Chemistry
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+Topics include the structure, bonding and characteristic
+reactions of organic compounds including additions,
+eliminations, oxidations, reductions, radical reactions,
+condensation/hydrolysis and rearrangements. The
+chemical relationships and reactivities of simple functional
+groups are discussed with an emphasis placed on
+reaction mechanisms involving the formation of organic
+intermediates, chemicals and polymers. An introduction
+will be given on biologically relevant compounds such as
+carbohydrates, proteins, lipids and nucleic acids.
+Examples will be discussed which outline the usefulness
+of these reactions and chemicals within the broader
+chemical industry.
+Corequisite: CHE204H1
+Total AUs: 44.80
+
+CHE220H1 - Applied Chemistry I - Inorganic Chemistry
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+The Chemistry and physical properties of inorganic
+compounds are discussed in terms of atomic structure
+and molecular orbital treatment of bonding. Topics include
+acid-base and donor-acceptor chemistry, crystalline solid
+state, chemistry of main group elements and an
+introduction to coordination chemistry. Emphasis is placed
+on second row and transition metal elements.
+Total AUs: 44.80
+
+CHE221H1 - Calculus III
+Credit Value: 0.50
+Hours: 37.8L/12.8T
+Introduces concepts used in developing mathematical
+models of common chemical engineering processes,
+concepts of process dynamics and methods for analyzing
+the process response to different perturbations, and the
+numerical methods required for solving and analyzing the
+mathematical models. The course will also introduce
+applications of modeling to biochemical engineering.
+Prerequisite: MAT186H1, MAT187H1
+Total AUs: 44.80
+
+CHE222H1 - Process Dynamics: Modeling, Analysis and Simulation
+Credit Value: 0.50
+Hours: 38.4L/12.8T/25.6P
+Introduces concepts used in developing mathematical
+models of common chemical engineering processes,
+concepts of process dynamics and methods for analyzing
+the process response to different perturbations, and the
+numerical methods required for solving and analyzing the
+mathematical models. The course will also introduce
+applications of modeling to biochemical engineering.
+Prerequisite: MAT186H1, MAT187H1
+Total AUs: 57.60
+
+CHE223H1 - Statistics
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+Analysis of data using statistics and design of
+experiments. Topics include probability, properties of the
+normal distribution, confidence intervals, hypothesis
+testing, fitting equations to data, analysis of variance and
+design of experiments. The tutorial involves, in part, the
+application of commercial software to interpret
+experimental data, as obtained in Chemical Engineering
+laboratories.
+Prerequisite: MAT186H1, MAT187H1
+Total AUs: 44.80
+
+CHE230H1 - Environmental Chemistry
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+The chemical phenomena occurring in environmental
+systems are examined based on fundamental principles of
+organic, inorganic and physical chemistry. The course is
+divided into sections describing the chemistry of the
+atmosphere, natural waters and soils. The principles
+applied in the course include reaction kinetics and
+mechanisms, complex formation, pH and solubility
+equilibria and adsorption phenomena. Molecules of
+biochemical importance and instrumental methods of
+analysis relevant to environmental systems are also
+addressed. (formerly EDC230H1S)
+Total AUs: 51.20
+
+CHE249H1 - Engineering Economic Analysis
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+156 Chemical Engineering and Applied Chemistry
+Engineering analysis and design are not ends in
+themselves, but they are a means for satisfying human
+wants. Thus, engineering concerns itself with the
+materials used and forces and laws of nature, and the
+needs of people. Because of scarcity of resources and
+constraints at all levels, engineering must be closely
+associated with economics. It is essential that engineering
+proposals be evaluated in terms of worth and cost before
+they are undertaken. In this course we emphasize that an
+essential prerequisite of a successful engineering
+application is economic feasibility. Hence, investment
+proposals are evaluated in terms of economic cost
+concepts, including break even analysis, cost estimation
+and time value of money. Effective interest rates, inflation
+and deflation, depreciation and income tax all affect the
+viability of an investment. Successful engineering projects
+are chosen from valid alternatives considering such issues
+as buy or lease, make or buy, cost and benefits and
+financing alternatives. Both public sector and for-profit
+examples are used to illustrate the applicability of these
+rules and approaches.
+Total AUs: 44.80
+
+CHE298H1 - Communication
+Credit Value: 0.25
+Hours: 25.6T
+Each student will make a large number of very short
+speeches developing skills for speaking to large and small
+groups. Many elements of public speaking are explored:
+voice, body language, timing, word selection, speech
+preparation, speech structure, audience and
+surroundings. Students will prepare and present
+overheads. Extemporaneous speeches. Questions and
+answers. Interviewing.
+Total AUs: 12.80
+
+CHE299H1 - Communication
+Credit Value: 0.25
+Hours: 25.6T
+Each student will learn to identify the central message
+they wish to communicate. They will learn to articulate this
+message through effective argumentation. Students will
+analyze their audience and purpose to select the most
+effective mode of communication. Students will
+summarize and synthesize information from external
+sources and effectively organize information and prioritize
+it in each mode of communication. They will apply
+effective strategies to the design of text, visuals and oral
+presentations.
+Total AUs: 12.80
+
+CHE304H1 - Chemical Engineering and Applied Chemistry- Laboratory III
+Credit Value: 0.50
+Hours: 12.8L/37.6P
+This laboratory course involves experiments investigating
+thermodynamics and kinetics, complimenting two courses
+this term. Thermodynamic experiments include phase
+equilibrium and calorimetry, and kinetics experiment
+include investigations of rate constants and Arrhenius
+behvaiour. Experimental applications of physical and
+chemical principles using pilot scale equipment.
+Experiments illustrating major unit operations: distillation;
+absorption; reactors; extraction; humidification; heat
+exchange.
+Total AUs: 38.40
+
+CHE305H1 - Chemical Engineering and Applied Chemistry- Laboratory IV
+Credit Value: 0.50
+Hours: 12.8L/37.6P
+This laboratory course involves experiments investigating
+thermodynamics and kinetics, complimenting two courses
+this term. Thermodynamic experiments include phase
+equilibrium and calorimetry, and kinetics experiment
+include investigations of rate constants and Arrhenius
+behvaiour. Experimental applications of physical and
+chemical principles using pilot scale equipment.
+Experiments illustrating major unit operations: distillation;
+absorption; reactors; extraction; humidification; heat
+exchange.
+Total AUs: 38.40
+
+CHE311H1 - Separation Processes
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+Staged equilibrium and rate governed separation
+processes for gases and liquids. Topics include
+equilibrium stage calculations, cascade separation, binary
+distillation, gas absorption and stripping, liquid-liquid
+extraction, membrane processes, adsorption and ion
+exchange. Experiments in fluid mechanics, heat transfer
+and related unit operations.
+Total AUs: 51.20
+
+CHE322H1 - Process Control
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+The major goal of this course is to teach students how to
+design control strategies for chemical processes. The first
+part of the course focuses on the types of
+interconnections encountered in chemical engineering,
+namely feedback, parallel and series connections, and
+their effect on the process dynamics. The second part of
+the course looks at the design of feedback, feedforward,
+cascade and multivariable control strategies for these
+processes and interprets these types of engineered
+interconnections in terms of the effect they have on the
+performance of the overall system. This course makes
+extensive use of active learning through computer
+157 Chemical Engineering and Applied Chemistry
+simulation based on MATLAB/Simulink and Aspen Plus
+Dynamics software.
+Total AUs: 51.20
+
+CHE323H1 - Engineering Thermodynamics
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+Classical thermodynamics and its applications to
+engineering processes are introduced. Topics include: the
+concepts of energy, work and entropy; the first and
+second laws of thermodynamics; properties of pure
+substances and mixtures; the concepts of thermal
+equilibrium, phase equilibrium and chemical equilibrium;
+and heat engines and refrigeration cycles.
+Total AUs: 51.20
+
+CHE324H1 - Process Design
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+This course presents the philosophy and typical
+procedures of chemical engineering design projects. The
+course begins at the design concept phase. Material and
+energy balances are reviewed along with the design of
+single unit operations and equipment specification sheets.
+The impact of recycles on equipment sizing is covered.
+Safety, health and environmental regulations are
+presented. These lead to the development of safe
+operating procedures. The systems for developing Piping
+and Instrumentation diagrams are presented. Process
+safety studies such as HAZOPS are introduced. Typical
+utility systems such as steam, air and vacuum are
+discussed. Project economics calculations are reviewed.
+Total AUs: 51.20
+
+CHE332H1 - Reaction Kinetics
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+The rates of chemical processes. Topics include:
+measurement of reaction rates, reaction orders and
+activation energies; theories of reaction rates; reaction
+mechanisms and networks; development of the rate law
+for simple and complex kinetic schemes; approach to
+equilibrium; homogeneous and heterogeneous catalysis.
+Performance of simple chemical reactor types.
+Total AUs: 51.20
+
+CHE333H1 - Chemical Reaction Engineering
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+Covers the basics of simple reactor design and
+performance, with emphasis on unifying the concepts in
+kinetics, thermodynamics and transport phenomena.
+Topics include flow and residence time distributions in
+various reactor types as well as the influence of transport
+properties (bulk and interphase) on kinetics and reactor
+performance. The interplay of these facets of reaction
+engineering is illustrated by use of appropriate computer
+simulations.
+Total AUs: 51.20
+
+CHE334H1 - Team Strategies for Engineering Design
+Credit Value: 0.50
+Hours: 12.8L/25.6T
+In this course, team strategies including how teams work,
+how to lead and manage teams, and decision making
+methodologies for successful teams will be taught in the
+context of engineering design. The development of
+problem solving and design steps will be undertaken. This
+course will be taught with an emphasis on team
+development and problem solving as it relates to the
+practice of process safety management in engineering
+and engineering design. The teams will develop a PFD
+and P&ID's, as well as an operating procedure for a
+portion of the process. Thus, environmental and
+occupational health and safety becomes the vehicle
+through which the teamwork is performed.
+Total AUs: 25.60
+
+CHE341H1 - Engineering Materials
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+This course advances the understanding of the use of
+materials in engineering design, with special emphasis on
+corrosion and the effect of chemical environment on long
+term failure modes. Students will learn how to apply
+material property data to specify materials for load bearing
+applications, thermal and other non-structural
+applications, and chemical containment and transport.
+Topics will include strength of materials concepts, an
+introduction to computerized materials databases,
+material failure modes and criteria, principles of corrosion,
+and practical applications of corrosion prediction and
+mitigation. Students are required to design a component
+of their choice and do a detailed materials selection as a
+major design project.
+Total AUs: 44.80
+
+CHE353H1 - Engineering Biology
+Credit Value: 0.50
+Hours: 25.6L/25.6T
+Using a quantitative, problem solving approach, this
+course will introduce basic concepts in cell biology and
+physiology. Various engineering modelling tools will be
+158 Chemical Engineering and Applied Chemistry
+used to investigate aspects of cell growth and metabolism,
+transport across cell membranes, protein structure,
+homeostasis, nerve conduction and mechanical forces in
+biology.
+Exclusion: BME205H1
+Total AUs: 38.40
+
+CHE354H1 - Cellular and Molecular Biology
+Credit Value: 0.50
+Hours: 38.4L/25.6T/12.8P
+This course will cover the principles of molecular and
+cellular biology as they apply to both prokaryotic and
+eukaryotic cells. Topics will include: metabolic conversion
+of carbohydrates, proteins, and lipids; nucleic acids;
+enzymology; structure and function relationships within
+cells; and motility and growth. Genetic analysis,
+immunohistochemistry, hybridomis, cloning, recombinant
+DNA and biotechnology will also be covered. This course
+will appeal to students interested in environmental
+microbiology, biomaterials and tissue engineering, and
+bioprocesses.
+Prerequisite: CHE353H1
+Total AUs: 57.60
+
+CHE399H1 - Professional Engineering Consultancy
+Credit Value: 0.50
+Hours: 12.8L/25.6T
+Students are provided with an open-ended and iterative
+learning experience through a consulting engineering
+project. Students tackle an authentic design challenge
+with limited background knowledge, while being guided by
+instructors who simulate the client-consultant relationship.
+The project brings together technical and professonal
+competencies from across eight graduate attributes to
+enable holistic learning: problem analysis; investigation;
+design; individual and team work; communication skills;
+professionalism; economics and project management;
+lifelong learning.
+Total AUs: 25.60
+
+CHE403H1 - Professional Practice
+Credit Value: 0.00
+Hours: 25.6L
+In this course, lectures and seminars will be given by
+practicing engineers who will cover the legal and ethical
+responsibility an engineer owes to an employer, a client
+and the public with particular emphasis on environmental
+issues.
+Total AUs: 25.60
+
+CHE408H1 - Data Analytics for Prediction, Control, and Optimization of Chemical Processes
+Credit Value: 0.50
+Hours: 38.4L/12.8P
+This course provides an industry-oriented approach of
+data analytics for chemical process engineers, including
+data acquisition methods and data sources, exploratory
+data analysis and sensitivity analysis, data-based
+modelling for prediction, data-based modelling for
+monitoring and control, and data-based optimization.
+Prerequisite: APS106H1, CHE223H1, CHE322H1,
+CHE324H1
+Recommended Preparation: CHE507H1
+Enrolment Limits: 200
+
+CHE412H1 - Advanced Reactor Design
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+Heterogeneous reactors. Mass and heat transport effects
+including intraparticle transport effects (Thiele modulus).
+Stability for various rate laws, transport regimes. Time
+dependent issues - deactivation/regeneration strategies.
+Emerging processes.
+Total AUs: 44.80
+
+CHE416H1 - Chemical Engineering in Human Health
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+Life expectancy has consistently increased over the past
+70 years due to advances in healthcare and sanitation.
+Engineers have played key roles in developing
+technologies and processes that enabled these critical
+advances in healthcare to occur. This course will provide
+an overview of areas in which chemical engineers directly
+impacted human health. We will study established
+processes that had transformative effects in the past as
+well as new emerging areas that chemical engineers are
+developing today to impact human health. Emphasis will
+be placed on quantitative approaches. Engineering tools,
+especially derived from transport phenomena and
+chemical kinetics will be used. Required readings,
+including scientific papers, will be assigned. Industrial visit
+and/or a hands-on project will be included.
+Prerequisite: CHE353H1, CHE354H1/MIE331H1;
+BME205H1
+Total AUs: 44.80
+
+CHE430Y1 - Chemical Plant Design
+Credit Value: 1.00
+Hours: 25.6L/76.8T
+159 Chemical Engineering and Applied Chemistry
+Students work in teams to design plants for the chemical
+and process industries and examine their economic
+viability. Lectures concern the details of process
+equipment and design.
+Prerequisite: CHE249H1, CHE324H1, and two of
+CHE311H1, CHE322H1, CHE333H1 or equivalent)
+Exclusion: APS490Y1
+Total AUs: 101.60
+
+CHE441H1 - Engineering Materials
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+This course advances the understanding of the use of
+materials in engineering design, with special emphasis on
+corrosion and the effect of chemical environment on long
+term failure modes. Students will learn how to apply
+material property data to specify materials for load bearing
+applications, thermal and other non-structural
+applications, and chemical containment and transport.
+Topics will include strength of materials concepts, an
+introduction to computerized materials databases,
+material failure modes and criteria, principles of corrosion,
+and practical applications of corrosion prediction and
+mitigation. Students are required to design a component
+of their choice and do a detailed materials selection as a
+major design project.
+Total AUs: 44.80
+
+CHE450H1 - Bioprocess Technology and Design
+Credit Value: 0.50
+Hours: 38.4L/12.8T/8.448P
+Building upon CHE353 and CHE354, the aim of this
+course is to learn and apply engineering principles
+relevant to bioprocess engineering, including energetics
+and stoichiometry of cell growth, cell and enzyme kinetics,
+metabolic modeling, bioreactor design, and bioseparation
+processes. In addition to course lectures, students will
+complete two laboratory exercises that will provide handson learning in bioreactor set-up and use.
+Prerequisite: CHE353H1 and CHE354H1
+Total AUs: 49.02
+
+CHE451H1 - Petroleum Processing
+Credit Value: 0.50
+Hours: 38.4L
+This course is aimed at surveying the oil industry practices
+from the perspective of a block flow diagram. Oil refineries
+today involve the large scale processing of fluids through
+primary separation techniques, secondary treating plus
+the introduction of catalyst for molecular reforming in order
+to meet the product demands of industry and the public.
+Crude oil is being shipped in increasing quantities from
+many parts of the world and refiners must be aware of the
+properties and specifications of both the crude and
+product slates to ensure that the crude is a viable source
+and that the product slate meets quality and quantity
+demands thus assuring a profitable operation. The course
+content will examine refinery oil and gas operations from
+feed, through to products, touching on processing steps
+necessary to meet consumer demands. In both course
+readings and written assignments, students will be asked
+to consider refinery operations from a broad perspective
+and not through detailed analysis and problem solving.
+Total AUs: 38.40
+
+CHE460H1 - Environmental Pathways and Impact Assessment
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+Review of the nature, properties and elementary
+toxicology of metallic and organic contaminants.
+Partitioning between environmental media (air, aerosols,
+water, particulate matter, soils, sediments and biota)
+including bioaccumulation. Degradation processes,
+multimedia transport and mass balance models.
+Regulatory approaches for assessing possible effects on
+human health and ecosystems.
+Total AUs: 51.20
+
+CHE462H1 - Food Engineering
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+The quantitative application of chemical engineering
+principles to the large-scale production of food. Food
+processing at the molecular and unit operation levels. The
+chemistry and kinetics of specific food processes. The
+application of chemical engineering unit operations
+(distillation, extraction, drying) and food specific unit
+operations such as extrusion, thermal processing
+refrigeration/freezing.
+Total AUs: 44.80
+
+CHE467H1 - Environmental Engineering
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+Core Course in the Environmental Engineering Minor A
+course which treats environmental engineering from a
+broad based but quantitative perspective and covers the
+driving forces for engineering activities as well as
+engineering principles. Models which are used for
+environmental impact, risk analysis, health impact,
+pollutant dispersion, and energy system analysis are
+covered.
+Total AUs: 44.80
+
+ECE110H1 - Electrical Fundamentals
+Credit Value: 0.50
+Hours: 38.4L/25.6T/12.8P
+An overview of the physics of electricity and magnetism:
+Coulomb's law, Gauss' law, Ampere's law, Faraday's law.
+Physics of capacitors, resistors and inductors. An
+introduction to circuit analysis: resistive circuits, nodal and
+mesh analysis, 1st order RC and RL transient response
+and sinusoidal steady-state analysis.
+Total AUs: 57.60
+
+ECE191H1 - Introduction to Electrical and Computer Engineering
+Credit Value: 0.15
+Hours: 12.8L
+This is a seminar series that will introduce first year
+students to the wealth of subjects within the field of
+Electrical and Computer Engineering. Instructors will be
+drawn from the various research groups within the
+Department. This course will be offered on a credit/nocredit basis. Credit will not be given to students who
+attend fewer than 70% of the seminars. Students who
+receive no credit for the course must re-take it in their 2F
+session. Students who have not received credit for this
+course at the end of their 2F session will not be permitted
+to register in session 2S.
+Total AUs: 12.80
+
+ECE201H1 - Electrical and Computer Engineering Seminar
+Credit Value: 0.15
+Hours: 12.8L
+This seminar introduces second year students to the
+various career pathways within the field of Electrical and
+Computer Engineering. Instructors from various areas will
+talk about third and fourth year ECE courses in weekly
+seminars to guide students with the selection of upper
+year courses. The course also offers talks and advice to
+aid students transitioning into second year, as well as
+enhance students' skills such as stress management and
+time management. This course will be offered on a
+credit/no credit basis. Credit will not be given to students
+203 Electrical and Computer Engineering
+who attend fewer than 70% of the seminars. Students who
+receive no credit for the course must re-take it in their 3F
+session. Students who have not received credit for this
+course at the end of their 3F session will not be permitted
+to register for their 3S session.
+Total AUs: 12.80
+
+ECE212H1 - Circuit Analysis
+Credit Value: 0.50
+Hours: 38.4L/25.6T/19.2P
+Nodal and loop analysis and network theorems. Natural
+and forced response of RL, RC, and RLC circuits.
+Sinusoidal steady-state analysis. Frequency response;
+resonance phenomena; poles and zeros; applications of
+the Laplace transform.
+Total AUs: 57.90
+
+ECE216H1 - Signals and Systems
+Credit Value: 0.50
+Hours: 38.4L/25.6T/12.8P
+Fundamental discrete- and continuous-time signals,
+definition and properties of systems, linearity and time
+invariance, convolution, impulse response, differential and
+difference equations, Fourier analysis, sampling and
+aliasing, applications in communications.
+Total AUs: 57.60
+
+ECE221H1 - Electric and Magnetic Fields
+Credit Value: 0.50
+Hours: 38.4L/25.6T/12.8P
+The fundamental laws of electromagnetics are covered,
+including Coulomb's law, Gauss' law, Poisson's and
+Laplace's equations, the Biot-Savart law, Ampere's law,
+Faraday's law, and Maxwell's equations. Vector calculus
+is applied to determine the relationship between the
+electric and magnetic fields and their sources (charges
+and currents). The interaction of the fields with material
+media will be discussed, including resistance, polarization
+in dielectrics, magnetization in magnetic materials,
+properties of magnetic materials and boundary conditions.
+Other topics include: electric and magnetic forces, the
+electric potential, capacitance and inductance, electric and
+magnetic energy, magnetic circuits, and boundary-value
+problems.
+Total AUs: 56.40
+
+ECE231H1 - Introductory Electronics
+Credit Value: 0.50
+Hours: 38.4L/25.6T/19.2P
+An introduction to electronic circuits using operational
+amplifiers, diodes, bipolar junction transistors and fieldeffect transistors.
+Total AUs: 60.80
+
+ECE241H1 - Digital Systems
+Credit Value: 0.50
+Hours: 38.4L/15P
+Digital logic circuit design with substantial hands-on
+laboratory work. Algebraic and truth table representation
+of logic functions and variables. Optimizations of
+combinational logic, using "don't cares." Multi-level logic
+optimization. Transistor-level design of logic gates;
+propagation delay and timing of gates and circuits. The
+Verilog hardware description language. Memory in digital
+circuits, including latches, clocked flip-flops, and Static
+Random Access Memory. Set-up and hold times of
+sequential logic. Finite state machines - design and
+implementation. Binary number representation, hardware
+addition and multiplication. Tri-state gates, and
+multiplexers. There is a major lab component using FieldProgrammable Gate Arrays (FPGAs) and associated
+computer-aided design software.
+Total AUs: 53.40
+
+ECE243H1 - Computer Organization
+Credit Value: 0.50
+Hours: 38.4L/38.4P
+Basic computer structure. Design of central processing
+unit. Hardwired control. Input-output and the use of
+interrupts. Assembly language programming. Main
+memory organization and caches. Peripherals and
+interfacing. System design considerations. The laboratory
+will consist of experiments involving logic systems and
+microprocessors and a large open project. Design activity
+constitutes a major portion of laboratory work.
+Total AUs: 57.60
+
+ECE244H1 - Programming Fundamentals
+Credit Value: 0.50
+Hours: 38.4L/12.8T/25.6P
+Provides a foundation in programming using an objectoriented programming language. Topics include: classes
+and objects, inheritance, exception handling, basic data
+structures (lists, tree, etc.), big-O complexity analysis, and
+testing and debugging. The laboratory assignments
+emphasize the use of object-oriented programming
+constructs in the design and implementation of reasonably
+large programs.
+Prerequisite: APS105H1
+Total AUs: 56.40
+204 Electrical and Computer Engineering
+
+ECE295H1 - Hardware Design and Communication
+Credit Value: 0.50
+Hours: 25.6L/12.8T/12.8P
+Introduction to engineering design processes for hardware
+systems. In addition to familiarizing students with
+hardware design practices, tools, and skill sets, it also
+aims to develop effective oral and written communication
+in a team context. Principles of engineering design,
+project management and teamwork are developed and
+applied as students work in teams to create and
+implement a complex hardware system comprising analog
+and digital electronic circuits. Students learn how to
+synthesize, prototype, and assemble designs realized
+using printed circuit board technology, as well as how to
+test them using modern measurement equipment. They
+learn about computer-aided design (CAD) and other
+development tools including those for electronic circuit
+simulation, schematic capture, board layout, version
+control (git), and instrument control. Students develop and
+apply communication skills by preparing a variety of
+documents and presentations, including proposals, status
+reports, design reviews, and presentations.
+Prerequisite: ECE212H1, ECE241H1, APS105H1
+Corequisite: ECE231H1
+Exclusion: ECE297H1
+Total AUs: 38.40
+
+ECE297H1 - Software Design and Communication
+Credit Value: 0.50
+Hours: 38.4L/12.8T/25.6P
+An introduction to engineering design processes,
+illustrated by the design and implementation of a software
+system, and to effective oral and written communication in
+a team context. Principles of software design, project
+management and team work are developed in the lectures
+and tutorials, and students apply these concepts in the
+laboratories as they work in a team to design and
+implement a complex software system. Students learn
+and practice oral and written communication techniques in
+lectures and in meetings with their communication
+instructor, and apply these techniques in a variety of
+documents and presentations, such as short status
+reports and longer design proposals and design reviews.
+Students learn software development tools such as
+version control (git), debuggers, code verifiers and unit
+test frameworks and gain experience in graphical user
+interface design and algorithm development.
+Prerequisite: APS105H1, ECE244H1
+Exclusion: ECE295H1
+Total AUs: 49.60
+
+ECE302H1 - Probability and Applications
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+Events, sample space, axioms of probability. Discrete and
+continuous random variables, distribution and density
+functions. Bernoulli trials, Binomial, geometric, Poisson,
+exponential and Gaussian distributions.
+Expectation, moments, characteristic function and
+correlation coefficient. Functions of random variables.
+Random vectors, joint distributions, transformations.
+Applications will be chosen from communication theory,
+estimation and hypothesis testing, predictive analytics and
+other areas of electrical and computer engineering.
+Prerequisite: MAT290H1 and MAT291H1 and
+ECE216H1
+Exclusion: ECE286H1
+Total AUs: 50.40
+
+ECE311H1 - Introduction to Control
+Systems
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+An introduction to dynamic systems and their control.
+Differential equation models of mechanical, electrical, and
+electromechanical systems. State variable form.
+Linearization of nonlinear models and transfer functions.
+Use of Laplace transform to solve ordinary differential
+equations. Conversion of models from state variable form
+to transfer function representation and vice versa. Block
+diagrams and their manipulation. Time response: transient
+analysis and performance measures. Properties of
+feedback control systems. Steady state tracking:the notion
+of system type. The concept of stability of feedback
+systems, Routh-Hurwitz stability criterion. Frequency
+response and stability in the frequency domain. Root
+locus. Bode and Nyquist plots and their use in feedback
+control design.
+Prerequisite: MAT290H1, MAT291H1, ECE216H1
+Total AUs: 54.40
+
+ECE313H1 - Energy Systems and
+Distributed Generation
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Three-phase systems; steady-state transmission line
+model; symmetrical three-phase faults; power system
+stability; symmetrical components; unsymmetrical faults
+and fault current calculation; distribution network;
+equivalent steady-state model of voltage-sourced
+converter; distributed energy resources (DR); distributed
+energy storage; interface between DR and power system.
+Exclusion: ECE413H1
+Total AUs: 70.40
+205 Electrical and Computer Engineering
+
+ECE314H1 - Fundamentals of Electrical
+Energy Systems
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+High-efficiency energy conversion via switched-mode
+power electronic circuits: design and steady-state
+modeling of DC/DC converters, DC/AC converters using
+pulse-width modulation. Transistor switch realization and
+basic efficiency analysis in power electronic converters.
+AC power quality and power factor, including nonsinusoidal currents. Energy conversion via magnetic
+devices: Faraday's law for time varying fields,
+characterization of hysteresis and eddy current losses in
+magnetic materials, modelling of magnetic circuits,
+transformer and inductor modelling and design.
+Introduction to electromechanical energy conversion:
+Lorentz Force, concepts of energy, co-energy, forces
+between ferromagnetic materials carrying flux, simple
+magnetic actuators, introduction to synchronous
+machines.
+Prerequisite: ECE212H1 and ECE221H1 and ECE231H1
+Exclusion: ECE349H1
+Total AUs: 54.40
+
+ECE316H1 - Communication Systems
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+An introductory course in analog and digital
+communication systems. Analog and digital signals.
+Signal representation and Fourier transforms; energy and
+power spectral densities; bandwidth. Distortionless analog
+communication; amplitude, frequency and phase
+modulation systems; frequency division multiplexing.
+Sampling, quantization and pulse code modulation (PCM).
+Baseband digital communication; intersymbol interference
+(ISI); Nyquist's ISI criterion; eye diagrams. Passband
+digital communications; amplitude-, phase- and
+frequency-shift keying; signal constellations. Performance
+analysis of analog modulation schemes in the presence of
+noise. Performance analysis of PCM in noise.
+Prerequisite: (MAT290H1, ECE216H1) /(MAT389H1,
+ECE355H1)
+Total AUs: 53.40
+
+ECE318H1 - Fundamentals of Optics
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Geometric Optics: Spherical surfaces, lenses and mirrors,
+optical imaging systems, matrix method, and aberrations.
+Polarization: Polarizer and polarizations, anisotropic
+materials, dichroism, birefringence, index ellipsoid,
+waveplates, optical activity, Faraday effect. Interference:
+superposition of waves, longitudinal and transverse
+coherence, Young's double-slit experiment, Michelson and
+Fabry-Perot interferometer, thin-films. Diffraction and
+Fourier Optics: diffraction theory, single and double slits,
+diffraction gratings, spatial filtering, basic optical signal
+processing. (Background preparation in ECE320H1 F -
+Fields and Waves, or ECE357H1 S - Electromagnetic
+Fields, is strongly recommended.)
+Prerequisite: ECE221H1 or ECE259H1
+Total AUs: 54.40
+
+ECE320H1 - Fields and Waves
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Voltage and current waves on a general transmission line,
+characteristic impedance, reflections from the load and
+source, transients on a transmission line, Smith's chart
+and impedance matching. Maxwell's equations, wave
+equation, constitutive relations, dispersion, boundary
+conditions. Plane wave propagation in lossless and lossy
+media, polarization, power flow and Poynting vector.
+Plane wave reflection and transmission at material
+boundaries. Waveguides; propagating and evanescent
+waveguide modes and cut-off frequencies.
+Prerequisite: ECE221H1
+Total AUs: 53.40
+
+ECE326H1 - Programming Languages
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Study of programming styles and paradigms. Included are
+object-oriented scripting functional and logic-based
+approaches. Languages that support these programming
+styles will be introduced. Languages treated include
+Python, Lisp or Scheme and Prolog.
+Exclusion: CSC324H1, CSC326H1
+Total AUs: 54.40
+
+ECE330H1 - Quantum and Semiconductor Physics
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+The course introduces the principles of quantum physics
+and uses them to understand the behaviour of
+semiconductors. Topics to be covered include waveparticle duality, Schrodinger's equation, energy
+quantization, quantum mechanical tunnelling, electrons in
+crystalline semiconductors and other physical concepts
+that form the basis for nanotechnology, microelectronics,
+and optoelectronics.
+Prerequisite: ECE221H1/ECE231H1
+Exclusion: MSE235H1
+Total AUs: 51.20
+
+ECE331H1 - Analog Electronics
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+206 Electrical and Computer Engineering
+Transistor amplifiers, including: differential and multistage
+amplifiers, integrated circuit biasing techniques, output
+stage design and IC amplifier building blocks. Frequency
+response of amplifiers at low, medium and high
+frequencies. Feedback amplifier analysis. Stability and
+compensation techniques for amplifiers using negative
+feedback.
+Prerequisite: ECE212H1, ECE231H1
+Total AUs: 53.40
+
+ECE334H1 - Digital Electronics
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Digital design techniques for integrated circuits. The
+emphasis will be on the design of logic gates at the
+transistor level. A number of different logic families will be
+described, but CMOS will be emphasized. Review of:
+device modeling, IC processing, and Spice simulation,
+simplified layout rules, inverter noise margins, transient
+response, and power dissipation, traditional CMOS logic
+design, transmission gates, RC timing approximations,
+input-output circuits, latches and flipflops, counters and
+adders, decoders and muxes, dynamic gates, SRAMs,
+DRAMs, and EEPROMs.
+Prerequisite: ECE241H1 and ECE231H1 or ECE253H1
+and ECE360H1
+Total AUs: 54.40
+
+ECE335H1 - Introduction to Electronic Devices
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+Electrical behaviour of semiconductor structures and
+devices. Metal-semiconductor contacts; pn junctions,
+diodes, photodetectors, LED's; bipolar junction transistors,
+Ebers-Moll and hybrid-pi models; field effect transistors,
+MOSFET, JFET/MESFET structures and models;
+thyristors and semiconductor lasers.
+Prerequisite: MAT291H1 and ECE221H1 and
+ECE231H1
+Exclusion: MSE335H1
+Total AUs: 51.20
+
+ECE342H1 - Computer Hardware
+Credit Value: 0.50
+Hours: 38.4L/38.4P
+Design of digital hardware components and embedded
+systems. Finite state machines and the algorithmic state
+machine representation. Timing analysis of single and
+multi-clock designs. Numeric representation and
+arithmetic circuits: binary addition, subtraction,
+multiplication and division; IEEE 754 floating point
+representation. Introduction to hardware architecture of
+embedded systems; on-chip buses, particularly the
+AMBA/AXI standard. Processor design and pipelining.
+Memory types, interfacing and direct memory access. Offchip peripherals and communication protocols.
+Prerequisite: ECE241H1, ECE243H1
+Total AUs: 57.60
+ECE344H1 - Operating Systems
+Credit Value: 0.50
+Hours: 38.4L/38.4P
+Operating system structures, concurrency,
+synchronization, deadlock, CPU scheduling, memory
+management, file systems. The laboratory exercises will
+require implementation of part of an operating system.
+Prerequisite: ECE244H1 and ECE243H1
+Exclusion: ECE353H1
+Total AUs: 53.40
+
+ECE345H1 - Algorithms and Data
+Structures
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+Design and analysis of algorithms and data structures that
+are essential to engineers in every aspect of the computer
+hardware and software industry. Recurrences,
+asymptotics, summations, trees and graphs. Sorting,
+search trees and balanced search trees, amortized
+analysis, hash functions, dynamic programming, greedy
+algorithms, basic graph algorithms, minimum spanning
+trees, shortest paths, introduction to NP completeness
+and new trends in algorithms and data structures.
+Prerequisite: ECE244H1 or equivalent with the
+permission of the Chair of the AI certificate/minor.
+Total AUs: 50.40
+
+ECE356H1 - Introduction to Control
+Theory
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+An introduction to dynamic systems and their control.
+Differential equation models of physical systems using
+transfer functions and state space models. Linearization.
+Initial and input response. Stability theory. Principle of
+feedback. Internal Model Principle. Frequencey response.
+Nyquist stability. Loop shaping theory. Computer aided
+design using MATLAB and Simulink.
+Prerequisite: MAT292H1
+Exclusion: ECE311H1, AER372H1
+Total AUs: 54.40
+
+ECE361H1 - Computer Networks I
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+207 Electrical and Computer Engineering
+Layered network architectures; overview of TCP/IP
+protocol suite. Introduction to sockets; introduction to
+application layer protocols. Peer-to-Peer Protocols: ARQ;
+TCP reliable stream service; flow control. Data Link
+Controls: Framing; PPP; HDLC. Medium access control
+and LANs: Aloha; Ethernet; Wireless LANs; Bridges.
+Packet Switching: Datagram and virtual circuit switching;
+Shortest path algorithms; Distance vector and link state
+algorithms.
+Prerequisite: ECE286H1 or ECE302H1
+Corequisite: ECE302H1. (Students must take the corequisite, ECE302H1 in the same term as ECE361H, OR
+in a term before taking ECE361H1.)
+Total AUs: 53.40
+
+ECE367H1 - Matrix Algebra and Optimization
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+This course will provide students with a grounding in
+optimization methods and the matrix algebra upon which
+they are based. The first past of the course focuses on
+fundamental building blocks in linear algebra and their
+geometric interpretation: matrices, their use to represent
+data and as linear operators, and the matrix
+decompositions (such as eigen-, spectral-, and singularvector decompositions) that reveal structural and
+geometric insight. The second part of the course focuses
+on optimization, both unconstrained and constrained,
+linear and non-linear, as well as convex and nonconvex;
+conditions for local and global optimality, as well as basic
+classes of optimization problems are discussed.
+Applications from machine learning, signal processing,
+and engineering are used to illustrate the techniques
+developed.
+Prerequisite: AER210H1/MAT290H1,
+MAT185H1/MAT188H1
+Total AUs: 51.20
+
+ECE368H1 - Probabilistic Reasoning
+Credit Value: 0.50
+Hours: 38.4L/12.8T
+This course will focus on different classes of probabilistic
+models and how, based on those models, one deduces
+actionable information from data. The course will start by
+reviewing basic concepts of probability including random
+variables and first and second-order statistics. Building
+from this foundation the course will then cover
+probabilistic models including vectors (e.g., multivariate
+Gaussian), temporal (e.g., stationarity and hidden Markov
+models), and graphical (e.g., factor graphs). On the
+inference side topics such as hypothesis testing,
+marginalization, estimation, and message passing will be
+covered. Applications of these tools cover a vast range of
+data processing domains including machine learning,
+communications, search, recommendation systems,
+finance, robotics and navigation.
+Prerequisite: ECE286H1/ECE302H1
+Exclusion: CSC412H1
+Total AUs: 44.80
+
+ECE410H1 - Linear Control Systems
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+State space analysis of linear systems, the matrix
+exponential, linearization of nonlinear systems. Structural
+properties of linear systems: stability, controllability,
+observability, stabilizability, and detectability. Pole
+assignment using state feedback, state estimation using
+observers, full-order and reduced-order observer design,
+design of feedback compensators using the separation
+principle, control design for tracking. Control design based
+on optimization, linear quadratic optimal control, the
+algebraic Riccati equation. Laboratory experiments
+include computer-aided design using MATLAB and the
+control of an inverted pendulum on a cart.
+Prerequisite: ECE311H1
+Exclusion: ECE557H1
+Total AUs: 53.40
+
+ECE411H1 - Real-Time Computer Control
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Digital Control analysis and design by state-space
+methods. Introduction to scheduling of control tasks using
+fixed-priority protocols. Labs include control design using
+MATLAB and Simulink, and computer control of the
+inverted pendulum using a PC with real-time software.
+Prerequisite: ECE311H1 or ECE356H1
+Total AUs: 54.40
+
+ECE412H1 - Analog Signal Processing
+Circuits
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+This course will provide students with an overview of
+continuous-time and discrete-time signal processing
+techniques, and the analysis and design of analog and
+mixed-signal circuit building blocks used in modern
+electronic systems. Topics covered include: analysis,
+specification, simulation, and design of continuous-time
+filters with linear transconductors and op-amps; phasedomain model, noise model, and design methodology for
+low phase noise Phase Lock Loops and associated
+building blocks (VCO, phase-frequency detector, charge
+pump); discrete-time signal analysis using z-transform;
+discrete-time filter design based on switched capacitors;
+as well as fundamentals, architectures, building blocks,
+and characterization techniques for digital-to-analog and
+analog-to-digital converters.
+208 Electrical and Computer Engineering
+Prerequisite: ECE331H1 or ECE354H1
+Exclusion: ECE512H1
+Total AUs: 51.20
+
+ECE417H1 - Digital Communication
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Basic concepts of digital communication. Baseband data
+transmission, intersymbol interference, Nyquist pulse
+shaping, equalization, line coding, multi-path fading,
+diversity. Binary and M-ary modulation schemes,
+synchronization. Signal space concepts, optimum
+receivers, coherent and noncoherent detectors.
+Information theory, source encoding, error control coding,
+block and convolutional codes.
+Prerequisite: ECE302H1 and ECE316H1, or ECE286H1
+Total AUs: 54.40
+
+ECE419H1 - Distributed Systems
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Design issues in distributed systems: heterogeneity,
+security, transparency, concurrency, fault-tolerance;
+networking principles; request-reply protocol; remote
+procedure calls; distributed objects; middleware
+architectures; CORBA; security and authentication
+protocols; distributed file systems; name services; global
+states in distributed systems; coordination and agreement;
+transactions and concurrency control; distributed
+transactions; replication.
+Prerequisite: ECE344H1 or ECE353H1
+Total AUs: 53.40
+
+ECE421H1 - Introduction to Machine Learning
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+An Introduction to the basic theory, the fundamental
+algorithms, and the computational toolboxes of machine
+learning. The focus is on a balanced treatment of the
+practical and theoretical approaches, along with hands on
+experience with relevant software packages. Supervised
+learning methods covered in the course will include: the
+study of linear models for classification and regression,
+neural networks and support vector machines.
+Unsupervised learning methods covered in the course will
+include: principal component analysis, k-means clustering,
+and Gaussian mixture models. Theoretical topics will
+include: bounds on the generalization error, bias-variance
+tradeoffs and the Vapnik-Chervonenkis (VC) dimension.
+Techniques to control overfitting, including regularization
+and validation, will be covered.
+Prerequisite: ECE286H1/STA286H1,
+ECE302H1/MIE231H1/CHE223H1/MIE236H1/MSE238H1
+Exclusion: CSC411H1, ECE521H1
+Total AUs: 51.20
+
+ECE422H1 - Radio and Microwave Wireless Systems
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Analysis and design of systems employing radio waves,
+covering both the underlying electromagnetics and the
+overall system performance aspects such as signal-tonoise ratios. Transmission/reception phenomena include:
+electromagnetic wave radiation and polarization;
+elementary and linear dipoles; directivity, gain, efficiency;
+integrated, phased-array and aperture antennas; beamsteering; Friis transmission formula and link budget.
+Propagation phenomena include: diffraction and wave
+propagation over obstacles; multipath propagation;
+atmospheric and ionospheric effects. Receiver design
+aspects include: radio receiver architectures, receiver
+figures of merit, noise in cascaded systems, noise figure,
+and noise temperature. System examples are: terrestrial
+communication systems; satellite communications; radar;
+radiometric receivers; software-defined radio.
+Prerequisite: ECE320H1 or ECE357H1
+Total AUs: 54.40
+
+ECE424H1 - Microwave Circuits
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Losses in conductors and dielectrics; RF and microwave
+transmission lines; transients on transmission lines;
+matching networks; planar transmission lines (microstrip,
+stripline, coplanar waveguide); design with scattering
+parameters; 3- and 4-port RF devices (power
+dividers/combiners, couplers, isolators & circulators);
+coupled lines and devices; microwave active circuits (RF
+amplifiers, mixers, and receiver front ends); RF and
+microwave filters. The hands-on laboratories engage
+students in the design, simulation, fabrication, and test of
+practical passive and active microwave circuits using
+industry-standard RF/microwave simulation tools and
+measurement systems.
+Exclusion: ECE524H1
+Total AUs: 54.40
+
+ECE427H1 - Photonic Devices
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+The human visual interface is rapidly evolving with the
+emergence of smart glasses, AR/VR wearable display,
+and autonomous vehicles. This course examines the
+photonic devices and integrated systems that underline
+such technologies, and how they are shaped by human
+visual perception and acuity. Advanced integrated
+photonic systems in optical display and sensing will be
+deconstructed and the underlying fundamental concepts
+209 Electrical and Computer Engineering
+studied. Topics include introduction to: heads up and
+wearable display, optical lidar, optical fiber, waveguide
+circuits, holography, optical switches, light sources (LED,
+laser), detectors and imaging sensors.
+Prerequisite: ECE318H1/ECE320H1/ECE357H1
+Total AUs: 51.20
+
+ECE430H1 - Analog Integrated Circuits
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Review of MOSFET semiconductor device equations.
+Noise in electronic devices. Review of single-stage
+amplifiers and frequency response, including noise
+analysis. Basic CMOS op amp. Op amp compensation.
+Advanced op amp circuits: telescopic and folded-cascode
+op amps. Fully-differential op amps. Common mode
+feedback.
+Prerequisite: ECE331H1 or ECE354H1
+Exclusion: ECE530H1
+Total AUs: 54.40
+
+ECE431H1 - Digital Signal Processing
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+An introductory course in digital filtering and applications.
+Introduction to real world signal processing. Review of
+sampling and quantization of signals. Introduction to the
+discrete Fourier transform and its properties. The fast
+Fourier transform. Fourier analysis of signals using the
+discrete Fourier transform. Structures for discrete-time
+systems. Design and realization of digital filters: finite and
+infinite impulse response filters. DSP applications in areas
+such as communications, multimedia, video coding,
+human computer interaction and medicine.
+Total AUs: 54.40
+
+ECE437H1 - VLSI Technology
+Credit Value: 0.50
+Hours: 38.4L/38.4P
+The introduction to VLSI fabrication techniques, integrated
+circuit designs and advanced semiconductor devices will
+give a proper perspective of the past, present and future
+trends in the VLSI industry. Following the evolution of
+MOS and bipolar devices, digital and analog CMOS,
+BiCMOS, deep submicron CMOS, SOI-CMOS, RF-CMOS
+and HV-CMOS technologies will be studied. Special
+attention will be given to the physical scaling limits such
+as short channel effects. In addition, CAD tools and
+design methodology for the development of advanced
+semiconductor devices and integrated circuits will be
+introduced in the laboratory environment. These include
+the simulation of device fabrication, device characteristics,
+device modeling, circuit layout, design verification. Finally,
+advanced technology such as GaN HEMTs, graphene
+devices, carbon nano-tube devices, power devices,
+heterojunctions, InP and GaSb HBTs will also be studied.
+Prerequisite: (ECE331H1 or ECE334H1 or ECE354H1)
+and (ECE335H1 or ECE350H1)
+Exclusion: ECE535H1 and ECE534H1
+Total AUs: 57.60
+
+ECE444H1 - Software Engineering
+Credit Value: 0.50
+Hours: 38.4L/12.8T/38.4P
+The collaborative software development process.
+Software requirements elicitation and specifications.
+Software design techniques. Techniques for developing
+large software systems. Software testing, quality
+assurance, documentation, and maintenance. Opensource software and web application design.
+Prerequisite: ECE344H1/ECE353H1/ECE297H1
+Exclusion: CSC444H1
+Total AUs: 64.00
+
+ECE445H1 - Neural Bioelectricity
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Generation, transmission and the significance of
+bioelectricity in neural networks of the brain. Topics
+covered include: (i) Basic features of neural systems. (ii)
+Ionic transport mechanisms in cellular membranes. (iii)
+Propagation of electricity in neural cables. (iv)
+Extracellular electric fields. (v) Neural networks,
+neuroplasticity and biological clocks. (vi) Learning and
+memory in artificial neural networks. Laboratory
+experiences include: (a) Biological measurements of body
+surface potentials (EEG and EMG). (b) Experiments on
+computer models of generation and propagation of
+neuronal electrical activities. (c) Investigation of learning in
+artificial neural networks.
+Total AUs: 54.40
+
+ECE446H1 - Sensory Communication
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Physical acoustics, acoustic measurements,
+electroacoustic transducers, and physiological acoustics.
+Speech processing, speech recognition algorithms and
+signal processing by the auditory system. Engineering
+aspects of acoustic design. Electrical models of acoustic
+systems. Noise, noise-induced hearing loss, and noise
+control. Introduction to vision and other modalities.
+Musical and psychoacoustics.
+Total AUs: 54.40
+
+ECE448H1 - Biocomputation
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+210 Electrical and Computer Engineering
+Modern technologies in the biosciences generate
+tremendous amounts of biological data ranging from
+genomic sequences to protein structures to gene
+expression. Biocomputations are the computer algorithms
+used to reveal the hidden patterns within this data. Course
+topics include basic concepts in molecular cell biology,
+pairwise sequence alignment, multiple sequence
+alignment, fast alignment algorithms, deep learning
+approaches, phylogentic prediction, structure-based
+computational methods, gene finding and annotation.
+Total AUs: 51.20
+
+ECE454H1 - Computer Systems
+Programming
+Credit Value: 0.50
+Hours: 38.4L/38.4P
+Fundamental techniques for programming computer
+systems, with an emphasis on obtaining good
+performance. Topics covered include: how to measure
+and understand program and execution and behaviour,
+how to get the most out of an optimizing compiler, how
+memory is allocated and managed, and how to exploit
+caches and the memory hierarchy. Furthermore, current
+trends in multicore, multithreaded and data parallel
+hardware, and how to exploit parallelism in their programs
+will be covered.
+Total AUs: 53.40
+
+ECE461H1 - Internetworking
+Credit Value: 0.50
+Hours: 38.4L/6.4T/19.2P
+This course will cover the fundamentals of protocols for
+packet switching networks with emphasis on Internet type
+of networks including the following topics: the
+Internetworking concept and architectural model; data link
+layer (Ethernet and PPP); service interface; Internet
+addresses; address resolution protocol; Internet protocol
+(connectionless datagram delivery); routing IP datagrams;
+Internet control message protocol (error and control
+messages); subnet and supernet address extensions;
+ping program; traceroute program; user datagram
+protocol; reliable stream transport service (TCP); the
+socket interface; routing (GGP, EGP, IP, OSPF, HELLO);
+Internet multicasting; domain name system; applications
+such as HTTP, electronic mail, and SNMP; Internet
+security and firewall design; Ipv6, RSVP, flows, and ISIP.
+Prerequisite: ECE361H1
+Total AUs: 51.20
+
+ECE462H1 - Multimedia Systems
+Credit Value: 0.50
+Hours: 38.4L/25.6P
+Topics in the engineering area of multimedia systems with
+particular emphasis on the theory, design features,
+performance, complexity analysis, optimization and
+application of multimedia engineering technologies.
+Topics include sound/audio, image and video
+characterization, compression, source entropy and hybrid
+coding, transform coding, wavelet-based coding, motion
+estimation, JPEG coding, digital video coding, MPEG-1/2
+coding, content-based processing, and MPEG-7.
+Total AUs: 48.40
+
+ECE463H1 - Electric Drives
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Electric drives comprise electric machines (i.e.
+motors/generators) together with power electronic
+actuation to enable the control of mechanical motion.
+Topics include electro-mechanical mechanisms for torque
+production relevant to rotating machines, speed-torque
+diagrams, DC machine analysis, dynamics and
+torque/speed/position control, introduction to space
+vectors and their application to motion control of
+synchronous machines and stepper motors. Steady state
+and variable speed operation of the induction machine
+using constant flux control is also covered.
+Prerequisite:
+ECE314H1/ECE315H1/ECE349H1/ECE359H1,
+ECE311H1/ECE356H1/AER372H1
+Corequisite: ECE311H1/ECE356H1/AER372H1
+Total AUs: 53.40
+
+ECE464H1 - Wireless Communication
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+The radio medium, radio communication system
+examples. Link budget: cable losses, propagation loss,
+antenna gains. Basic concepts of propagation: path loss,
+multi-path propagation and fading. Raleigh and Rician
+fading models, Doppler shift, delay spread, coherence
+time and coherence bandwidth of the channel. Analog
+modulation schemes and their bandwidths. Digital
+modulation schemes and their bandwidths and bit rates:
+BPSK, QPSK, MSK, GMSK. Basic concepts of speech
+coding. Error correction coding, interleaving, and multiple
+access frame structure. The physical layer description of
+the AMPS, IS-54, and GSM cellular systems. The cellular
+concept: frequency re-use, re-use cluster concept.
+Channel allocation. Cellular system architecture for
+AMPS, IS-54, and GSM. Hand-offs and transmitter power
+control. Cellular traffic, call blocking, concept of Erlangs.
+Basic ideas in spread spectrum modulation, spreading
+codes, bit error probability. Orthogonal and nonorthogonal CDMA Basic concepts in CDMA networks.
+Prerequisite: ECE302H1 and ECE316H1 and
+ECE417H1, or ECE286H1 and ECE417H1
+Total AUs: 54.40
+211 Electrical and Computer Engineering
+
+ECE466H1 - Computer Networks II
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Traffic modeling; network calculus; traffic classification;
+traffic regulation: shaping, filtering, policing, leaky bucket;
+queueing systems; scheduling; quality of service: Diffserv
+and IntServ/RSVP; multi-protocol label switching; call
+admission control / congestion control; switching; pricing;
+optical networks.
+Prerequisite: ECE361H1
+Total AUs: 54.40
+
+ECE467H1 - Compilers & Interpreters
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Compiler organization, compiler writing tools, use of
+regular expressions, finite automata and context-free
+grammars, scanning and parsing, runtime organization,
+semantic analysis, implementing the runtime model,
+storage allocation, code generation.
+Prerequisite: ECE243H1/ECE352H1
+Exclusion: CSC467H1
+Total AUs: 54.40
+
+ECE469H1 - Optical Communications and Networks
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+This course provides an introduction to optical
+communication systems and networks at the system and
+functional level. Applications range from
+telecommunication networks (short to long haul) to
+computing networks (chip-to-chip, on chip
+communications, optical backplanes). Basic principles of
+optical transmission and associated components used for
+transmission of light and optical networks; system design
+tools for optical links; multi-service system requirements;
+optical network design tools (routing and wavelength
+assignment), network management and survivability.
+Total AUs: 54.40
+
+ECE470H1 - Robot Modeling and Control
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Classification of robot manipulators, kinematic modeling,
+forward and inverse kinematics, velocity kinematics, path
+planning, point-to-point trajectory planning, dynamic
+modeling, Euler-Lagrange equations, inverse dynamics,
+joint control, computed torque control, passivity-based
+control, feedback linearization.
+Prerequisite: ECE311H1 or ECE356H1
+Exclusion: AER525H1
+Total AUs: 53.40
+
+ECE472H1 - Engineering Economic Analysis & Entrepreneurship
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+The economic evaluation and justification of engineering
+projects and investment proposals are discussed. Cost
+concepts; financial and cost accounting; depreciation; the
+time value of money and compound interest; inflation;
+capital budgeting; equity, bond and loan financing; income
+tax and after-tax cash flow in engineering project
+proposals; measures of economic merit in the public
+sector; sensitivity and risk analysis. Applications:
+evaluations of competing engineering project alternatives;
+replacement analysis; economic life of assets; lease
+versus buy decisions; break-even and sensitivity analysis.
+Entrepreneurship and the Canadian business environment
+will be discussed.
+Total AUs: 50.40
+
+ECE488H1 - Entrepreneurship and Business for Engineers
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+A complete introduction to small business formation,
+management and wealth creation. Topics include: the
+nature of the Entrepreneur and the Canadian business
+environment; business idea search and Business Plan
+construction; Buying a business, franchising, taking over a
+family business; Market research and sources of data;
+Marketing strategies promotion, pricing, advertising,
+electronic channels and costing; The sales process and
+management, distribution channels and global marketing;
+Accounting, financing and analysis, sources of funding,
+and financial controls; The people dimension:
+management styles, recruiting and hiring, legal issues in
+employment and Human Resources; Legal forms of
+organization and business formation, taxation, intellectual
+property protection; the e-Business world and how
+businesses participate; Managing the business: location
+and equipping the business, suppliers and purchasing,
+credit, ethical dealing; Exiting the business and
+succession, selling out. A full Business Plan will be
+developed by each student and the top submissions will
+be entered into a Business Plan competition with
+significant cash prices for the winners. Examples will be
+drawn from real business situations including practicing
+entrepreneurs making presentations and class visits
+during the term. (Identical courses are offered:
+MSE488H1, MIE488H1, CHE488H1 and CIV488H1.)
+*Complementary Studies Elective
+212 Electrical and Computer Engineering
+Exclusion: TEP234H1, TEP432H1
+Total AUs: 51.20
+
+ECE496Y1 - Design Project
+Credit Value: 1.00
+Hours: 12.8L/12.8T
+A full year capstone design project course intended to
+give students an opportunity to apply their technical
+knowledge and communication skills. Working in teams
+under the direct supervision of a faculty member, students
+develop a design project of their choice from an initial
+concept to a final working prototype. In the first session, a
+project proposal is submitted early on, followed by a
+project requirements specification. A design review
+meeting is then held to review the proposed design.
+Lectures given during the first session will develop
+expertise in various areas related to design and technical
+communication. In the second session, the teams present
+their work in a number of ways, including an oral
+presentation, a poster presentation, a final demonstration
+at the Design Fair, an individual progress report, and a
+group final report. Course deliverables are evaluated by
+both the team's supervisor and one of several course
+administrators.
+Exclusion: APS490Y1
+Total AUs: 107.80
+
+ECE499H1 - Research Thesis
+Credit Value: 0.50
+The course consists of a research project conducted
+under the supervision of an ECE faculty member.
+Research projects must be arranged individually between
+the student and a supervising faculty member, subject to
+the approval of the Associate Chair, Undergraduate. The
+thesis should have a research focus. The student’s work
+must culminate in a final thesis document. The student is
+also required to submit a set of deliverables, including a
+proposal. The course may be undertaken only once, either
+in the Fall (F) or Winter (S) Session (0.5 weight), or as a
+full year (Y) course (1.0 weight).
+Prerequisite: Approval of Associate Chair,
+Undergraduate
+Total AUs: 49.60
+
+ECE499Y1 - Research Thesis
+Credit Value: 0.50
+The course consists of a research project conducted
+under the supervision of an ECE faculty member.
+Research projects must be arranged individually between
+the student and a supervising faculty member, subject to
+the approval of the Associate Chair, Undergraduate. The
+thesis should have a research focus. The student’s work
+must culminate in a final thesis document. The student is
+also required to submit a set of deliverables, including a
+proposal. The course may be undertaken only once, either
+in the Fall (F) or Winter (S) Session (0.5 weight), or as a
+full year (Y) course (1.0 weight).
+Prerequisite: Approval of Associate Chair,
+Undergraduate
+Total AUs: 99.20
+
+ECE516H1 - Intelligent Image Processing
+Credit Value: 0.50
+Hours: 38.4L/38.4P
+This course provides the student with the fundamental
+knowledge needed in the rapidly growing field of Personal
+Cybernetics, including "Wearable Computing", "Personal
+Technologies", "Human Computer Interaction (HCI),"
+"Mobile Multimedia," "Augmented Reality," "Mediated
+Reality," CyborgLogging," and the merging of
+communications devices such as portable telephones with
+computational and imaging devices. The focus is on
+fundamental aspects and new inventions for humancomputer interaction. Topics to be covered include:
+mediated reality, Personal Safety Devices, lifelong
+personal video capture, the Eye Tap principle, collinearity
+criterion, comparametric equations, photoquantigraphic
+imaging, lightvector spaces, anti-homomorphic imaging,
+application of personal imaging to the visual arts, and
+algebraic projective geometry.
+Total AUs: 57.60
+
+ECE520H1 - Power Electronics
+Credit Value: 0.50
+Hours: 38.4L/12.8T/16.2P
+Focuses on power electronic converters utilized in
+applications ranging from low-power mobile devices to
+higher power applications such as electric vehicles, server
+farms, microgrids, and renewable energy systems.
+Concepts covered include the principles of efficient
+electrical energy processing (dc-dc, dc/ac, and ac/ac)
+through switch-mode energy conversion, converter loss
+analysis, large- and small-signal modeling of power
+electronic circuits and controller design.
+Prerequisite: ECE314H1/ECE349H1/ECE359H1
+Exclusion: ECE514H1, ECE533H1
+Total AUs: 52.90
+
+ECE526H1 - Power System Protection and Automation
+Credit Value: 0.50
+Hours: 38.4L/12.8T/16.2P
+Presents the concepts of short-circuit fault analysis,
+protective relaying, and automation in power systems. The
+course starts by discussing the causes and types of shortcircuit faults using real-world examples. The
+consequences of faults for different power system
+components are reviewed using event reports from field
+data. The method of symmetrical components for
+213 Electrical and Computer Engineering
+analyzing unbalanced three-phase systems are
+introduced. Analytical methods and computer-based
+approaches for deriving fault voltages and currents are
+discussed and the effect of system grounding during
+transient conditions, including faults, are introduced.
+Students also learn the concept of power system
+automation and its role in monitoring, protection, and
+control of modern power systems. Critical devices used in
+an automation system, such as breakers, relays,
+reclosers, capacitor bank controllers, and tap changer
+controllers are presented.
+Prerequisite: ECE313H1/ECE314H1/ECE349H1
+Total AUs: 52.90
+
+ECE532H1 - Digital Systems Design
+Credit Value: 0.50
+Hours: 38.4L/38.4P
+Advanced digital systems design concepts including
+project planning, design flows, embedded processors,
+hardware/software interfacing and interactions, software
+drivers, embedded operating systems, memory interfaces,
+system-level timing analysis, clocking and clock domains.
+A significant design project is undertaken and
+implemented on an FPGA development board.
+Prerequisite: ECE342H1 or ECE352H1
+Total AUs: 57.60
+
+ECE537H1 - Random Processes
+Credit Value: 0.50
+Hours: 38.4L/25.6T
+Introduction to the principles and properties of random
+processes, with applications to communications, control
+systems, and computer science. Random vectors, random
+convergence, random processes, specifying random
+processes, Poisson and Gaussian processes, stationarity,
+mean square derivatives and integrals, ergodicity, power
+spectrum, linear systems with stochastic input, mean
+square estimation, Markov chains, recurrence, absorption,
+limiting and steady-state distributions, time reversibility,
+and balance equations.
+Prerequisite: ECE286H1 and ECE355H1 or ECE302H1
+Corequisite: ECE355H1 (can be taken at the same time
+as ECE537H1)
+Total AUs: 50.40
+
+ECE552H1 - Computer Architecture
+Credit Value: 0.50
+Hours: 38.4L/12.8T/19.2P
+Performance analysis and metrics and cost. Instruction
+set architectures. Instruction-level parallelism: pipelining,
+superscalar, dynamic scheduling, VLIW processors. Datalevel prallelism: vector processors, GPUs. Thread-level
+parallelism: multiprocessors, multi-core, coherence,
+simultaneous multi-threading. Memory hierarchies: caches
+and virtual memory support. Simulation tools and
+methods. Limited Enrollment.
+Prerequisite: ECE243H1 or ECE352H1
+Total AUs: 54.40
+
+ECE568H1 - Computer Security
+Credit Value: 0.50
+Hours: 38.4L/38.4P
+As computers permeate our society, the security of such
+computing systems is becoming of paramount importance.
+This course covers principles of computer systems
+security. To build secure systems, one must understand
+how attackers operate. This course starts by teaching
+students how to identify security vulnerabilities and how
+they can be exploited. Then techniques to create secure
+systems and defend against such attacks will be
+discussed. Industry standards for conducting security
+audits to establish levels of security will be introduced.
+The course will include an introduction to basic
+cryptographic techniques as well as hardware used to
+accelerate cryptographic operations in ATM's and
+webservers.
+Prerequisite: ECE344H1 or ECE353H1
+Total AUs: 53.40

@@ -6,7 +6,7 @@ from search.search_client import searchRAG
 import json
 
 def main():
-    load_database()
+    # load_database()
     student_context = getIntroConversation()
     query = getRAGQuery(str(student_context))
     course_context = searchRAG(query)

@@ -15,6 +15,7 @@ from langchain.prompts import (
     SystemMessagePromptTemplate,
 )
 from langchain.chains import create_extraction_chain
+from json import dumps
 
 
 llm = ChatOpenAI(model_name="gpt-4-1106-preview")
@@ -66,12 +67,12 @@ def getRecommendation(course_context, student_context):
     # qa_chain = load_qa_chain(OpenAI(model_name="gpt4-1106-preview"),  prompt=prompt, memory=memory)
 
     # qa_chain = LLMChain(llm=llm, prompt=prompt)
-
+    str_student_context = dumps(student_context)
     context = (
         "Course information:\n"
         + course_context
         + "\nStudent information:\n"
-        + student_context
+        + str_student_context
     )
     question = "Hi! Can you recommend courses for me?"
     recommendation_list = []
