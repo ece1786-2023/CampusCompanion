@@ -6,7 +6,11 @@
 `docker compose up &`
 
 2. To run the main system run:
-`python main.oy`
+`python main.py`
+
+3. To run the UI
+`cd UI`
+`npm run dev`
 
 ## Testing
 Test code in `test`:
