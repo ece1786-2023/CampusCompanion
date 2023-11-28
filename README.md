@@ -15,8 +15,9 @@
     * See APIs in `http://127.0.0.1:1234/swagger/`
 
 3. To run the UI
-`cd UI`
-`npm run dev`
+    * `cd UI`
+    * `npm install`
+    * `npm run dev`
 
 
 ## Testing

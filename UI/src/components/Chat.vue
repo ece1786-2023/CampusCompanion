@@ -10,14 +10,8 @@
       </div>
       <div class="py-14" />
     </v-responsive>
-    <v-text-field
-      v-model="newMessageText"
-      color="primary"
-      label="Chat"
-      variant="filled"
-      class="chat-input"
-      @keydown.enter="sendMessage"
-    >
+    <v-text-field v-model="newMessageText" color="primary" label="Chat" variant="filled" class="chat-input"
+      @keydown.enter="sendMessage">
       <template #append>
         <transition name="scale">
           <v-btn icon @click="sendMessage">
@@ -82,19 +76,23 @@
 
 
 .message-container:hover .timestamp {
-  opacity: 1; /* Show timestamp on hover */
+  opacity: 1;
+  /* Show timestamp on hover */
 }
 
 .white-text {
-  color: #fff; /* Set text color to white */
+  color: #fff;
+  /* Set text color to white */
 }
 
-.scale-enter-active, .scale-leave-active {
+.scale-enter-active,
+.scale-leave-active {
   transform: scale(1);
   transition: transform 0.2s;
 }
 
-.scale-enter, .scale-leave-to {
+.scale-enter,
+.scale-leave-to {
   transform: scale(0.8);
 }
 </style>
@@ -102,6 +100,7 @@
 <script setup>
 import chatWindow from "./ChatWindow.vue";
 import { ref } from "vue";
+import axiosCom from "@/components/axios"
 
 const messages = ref([]);
 const newMessageText = ref("");
@@ -115,8 +114,9 @@ const conversation = ref({
     // Add more messages as needed
   ],
 });
+const error = ref(null);
 
-const sendMessage = () => {
+const sendMessage = async () => {
   const message = {
     is_bot: false,
     message: newMessageText.value.trim(),
@@ -127,6 +127,20 @@ const sendMessage = () => {
 
     // REST CALL
     newMessageText.value = "";
+    try {
+      console.log(message.message)
+      // wait for axios to return
+      const response = await axiosCom.post(`/chatbot/${message.message}`);
+      console.log(response.data.message)
+      const botMessage = {
+        is_bot: true,
+        message: response.data.message,
+      };
+      conversation.value.messages.push(botMessage);
+      conversation.value.focus()
+    } catch (err) {
+      error.value = err.message;
+    }
   }
 };
 </script>
