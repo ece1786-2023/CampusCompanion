@@ -11,7 +11,7 @@ def searchRAG(query):
         except Exception as e:
             pass
 
-    results = document_collection.query(query_texts=query, n_results=20)
+    results = document_collection.query(query_texts=query, n_results=10)
     result_documents = results["documents"][0]
     print("RAG Search Results:")
     courseStr = ""
