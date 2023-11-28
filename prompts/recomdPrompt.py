@@ -29,8 +29,6 @@ course_schema = {
     },
     "required": ["code", "name", "score", "reason"],
 }
-course_ext_chain = create_extraction_chain(schema=course_schema, llm=llm)
-
 
 # Prompt
 prompt = ChatPromptTemplate(
@@ -60,19 +58,31 @@ Fail!
 )
 
 
-def getRecommendation(course_context, student_context):
+def getRecommendation(course_context, student_context, llm):
+    if type(course_context) is list:
+        course_context = ",".join(course_context)
+    elif type(course_context) is dict:
+        course_context = dumps(course_context)
+    if type(student_context) is dict:
+        student_context = dumps(student_context)
+
+    # print(course_context)
+    # print(student_context)
     # using Stuff chain?
     # https://python.langchain.com/docs/modules/chains/document/stuff
-    memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True, input_key="question")
+    memory = ConversationBufferMemory(
+        memory_key="chat_history", return_messages=True, input_key="question"
+    )
     # qa_chain = load_qa_chain(OpenAI(model_name="gpt4-1106-preview"),  prompt=prompt, memory=memory)
 
     # qa_chain = LLMChain(llm=llm, prompt=prompt)
-    str_student_context = dumps(student_context)
+    course_ext_chain = create_extraction_chain(schema=course_schema, llm=llm)
+
     context = (
         "Course information:\n"
         + course_context
         + "\nStudent information:\n"
-        + str_student_context
+        + student_context
     )
     question = "Hi! Can you recommend courses for me?"
     recommendation_list = []
@@ -101,13 +111,15 @@ def getRecommendation(course_context, student_context):
     print("Recommendation generated.")
     print("rank, code, name, score, reason")
     for i, course in enumerate(recommendation_list):
-        print(f"{i+1}, {course['code']}, {course['name']}, {course['score']}, {course['reason']}")
+        print(
+            f"{i+1}, {course['code']}, {course['name']}, {course['score']}, {course['reason']}"
+        )
 
     return recommendation_list
 
 
 if __name__ == "__main__":
-    course_context = '''CSC301H1 - Introduction to Software Engineering
+    course_context = """CSC301H1 - Introduction to Software Engineering
 Hours: 24L/12T
 An introduction to agile development methods appropriate for medium-sized teams and rapidly-moving projects. Basic software development infrastructure; requirements elicitation and tracking; estimation and prioritization; teamwork skills; basic modeling; design patterns and refactoring; discussion of ethical issues, and professional responsibility.
 Prerequisite: CSC209H1, CSC263H1/ CSC265H1Exclusion: CSC301H5, CSCC01H3. NOTE: Students not enrolled in the Computer Science Major or Specialist program at A&S, UTM, or UTSC, or the Data Science Specialist at A&S, are limited to a maximum of 1.5 credits in 300-/400-level CSC/ECE courses.Distribution Requirements: Science
@@ -149,8 +161,9 @@ Hours: 24L/12T
 An introduction to methods for automated learning of relationships on the basis of empirical data. Classification and regression using nearest neighbour methods, decision trees, linear models, and neural networks. Clustering algorithms. Problems of overfitting and of assessing accuracy. Basics of reinforcement learning.
 Prerequisite: CSC207H1/ APS105H1/ APS106H1/ ESC180H1/ CSC180H1; MAT235Y1/​ MAT237Y1/​ MAT257Y1/​ (minimum of 77% in MAT135H1 and MAT136H1)/ (minimum of 73% in MAT137Y1)/ (minimum of 67% in MAT157Y1)/ MAT291H1/ MAT294H1/ (minimum of 77% in MAT186H1, MAT187H1)/ (minimum of 73% in MAT194H1, MAT195H1)/ (minimum of 73% in ESC194H1, ESC195H1); MAT223H1/ MAT240H1/ MAT185H1/ MAT188H1; STA237H1/ STA247H1/ STA255H1/ STA257H1/ STA286H1/ CHE223H1/ CME263H1/ MIE231H1/ MIE236H1/ MSE238H1/ ECE286H1Exclusion: CSC411H1, STA314H1, ECE421H1, CSC311H5, CSC411H5, CSCC11H3. NOTE: Students not enrolled in the Computer Science Major or Specialist program at A&S, UTM, or UTSC, or the Data Science Specialist at A&S, are limited to a maximum of 1.5 credits in 300-/400-level CSC/ECE courses.Recommended Preparation: MAT235Y1/ MAT237Y1/ MAT257Y1Distribution Requirements: Science
 Breadth Requirements: The Physical and Mathematical Universes (5)
-'''
+"""
     student_context = "A student in the Faculty of Arts & Science at the University of Toronto. Interested in computer science and mathematics. I am a hard-working student and I am willing to take challenging courses."
     res = getRecommendation(course_context, student_context)
     import json
+
     json.dump(res, open("recomd.json", "w"), indent=4)

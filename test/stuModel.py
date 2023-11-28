@@ -7,12 +7,13 @@ from langchain.prompts import (
     MessagesPlaceholder,
     SystemMessagePromptTemplate,
 )
-from langchain.evaluation import load_evaluator
+from langchain.evaluation import load_evaluator, EvaluatorType
 from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 
 import json
 
 W = {"interest": 0.3, "academic_goal": 0.3, "experience": 0.4}
+
 
 class StuModel:
     def __init__(self, llm, profile):
@@ -25,14 +26,13 @@ class StuModel:
         self.experience = profile["experience"]
         self.extra_info = profile["extra_info"]
 
-        print(self.degree_program)
-        print(self.department)
-        print(self.course_taken)
-        print(self.course_to_take)
-        print(self.interest)
-        print(self.academic_goal)
-        print(self.experience)
-        print(self.extra_info)
+        # print("program:", self.degree_program)
+        # print("department:", self.department)
+        # print("course_taken:", self.course_taken)
+        # print("interest:", self.interest)
+        # print("academic_goal:", self.academic_goal)
+        # print("experience:", self.experience)
+        # print("extra_info:", self.extra_info)
 
         self.llm = llm
         self.memory = ConversationBufferMemory(return_messages=True)
@@ -98,5 +98,23 @@ Score 10: The answer is completely accurate and aligns perfectly with the refere
         )
         return score
 
-    def eval_course(self, course):
-        pass
+    def eval_recommd(self, recommend_list):
+        criterion = {
+            "contain": "Does the name of the input course contained in the output?"
+        }
+
+        eval_chain = load_evaluator(
+            EvaluatorType.CRITERIA,
+            criteria=criterion,
+        )
+        recommed_courses = [course["name"] for course in recommend_list]
+
+        hit = 0
+        for course in self.course_to_take:
+            query = course
+            eval_result = eval_chain.evaluate_strings(
+                prediction=recommed_courses, input=query
+            )
+            hit += eval_result["score"]
+            print(eval_result)
+        return hit / len(self.course_to_take)
