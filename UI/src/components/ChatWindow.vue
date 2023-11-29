@@ -1,18 +1,28 @@
 <script setup>
-import { ref, onMounted, defineProps } from "vue";
+import { ref, watch, onMounted, defineProps } from "vue";
 import botIcon from '@/assets/cap-logo.svg';
 import userIcon from '@/assets/person-icon.png';
 
 const props = defineProps(["conversation"]);
 const grab = ref(null);
+const lastMessageCount = ref(0);
 
 onMounted(() => {
-  grab.value.scrollTop = grab.value.scrollHeight;
+  scrollToEnd();
 });
+
+watch(() => props.conversation.messages.length, () => {
+  scrollToEnd();
+})
+
+function scrollToEnd() {
+    const chatWindow = grab.value;
+    chatWindow.scrollTop = chatWindow.clientHeight;
+}
 </script>
 
 <template>
-  <div v-if="conversation.messages" ref="chatWindow" class="chat-window">
+  <div v-if="conversation.messages" ref="grab" class="chat-window">
     <v-container>
       <v-row>
         <v-col v-for="(message, index) in conversation.messages" :key="index" cols="12">
@@ -31,7 +41,7 @@ onMounted(() => {
       </v-row>
     </v-container>
 
-    <div ref="grab" style="height: 200px; overflow-y: auto;" :scrollTop="grab?.scrollHeight"></div>
+    <div style="height: 200px; overflow-y: auto;"></div>
   </div>
 </template>
 
@@ -60,6 +70,7 @@ onMounted(() => {
   margin-left: 10px;
   color: #ffffff;
   word-wrap: break-word; 
+  width:500px;
 }
 
 .header {
@@ -68,11 +79,14 @@ onMounted(() => {
 }
 
 .bubble {
-  display: inline-block;
+  display: flex;
+  margin: 0 auto; /* Center horizontally */
   margin-bottom: -8px; /* Adjusted margin to make bubbles closer together */
   overflow: hidden;
   position: relative;
   transition: transform 0.2s ease-in-out; /* Smooth transition effect */
+  width: 600px; /* Limit the maximum width */
+  align-self: center;
 }
 
 .bubble:hover {

@@ -6,7 +6,7 @@
           <div class="text-body-2 font-weight-light mb-n1 white-text">Welcome to</div>
           <h1 class="text-h2 font-weight-bold white-text">CampusCompanion</h1>
         </div>
-        <chatWindow :conversation="conversation" />
+        <chatWindow :conversation="conversation"/>
       </div>
       <div class="py-14" />
     </v-responsive>
@@ -59,6 +59,8 @@
   width: 40vw;
   margin: auto;
   position: absolute;
+  left: 50%;
+  transform: translateX(calc(-20vw + 100px));
   bottom: 10px;
   z-index: 1;
 }
@@ -106,12 +108,7 @@ const messages = ref([]);
 const newMessageText = ref("");
 const conversation = ref({
   messages: [
-    { is_bot: true, message: "Welcome to" },
-    { is_bot: true, message: "CampusCompanion" },
-    { is_bot: true, message: "Feel free to chat!" },
-    { is_bot: true, message: "Ask me anything." },
-    { is_bot: false, message: "Hello Back" },
-    // Add more messages as needed
+    { is_bot: true, message: "Hi there! How can I assist you today with Course Recommendations?" },
   ],
 });
 const error = ref(null);
