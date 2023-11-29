@@ -20,13 +20,15 @@ from django.contrib.auth import get_user_model
 
 student_schema = {
     "properties": {
-        "interests": {"type": "string"},
+        "degree": {"type": "string"},
+        "department": {"type": "string"},
+        "interest": {"type": "string"},
         "goal": {"type": "string"},
         "experience": {"type": "string"},
         "course_taken": {"type": "string"},
         "extra_info": {"type": "string"},
     },
-    "required": ["interests", "goal", "experience", "course_taken"],
+    "required": ["degree", "department", "interest", "goal", "experience", "course_taken"],
 }
 
 course_schema = {

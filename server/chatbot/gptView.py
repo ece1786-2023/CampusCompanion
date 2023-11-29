@@ -1,7 +1,7 @@
 from operator import itemgetter
 from langchain.chat_models import ChatOpenAI
 from langchain.llms.openai import OpenAI
-from langchain.memory import ConversationBufferMemory
+
 from langchain.chains.question_answering import load_qa_chain
 from langchain.chains import LLMChain
 from langchain.schema import HumanMessage, SystemMessage
@@ -9,28 +9,18 @@ from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 from langchain.chains import create_extraction_chain
 from langchain.evaluation import EvaluatorType, load_evaluator
-from langchain.chains import create_extraction_chain
 from json import dumps
 
 from .models import student_schema, course_schema
-from .prompts import intro_prompt, rag_prompt, recommend_prompt
+from .prompts import intro_prompt, rag_prompt, recommend_prompt, extract_prompt
 
 
-intro_memory = ConversationBufferMemory(
-    memory_key="intro_history", return_messages=True, input_key="question"
-)
-
-recommend_memory = ConversationBufferMemory(
-    memory_key="recommend_history", return_messages=True, input_key="question"
-)
-
-
-def Intro(question, llm, student=None):
+def Intro(question, llm, memory, student=None):
     stu_ext_chain = create_extraction_chain(schema=student_schema, llm=llm)
 
     chain = (
         RunnablePassthrough.assign(
-            chat_history=RunnableLambda(intro_memory.load_memory_variables)
+            chat_history=RunnableLambda(memory.load_memory_variables)
             | itemgetter("intro_history")
         )
         | intro_prompt
@@ -39,23 +29,24 @@ def Intro(question, llm, student=None):
     inputs = {"question": question}
     res = chain.invoke(inputs)
 
-    intro_memory.save_context({"question": question}, {"output": res.content})
+    memory.save_context({"question": question}, {"output": res.content})
 
-    criterion = {"question": "Does the output contain a summary of a student's interests, goals and experience?"}
+    criterion = {
+        "question": "Does the output contain a summary of a student's interests, goals and experience?"
+    }
     evaluator = load_evaluator(EvaluatorType.CRITERIA, criteria=criterion)
     eval_result = evaluator.evaluate_strings(prediction=res.content, input=question)
-    
+
     if eval_result["score"] == 1:
-        # context = stu_ext_chain.run(res.content)[0]
-        # context["summary"] = res.content
-        # res = context
-        res = res.content
+        stu = stu_ext_chain.run(res.content)[0]
+        res = dumps(stu)
         flag = True
+        print("Student profile:\n", stu)
     else:
         res = res.content
         flag = False
 
-    return res, flag
+    return res, flag, memory
 
 
 def RAGQuery(content, llm):
@@ -82,12 +73,11 @@ def RAGQuery(content, llm):
     input = {"content": content}
     res = chain.invoke(input)
 
-    # print("Generated RAG search query:")
-    # print(output)
+    print("Generated RAG search query:\n", res.content)
     return res.content
 
 
-def Recommend(question, course_context, student_context, llm):
+def Recommend(question, course_context, student_context, llm, memory):
     if type(course_context) is list:
         course_context = ",".join(course_context)
     elif type(course_context) is dict:
@@ -112,7 +102,7 @@ def Recommend(question, course_context, student_context, llm):
 
     chain = (
         RunnablePassthrough.assign(
-            chat_history=RunnableLambda(recommend_memory.load_memory_variables)
+            chat_history=RunnableLambda(memory.load_memory_variables)
             | itemgetter("recommend_history")
         )
         | recommend_prompt
@@ -120,7 +110,7 @@ def Recommend(question, course_context, student_context, llm):
     )
     inputs = {"input_documents": context, "question": question}
     res = chain.invoke(inputs)
-    recommend_memory.save_context({"question": question}, {"output": res.content})
+    memory.save_context({"question": question}, {"output": res.content})
     recommendation_list = []
     if "Success!" in res.content:
         recomd = res.content.split("Success!")[1]
@@ -139,4 +129,12 @@ def Recommend(question, course_context, student_context, llm):
                 f"{i+1}, {course['code']}, {course['name']}, {course['score']}, {course['reason']}"
             )
 
-    return res, flag
+    return res, flag, memory
+
+
+def ExtractCourse(docu, profile, llm):
+    chain = extract_prompt | llm
+    
+    res = chain.invoke({"document": docu, "profile": profile})
+    print("Extracted courses:\n", res.content)
+    return res.content

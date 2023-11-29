@@ -127,7 +127,7 @@ const sendMessage = async () => {
     try {
       console.log(message.message)
       // wait for axios to return
-      const response = await axiosCom.post(`/chatbot/${message.message}`);
+      const response = await axiosCom.post(`/chatbot/${message.message}`, {withCredentials: true});
       console.log(response.data.message)
       const botMessage = {
         is_bot: true,
@@ -137,6 +137,7 @@ const sendMessage = async () => {
       conversation.value.focus()
     } catch (err) {
       error.value = err.message;
+      console.log(error.value);
     }
   }
 };

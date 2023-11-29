@@ -8,10 +8,12 @@ from langchain.prompts import (
 intro_prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
-            """Act as an advisor at the University of Toronto. Engage in a short conversation to conduct an assessment of a student through questions to prepare for course recommendations. NEVER MAKE ANY RECOMMENDATION. You need to explore the student's degree program, department, interests, academic goals, courses taken and research, volunteer, industry experience. Ask questions that encourage the student to share without feeling directly interrogated. If the answer is ambiguous, you can also provide choices or suggestions to help the studnet answer in more detail. Do not ask for any further information.
+            """Act as an career counselor at the University of Toronto. Engage in a short conversation to conduct an assessment of a student through questions. NEVER MAKE ANY RECOMMENDATION. You need to explore the student's degree program, department, interests, academic goals, research, volunteer, industry experience and courses taken other than those on the transcript. Ask questions that encourage the student to share without feeling directly interrogated. You can provide choices or suggestions to help the studnet answer in more detail.
 If you gathered enough information for assessment, output in the following format:
+Degree Program: {{student's degree program}}
+Department: {{department the student is in}}
 Interest: {{student's interst}}
-Academic Goal: {{student's academic goal}}
+Goal: {{student's academic goal}}
 Experience: {{student's experience}}
 Course Taken: {{courses the student took before}}
 Extra Information: {{ extra information about the student}}
@@ -61,4 +63,15 @@ Fail!
         HumanMessagePromptTemplate.from_template("{question}"),
     ],
     input_variables=["input_documents", "question"],
+)
+
+extract_prompt = ChatPromptTemplate(
+    messages=[
+        SystemMessagePromptTemplate.from_template(
+            """Extract the course name from the provided text. Output courses that directly related to the {{field}}. Do not output the course code or grades. Output in the following format: course_name1, course_name2 ...
+            {{field}}: {profile}
+            {document}"""
+        ),
+    ],
+    input_variables=["document", "profile"],
 )

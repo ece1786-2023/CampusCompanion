@@ -38,13 +38,17 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "drf_yasg",
-    'corsheaders',
+    "corsheaders",
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',  # Add the origins you want to allow requests from
-    # Add more origins if needed
-]
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_ALL_ORIGINS = True
+# This allows requests from all origins, for development purposes only
+
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:3000',  # Add the origins you want to allow requests from
+#     # Add more origins if needed
+# ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

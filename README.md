@@ -1,6 +1,6 @@
 # CampusCompanion
 
-## Running server
+## Running CampusCompanion
 
 1. ChromaDB is running on docker, use docker compose
     `docker compose up &`
@@ -13,12 +13,13 @@
     * run `chmod +x runserver` if needed. 
     * The backend server will be running at port 1234.
     * See APIs in `http://127.0.0.1:1234/swagger/`
+        * chatbot/upload/{file_path} upload student's pdf transcript
+        * loader/{file_path} upload a dataset
 
 3. To run the UI
     * `cd UI`
     * `npm install`
     * `npm run dev`
-
 
 ## Testing
 Test code in `test`:
