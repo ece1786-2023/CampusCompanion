@@ -28,7 +28,10 @@ def load_database():
 
     result_chunks = split_course_data()
     for i, chunk in enumerate(result_chunks, start=1):
-        metadata = {'source': chunk.split('\n')[0].strip()}
+        metadata = {
+            'source': chunk.split('\n')[0].strip(),
+            'level': 'graduate' if 'Graduate' in chunk.split('\n')[1] else 'undergraduate'
+        }
         course_description = chunk.replace('\n', '.')
 
         ids.append(str(i+1))

@@ -33,7 +33,29 @@ function scrollToEnd() {
                 <div class="user-info">
                   <span class="user-type">{{ message.is_bot ? 'CampusCompanion' : 'Student' }}</span>
                 </div>
-                <div class="text">{{ message.message }}</div>
+                <div>
+              <div v-if="Array.isArray(message.message)">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Code</th>
+                      <th>Name</th>
+                      <th>Score</th>
+                      <th>Reason</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="(item, index) in message.message" :key="index">
+                      <td>{{ item.code }}</td>
+                      <td>{{ item.name }}</td>
+                      <td>{{ item.score }}</td>
+                      <td>{{ item.reason }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div v-else class="text">{{ message.message }}</div>
+            </div>
               </div>
             </div>
           </div>
@@ -139,5 +161,33 @@ function scrollToEnd() {
 .chat-window {
   width: 70vw;
   justify-self: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.bubble table {
+  margin: 10px 0;
+}
+
+.bubble table tr {
+  background-color: #fff;
+}
+
+.bubble table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray background for alternating rows */
 }
 </style>

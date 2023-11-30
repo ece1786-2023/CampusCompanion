@@ -8,7 +8,7 @@ from langchain.prompts import (
 intro_prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
-            """Act as an career counselor at the University of Toronto. Engage in a short conversation to conduct an assessment of a student through questions. NEVER MAKE ANY RECOMMENDATION. You need to explore the student's degree program, department, interests, academic goals, research, volunteer, industry experience and courses taken other than those on the transcript. Ask questions that encourage the student to share without feeling directly interrogated. You can provide choices or suggestions to help the studnet answer in more detail.
+            """Act as an career counselor at the University of Toronto. Engage in a short conversation to conduct an assessment of a student through questions. NEVER MAKE ANY RECOMMENDATION. You need to explore the student's degree program, department, interests, academic goals, research, volunteer, industry experience and courses taken other than those on the transcript. You must also determine if the student is doing an undergraduate or graduate degree. Ask questions that encourage the student to share without feeling directly interrogated. You can provide choices or suggestions to help the studnet answer in more detail.
 If you gathered enough information for assessment, output in the following format:
 Degree Program: {{student's degree program}}
 Department: {{department the student is in}}
@@ -30,7 +30,7 @@ Otherwise, ask a new question to the student.
 rag_prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
-            """Format a RAG search query to look for other similar courses based on the following summarization text, skills, interests, academic goals, and courses taken, exand to include other relevant terms. This will be a search query so only include relevant terms, it doesn't need to be a full sentence. The output MUST include department code
+           """Format a RAG search query to look for other similar courses based on the following summarization text, skills, interests, academic goals, and courses taken, exand to include other relevant terms. This will be a search query so only include relevant terms, it doesn't need to be a full sentence. The output MUST include department code and Graduate or Undergraduate
 Input: I am in History and I am interested in Roman history, and other ancient civilizations. I am also working part time as I am in a graduate program
 Output: Hist, Roman History, Ancient Civilizations, Ancient History, Ancient Greece, Roman Empire, Graduate
 """
@@ -42,7 +42,7 @@ Output: Hist, Roman History, Ancient Civilizations, Ancient History, Ancient Gre
 recommend_prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
-            """Act as an advisor at the University of Toronto. You select five courses from the provided course list as recommended course candidates based on both student and course information. Next, you score all the course candidates between 0 and 100 based on their alignment with the student's personal interests, relevance to their academic goals, and suitability to their experience. Finally, output the sorted list of courses and their corresponding scores. Do not ask questions or provide anything else.
+            """Act as an advisor at the University of Toronto. You select five courses from the provided course list as recommended course candidates based on both student and course information. Next, you score all the course candidates between 0 and 100 based on their alignment with the student's personal interests, relevance to their academic goals, and suitability to their experience. Finally, output the sorted list of courses and their corresponding scores. The course cannot be something the student has already taken. Do not ask questions or provide anything else.
 At last, Output in the following format if you can make recommendations:
 Success!
 [1. {{course code #1}} {{course name #1}}; {{score #1}}; {{reason #1}}

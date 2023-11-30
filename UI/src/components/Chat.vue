@@ -108,7 +108,7 @@ const messages = ref([]);
 const newMessageText = ref("");
 const conversation = ref({
   messages: [
-    { is_bot: true, message: "Hi there! How can I assist you today with Course Recommendations?" },
+    { is_bot: true, message: "Hi there! How can I assist you today with course recommendations?" },
   ],
 });
 const error = ref(null);
