@@ -18,7 +18,6 @@ def searchRAG(query, level='post-secondary'):
         except Exception as e:
             pass
 
-    query = f'{query} AND level:{level}'
     results = document_collection.query(query_texts=query, n_results=15)
     result_documents = results["documents"][0]
     print("RAG Search Results:")
