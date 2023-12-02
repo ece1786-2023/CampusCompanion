@@ -20,9 +20,9 @@ def getRAGQuery(content):
                 },
                 {
                 "role": "assistant",
-                "content":  """Format a RAG search query to look for other similar courses based on the following summarization text, skills, interests, academic goals, and courses taken, exand to include other relevant terms. This will be a search query so only include relevant terms, it doesn't need to be a full sentence. The output MUST include department code
+                "content":  """Format a JSON output with 2 keys: `query` and `level`, where the query is used to look for other similar courses based on the following summarization text, skills, interests, academic goals, and courses taken, exand to include other relevant terms. This will be a search query so only include relevant terms, it doesn't need to be a full sentence, and must include department code. `level` can only be "graduate" or "undergraduate".
                 Input: I am in History and I am interested in Roman history, and other ancient civilizations. I am also working part time as I am in a graduate program
-                Output: Hist, Roman History, Ancient Civilizations, Ancient History, Ancient Greece, Roman Empire, Graduate
+                Output: {query: "Hist, Roman History, Ancient Civilizations, Ancient History, Ancient Greece, Roman Empire", level: "graduate"}
                 Input: 
                 """
                 }
@@ -47,5 +47,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
