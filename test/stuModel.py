@@ -12,17 +12,17 @@ from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 
 import json
 
-W = {"interest": 0.3, "academic_goal": 0.3, "experience": 0.4}
+W = {"interest": 0.3, "goal": 0.3, "experience": 0.3, "extra_info": 0.1}
 
 
 class StuModel:
-    def __init__(self, llm, profile):
+    def __init__(self, llm, eval_llm, profile):
         self.degree_program = profile["degree_program"]
         self.department = profile["department"]
-        self.course_taken = "".join(profile["course_taken"].split(";")[:-2])
-        self.course_to_take = profile["course_taken"].split(";")[-2:]
+        self.course_taken = [course.strip() for course in profile["course_taken"].split(";")]
+        self.course_to_take = [course.strip() for course in profile["course_to_take"].split(";")]
         self.interest = profile["interest"]
-        self.academic_goal = profile["academic_goal"]
+        self.goal = profile["goal"]
         self.experience = profile["experience"]
         self.extra_info = profile["extra_info"]
 
@@ -30,17 +30,18 @@ class StuModel:
         # print("department:", self.department)
         # print("course_taken:", self.course_taken)
         # print("interest:", self.interest)
-        # print("academic_goal:", self.academic_goal)
+        # print("goal:", self.goal)
         # print("experience:", self.experience)
         # print("extra_info:", self.extra_info)
 
         self.llm = llm
+        self.eval_llm = eval_llm
         self.memory = ConversationBufferMemory(return_messages=True)
         prompt = ChatPromptTemplate(
             input_variables=["input"],
             messages=[
                 SystemMessagePromptTemplate.from_template(
-                    f"You are a student in the University of Toronto. You're asked questions by advisors to help recommend course for you. You know nothing about the course provided this term or what course to take. Simply answer the question and do NOT provide other information.\nYour degree program: {self.degree_program}\n Your department: {self.department}\nYour interest: {self.interest}\nYour academic goal: {self.academic_goal}\nYour experience: {self.experience}\nYour took courses: {self.course_taken}\nYour extra information: {self.extra_info}"
+                    f"You are a student in the University of Toronto. You're asked questions by advisors to help recommend course for you. You know nothing about the course provided this term or what course to take. Simply answer the question and do NOT provide other information.\nYour degree program: {self.degree_program}\n Your department: {self.department}\nYour interest: {self.interest}\nYour academic goal: {self.goal}\nYour experience: {self.experience}\nYour took courses: {self.course_taken}\nYour extra information: {self.extra_info}"
                 ),
                 MessagesPlaceholder(variable_name="history"),
                 HumanMessagePromptTemplate.from_template("{input}"),
@@ -55,6 +56,18 @@ class StuModel:
             | prompt
             | self.llm
         )
+
+    def getProfileWithoutCourse(self) -> str:
+        return f"{self.degree_program} {self.department} {self.interest} {self.goal} {self.experience}"
+    
+    def getProfileWithTakenCourse(self) -> str:
+        return f"{self.degree_program} {self.department} {self.interest} {self.goal} {self.experience} {' '.join(self.course_taken)}"
+    
+    def getProfile(self) -> str:
+        return f"{self.degree_program} {self.department} {self.interest} {self.goal} {self.experience} {' '.join(self.course_taken)} {' '.join(self.course_to_take)}"
+
+    def getProfileDict(self) -> dict:
+        return {"program": self.degree_program, "department": self.department, "interest": self.interest, "goal": self.goal, "experience": self.experience, "course_taken": self.course_taken, "course_to_take": self.course_to_take}
 
     def getResponse(self, message):
         response = self.chain.invoke({"input": message})
@@ -74,16 +87,16 @@ Score 10: The answer is completely accurate and aligns perfectly with the refere
         }
 
         evaluator = load_evaluator(
-            "labeled_score_string", criteria=accuracy_criteria, llm=self.llm
+            "labeled_score_string", criteria=accuracy_criteria, llm=self.eval_llm
         )
         interest_result = evaluator.evaluate_strings(
             prediction=profile["interests"],
             reference=self.interest,
             input="What's the interest of the student?",
         )
-        academic_goal_result = evaluator.evaluate_strings(
+        goal_result = evaluator.evaluate_strings(
             prediction=profile["goal"],
-            reference=self.academic_goal,
+            reference=self.goal,
             input="what's the academic goal of the student?",
         )
         experience_result = evaluator.evaluate_strings(
@@ -91,10 +104,16 @@ Score 10: The answer is completely accurate and aligns perfectly with the refere
             reference=self.experience,
             input="what's the experience of the student?",
         )
+        extra_info_result = evaluator.evaluate_strings(
+            prediction=profile["extra_info"],
+            reference=self.extra_info,
+            input="what's the extra information of the student?",
+        )
         score = (
             interest_result["score"] * W["interest"]
-            + academic_goal_result["score"] * W["academic_goal"]
+            + goal_result["score"] * W["goal"]
             + experience_result["score"] * W["experience"]
+            + extra_info_result["score"] * W["extra_info"]
         )
         return score
 
@@ -106,6 +125,7 @@ Score 10: The answer is completely accurate and aligns perfectly with the refere
         eval_chain = load_evaluator(
             EvaluatorType.CRITERIA,
             criteria=criterion,
+            llm=self.eval_llm,
         )
         recommed_courses = [course["name"] for course in recommend_list]
 
@@ -117,4 +137,5 @@ Score 10: The answer is completely accurate and aligns perfectly with the refere
             )
             hit += eval_result["score"]
             print(eval_result)
-        return hit / len(self.course_to_take)
+        print(f"total hit {hit} in {len(self.course_to_take)}")
+        return hit, len(self.course_to_take)

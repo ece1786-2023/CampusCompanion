@@ -45,6 +45,16 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = True
 # This allows requests from all origins, for development purposes only
 
+REST_FRAMEWORK = {
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.MultiPartParser',  # Ensure this line is present
+    ],
+    # ... other DRF settings ...
+}
+
+
 # CORS_ALLOWED_ORIGINS = [
 #     'http://localhost:3000',  # Add the origins you want to allow requests from
 #     # Add more origins if needed

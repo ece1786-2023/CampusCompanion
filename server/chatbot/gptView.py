@@ -12,7 +12,13 @@ from langchain.evaluation import EvaluatorType, load_evaluator
 from json import dumps
 
 from .models import student_schema, course_schema
-from .prompts import intro_prompt, rag_prompt, recommend_prompt, extract_prompt
+from .prompts import (
+    intro_prompt,
+    rag_prompt,
+    recommend_prompt,
+    extract_prompt,
+    candid_prompt,
+)
 
 
 def Intro(question, llm, memory, student=None):
@@ -47,6 +53,27 @@ def Intro(question, llm, memory, student=None):
         flag = False
 
     return res, flag, memory
+
+
+def getCandid(course_names, student_context, llm, candid_size=10):
+    if type(course_names) is list:
+        course_names = ", ".join(course_names)
+    if type(student_context) is dict:
+        student_context = dumps(student_context)
+
+    context = (
+        "Course lists:\n" + course_names + "\nStudent information:\n" + student_context
+    )
+    question = "Hi! Can you recommend courses for me?"
+    chain = candid_prompt | llm
+    inputs = {
+        "input_documents": context,
+        "question": question,
+        "candid_size": candid_size,
+    }
+    res = chain.invoke(inputs)
+    res = res.content
+    return res
 
 
 def RAGQuery(content, llm):
@@ -134,7 +161,7 @@ def Recommend(question, course_context, student_context, llm, memory):
 
 def ExtractCourse(docu, profile, llm):
     chain = extract_prompt | llm
-    
+
     res = chain.invoke({"document": docu, "profile": profile})
     print("Extracted courses:\n", res.content)
     return res.content

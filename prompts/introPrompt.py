@@ -62,15 +62,16 @@ Otherwise, ask a new question to the student.
     while True:
         res = conversation({"question": question})
 
-        criterion = {"question": "Does the output contain a question?"}
+        criterion = {
+            "question": "Does the output contain a summary of a student's interests, goals and experience?"
+        }
         evaluator = load_evaluator(EvaluatorType.CRITERIA, criteria=criterion)
         eval_result = evaluator.evaluate_strings(prediction=res["text"], input=question)
 
-        if eval_result["score"] == 0:
+        if eval_result["score"] == 1:
             peop = stu_ext_chain.run(res["text"])[0]
             context = peop
-            context["summary"] = res["text"]
-            print("Summary: ", context)
+            print("Student profile:\n", context)
             break
         else:
             print("\nAdvisor: ", res["text"])

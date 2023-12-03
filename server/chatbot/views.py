@@ -3,10 +3,11 @@ from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 from django.shortcuts import render
 from django.http import JsonResponse
+from django.core.files.storage import default_storage
 import os
 import json
 import time
-from .gptView import Intro, RAGQuery, Recommend, ExtractCourse
+from .gptView import Intro, RAGQuery, Recommend, ExtractCourse, getCandid
 from .search_client import searchRAG
 
 from langchain.chat_models import ChatOpenAI
@@ -80,7 +81,6 @@ class Chat(APIView):
 
         print(user_input)
         print(state)
-        print(intro_memory.load_memory_variables({}))
 
         if state == "INTRO":
             res, end_flag, intro_memory = Intro(user_input, llm, intro_memory)
@@ -93,7 +93,7 @@ class Chat(APIView):
                 level = "undergrad_collection"
                 if (is_graduate):
                     level = "grad_collection"
-                course_ctx = searchRAG(query, level)
+                course_ctx = searchRAG(query, level, 30, True)
                 student_ctx = res
                 state = "RECOMMEND"
                 user_input = "Hi! Can you recommend courses for me?"
@@ -105,8 +105,23 @@ class Chat(APIView):
                     student_ctx = json.dumps(stu)
 
         if state == "RECOMMEND":
+            course_list = course_ctx.split("\n\n")
+            course_names = [
+                course.split(".)")[1].split(".")[0].strip()
+                for course in course_list
+                if ".)" in course
+            ]
+            candids = getCandid(course_names, student_ctx, llm)
+            print("candids:", candids)
+            candid_course_context = "\n\n".join(
+                [
+                    course_list[i].split(".)")[1]
+                    for i in range(len(course_names))
+                    if course_names[i].split("-")[0] in candids
+                ]
+            )
             res, recomend_flag, recommend_memory = Recommend(
-                user_input, course_ctx, student_ctx, llm, recommend_memory
+                user_input, candid_course_context, student_ctx, llm, recommend_memory
             )
             if recomend_flag == True:
                 state = "END"
@@ -131,16 +146,45 @@ class ChatReset(APIView):
 
 
 class ChatUpload(APIView):
-    def post(self, request, file_path):
+    def post(self, request):
         sess_id = request.session.session_key
         sess_state = session_state_pool.get_session_state(sess_id)
 
-        print(file_path)
-        loader = PyPDFLoader(file_path)
-        pages = loader.load()
-        docu = " ".join([page.page_content for page in pages])
+        print("FILES:", request.FILES)
+        file = request.FILES.get("file")
 
-        sess_state.transcript = docu
-        session_state_pool.set_session_state(sess_id, sess_state)
+        if not file:
+            return JsonResponse({"message": "No file found."})
+        # Save the file temporarily
+        file_name = default_storage.save(file.name, file)
+        file_path = default_storage.path(file_name)
 
-        return JsonResponse({"message": "File uploaded."})
+        try:
+            loader = PyPDFLoader(file_path)
+            pages = loader.load()
+            docu = " ".join([page.page_content for page in pages])
+
+            sess_state.transcript = docu
+            session_state_pool.set_session_state(sess_id, sess_state)
+
+            return JsonResponse({"message": "File uploaded."})
+        except Exception as e:
+            print(e)
+            return JsonResponse({"message": "File upload failed."})
+        finally:
+            default_storage.delete(file_path)
+
+
+class ChatState(APIView):
+    def get(self, request):
+        sess_id = request.session.session_key
+        sess_state = session_state_pool.get_session_state(sess_id)
+        print("state: ", sess_state.state)
+        print("course_ctx: ", sess_state.course_ctx)
+        print("student_ctx: ", sess_state.student_ctx)
+        print("intro_memory: ", sess_state.intro_memory.load_memory_variables({}))
+        print(
+            "recommend_memory: ", sess_state.recommend_memory.load_memory_variables({})
+        )
+        print("transcript: ", sess_state.transcript)
+        return JsonResponse({"message": "Success."})

@@ -1,0 +1,534 @@
+[
+{
+  "program": "Bachelor in Environmental Science",
+  "department": "College of Natural Sciences",
+  "interest": "Climate change impact studies, renewable energy, and sustainability; Keen on fieldwork and practical approaches to learning.",
+  "goal": "Aim to maintain a GPA above 3.7; Become an environmental consultant; Plans to enroll in a Master's program specializing in Environmental Policy.",
+  "experience": "Volunteer for a river cleanup initiative; Summer internship with a sustainable agriculture NGO; Participated in a university-led project on assessing solar energy potentials.",
+  "course_taken": [
+    "ENV333H1 - Ecological Worldviews",
+    " EEB405H1 - Temperate Field Biology",
+    " EEB465H1 - Advanced Topics in Biodiversity Science and Conservation Biology",
+    " ENV199H1 - Debating & Understanding Current Environmental Issues",
+    " ENV338H1 - Environmental Research Data and Decision-making."
+  ],
+  "course_to_take": [
+    "ENV322H1 - International Environmental Policy",
+    " TRN141Y1 - Environmental Science and Pathways to Sustainability",
+    " ENV320H1 - National Environmental Policy"
+  ],
+  "recommendaion": [
+    {
+      "code": "ENV338H1",
+      "name": "Environmental Research Data and Decision-making",
+      "score": 95,
+      "reason": "The course focuses on understanding environmental data and its application to real-world decision-making, which aligns closely with your interest in climate change impact studies, renewable energy, sustainability, and your practical approach to learning."
+    },
+    {
+      "code": "ENV421Y1",
+      "name": "Community Research for Social & Environmental Change",
+      "score": 90,
+      "reason": "This course offers hands-on community-based research projects, which would complement your fieldwork interests and experience with a sustainable agriculture NGO."
+    },
+    {
+      "code": "ENV350H1",
+      "name": "Energy Policy and Environment",
+      "score": 85,
+      "reason": "The course covers energy systems and their environmental impacts, directly related to your interest in renewable energy and sustainability, and it could be particularly relevant for your future environmental policy studies."
+    },
+    {
+      "code": "ENV462H1",
+      "name": "Energy and Environment: Economics, Politics, and Sustainability",
+      "score": 80,
+      "reason": "This interdisciplinary course addresses energy markets and sustainability, which are pertinent to your academic goals and personal interests in energy and environmental issues."
+    },
+    {
+      "code": "GGR481H1",
+      "name": "Field Course in Environmental Geography",
+      "score": 75,
+      "reason": "The course involves practical fieldwork, which matches your keen interest in fieldwork and hands-on learning, although it may have less direct focus on renewable energy and sustainability compared to other courses."
+    }
+  ],
+  "score": 0.0
+},
+{
+  "program": "Master in Public Health",
+  "department": "School of Public Health",
+  "interest": "Epidemiology, global health, and biostatistics; Passionate about data-driven approaches and community health initiatives.",
+  "goal": "Graduate with distinction; work with international health organizations; contribute to pandemic prevention research; Aim to earn a PhD in Epidemiology.",
+  "experience": "Research assistant at the university's center for disease control; Fieldwork with a non-profit on malaria prevention; Data analysis internship at a health policy institute.",
+  "course_taken": [
+    "TRN192H1 - Public Health in Canada: Health for the 21st Century",
+    " HMB342H1 - Epidemiology of Health & Disease",
+    " PHS100H1 - Discovering Global Health",
+    " ENV341H1 - Environment and Health",
+    " HST330H1 - Population Health",
+    " HST209H1 - Introduction to Health: Determinants of Health & Health Care",
+    " SOC364H1 - Urban Health",
+    " HMB203H1 - Introduction to Global Health."
+  ],
+  "course_to_take": [
+    "HST373H1 - Epidemiology",
+    " ECO402H1 - Topics in Health Economics",
+    " NEW106H1 - Science, Health and Social Justice"
+  ],
+  "recommendaion": [
+    {
+      "code": "HMB342H1",
+      "name": "Epidemiology of Health & Disease",
+      "score": 95,
+      "reason": "This course is highly relevant to your focus on Epidemiology and will build upon your existing knowledge and experience in pandemic prevention research, aligning with your aim to earn a PhD in Epidemiology."
+    },
+    {
+      "code": "HMB462H1",
+      "name": "Topics in Epidemiology",
+      "score": 92,
+      "reason": "As an advanced course in Epidemiology, it offers a deep dive into current developments in the field, which is ideal for your academic trajectory and your passion for data-driven approaches."
+    },
+    {
+      "code": "HMB433H1",
+      "name": "Topics in Global Health",
+      "score": 88,
+      "reason": "This course's global health focus is directly aligned with your interests and experience in international health organizations and malaria prevention."
+    },
+    {
+      "code": "ECO402H1",
+      "name": "Topics in Health Economics",
+      "score": 81,
+      "reason": "Understanding economic aspects of healthcare is crucial for comprehensive public health policy, which complements your experience in health policy and contributes to your academic growth toward a PhD."
+    },
+    {
+      "code": "ECO475H1",
+      "name": "Applied Econometrics II",
+      "score": 75,
+      "reason": "Given your passion for biostatistics and data analysis, this advanced econometrics course would further develop your quantitative research skills, beneficial for your PhD and epidemiology research work. However, please verify prerequisite requirements."
+    }
+  ],
+  "score": 0.6666666666666666
+},
+{
+  "program": "Bachelor in Computer Science",
+  "department": "School of Computing",
+  "interest": "Artificial Intelligence, software development, and human-computer interaction. Enthusiastic about hands-on programming projects and AI research.",
+  "goal": "Aim to graduate with a GPA of 3.8 or higher; secure a position at a leading tech company; pursue a Master's degree in AI; contribute to open-source projects.",
+  "experience": "Internship at a software development company; Assistant in the university computer lab; Participation in hackathons and coding competitions",
+  "course_taken": [
+    "CSC148H1 - Introduction to Computer Science",
+    " CSC111H1 - Foundations of Computer Science II",
+    " CSC443H1 - Database System Technology",
+    " CSC486H1 - Knowledge Representation and Reasoning",
+    " CSC469H1 - Operating Systems Design and Implementation"
+  ],
+  "course_to_take": [
+    "CSC412H1 - Probabilistic Learning and Reasoning",
+    " CSC485H1 - Computational Linguistics",
+    " CSC300H1 - Computers and Society",
+    " HPS255H1 - History and Philosophy of Artificial Intelligence"
+  ],
+  "recommendaion": [
+    {
+      "code": "CSC494Y1",
+      "name": "Computer Science Project",
+      "score": 100,
+      "reason": "This course aligns perfectly with your interest in hands-on programming projects and AI research and will contribute significantly to your academic and professional portfolio, which is crucial for achieving a high GPA and securing a top tech position."
+    },
+    {
+      "code": "ECE1724H",
+      "name": "Special Topics in Software Systems: Artificial Intelligence",
+      "score": 95,
+      "reason": "As a graduate-level course, it will prepare you for advanced studies and research in AI, directly supporting your goal to pursue a Master's degree in AI."
+    },
+    {
+      "code": "CSC318H1",
+      "name": "The Design of Interactive Computational Media",
+      "score": 90,
+      "reason": "This course matches your interest in software development and human-computer interaction, and it will provide practical design experience that can be beneficial for your career."
+    },
+    {
+      "code": "CSC486H1",
+      "name": "Knowledge Representation and Reasoning",
+      "score": 85,
+      "reason": "Relevant to your AI specialization and will strengthen your understanding of symbolic AI, which is crucial for both academic research and practical applications in the tech industry."
+    },
+    {
+      "code": "CSC443H1",
+      "name": "Database System Technology",
+      "score": 80,
+      "reason": "Given your background in database systems and the importance of data management in AI and software development, this course will enhance your technical skills and support your career aspirations."
+    }
+  ],
+  "score": 0.25
+},
+{
+  "program": "Bachelor in Software Engineering",
+  "department": "College of Computer and Information Sciences",
+  "interest": "Cybersecurity, system analysis, and software quality assurance. Engaged in collaborative coding environments and practical security drills.",
+  "goal": "Aim for a GPA of 3.6 or above; Secure a role as a software quality analyst; Plan to specialize in cybersecurity with graduate studies.",
+  "experience": "Part-time work as a junior system analyst; Participated in national cybersecurity competitions; Collaborative projects in software testing.",
+  "course_taken": [
+    "CSC301H1 - Introduction to Software Engineering",
+    " CSC324H1 - Principles of Programming Languages",
+    " CSC369H1 - Operating Systems Design and Implementation",
+    " CSC443H1 - Database System Technology",
+    " CSC207H1 - Introduction to Computer Science",
+    " CSC302H1 - Engineering Large Software Systems"
+  ],
+  "course_to_take": [
+    "CSC410H1 - Software Testing and Verification",
+    " CSC465H1 - Formal Methods in Software Design"
+  ],
+  "recommendaion": [
+    {
+      "code": "CSC410H1",
+      "name": "Software Testing and Verification",
+      "score": 95,
+      "reason": "This course strongly aligns with your interest in software quality assurance and your career goal to become a software quality analyst. The content is directly related to quality assessment in software engineering, which is crucial for your academic and professional development."
+    },
+    {
+      "code": "CSC318H1",
+      "name": "The Design of Interactive Computational Media",
+      "score": 85,
+      "reason": "Given your background in software engineering and part-time work as a junior system analyst, understanding user-centered design will complement your skills in system analysis and contribute to developing high-quality software interfaces."
+    },
+    {
+      "code": "ECE568H1",
+      "name": "Computer Security",
+      "score": 90,
+      "reason": "This course is essential for your goal to specialize in cybersecurity. It covers computer system security principles and deepens your practical understanding of security vulnerabilities, which is relevant to your participation in cybersecurity competitions and future graduate studies."
+    },
+    {
+      "code": "CSC302H1",
+      "name": "Engineering Large Software Systems",
+      "score": 80,
+      "reason": "The course content on software system design and deployment is relevant to your experience in collaborative coding environments and your academic goal of excelling in system analysis."
+    },
+    {
+      "code": "CSC469H1",
+      "name": "Operating Systems Design and Implementation",
+      "score": 75,
+      "reason": "Operating systems are at the core of system analysis and cybersecurity. This course will enhance your understanding of modern systems, which is beneficial for your current role and future ambitions in cybersecurity."
+    }
+  ],
+  "score": 0.5
+},
+{
+  "program": "Master in Environmental Science",
+  "department": "Department of Earth and Environmental Sciences",
+  "interest": "Climate change mitigation, renewable energy solutions, and environmental policy; Keen on field research and sustainable development practices.",
+  "goal": "Aspire to graduate with a GPA over 3.9; engage in vital environmental research; work with NGOs on sustainable projects; pursue a PhD with a focus on climate policy.",
+  "experience": "Internship with a green technology startup; Volunteer for beach clean-up initiatives; Research project on urban sustainability.",
+  "course_taken": [
+    "ENV100H1 - Introduction to Environmental Studies",
+    " TRN141Y1 - Environmental Science and Pathways to Sustainability",
+    " ENV333H1 - Ecological Worldviews",
+    " ECO314H1 - Energy and the Environment",
+    " ENV322H1 - International Environmental Policy",
+    " ENV462H1 - Energy and Environment: Economics, Politics, and Sustainability",
+    " ENV200H1 - Assessing Global Change: Science and the Environment."
+  ],
+  "course_to_take": [
+    "EEB465H1 - Advanced Topics in Biodiversity Science and Conservation Biology",
+    " GGR387H1 - Special Topics in Environmental Geography",
+    " ENV223H1 - Fundamental Environmental Skills",
+    " HIS408H1 - Topics in Environmental History"
+  ],
+  "recommendaion": [
+    {
+      "code": "ENV462H1",
+      "name": "Energy and Environment: Economics, Politics, and Sustainability",
+      "score": 95,
+      "reason": "This course aligns closely with your interests in climate change mitigation, renewable energy solutions, and environmental policy. It covers energy markets and policies, which will be beneficial for your aspirations to work with NGOs and pursue a PhD focused on climate policy."
+    },
+    {
+      "code": "ECO314H1",
+      "name": "Energy and the Environment",
+      "score": 90,
+      "reason": "The economic perspective on energy markets and environmental challenges provided in this course is highly relevant to your academic goals, particularly in understanding the public discourse on energy, which will be important for your future research and work in environmental policy."
+    },
+    {
+      "code": "ENV338H1",
+      "name": "Environmental Research Data and Decision-making",
+      "score": 85,
+      "reason": "Given your keen interest in field research and sustainable development practices, this course will enhance your ability to design studies and interpret environmental data, which is crucial for high-quality research and informed decision-making."
+    },
+    {
+      "code": "ENV451H1",
+      "name": "Current Environmental Topics",
+      "score": 80,
+      "reason": "As a capstone course, it will help you integrate the multi- and interdisciplinary knowledge you've gained, which is crucial for achieving a high GPA and engaging in vital environmental research."
+    },
+    {
+      "code": "ENV411H1",
+      "name": "Sustainability Thinking",
+      "score": 75,
+      "reason": "This capstone course builds on foundational sustainability principles and requires reflection on your entire sustainability education and experience, supporting your engagement with sustainable development practices and preparing you for PhD studies."
+    }
+  ],
+  "score": 0.0
+},
+{
+  "program": "Master in Data Science",
+  "department": "Institute of Informatics and Data Analysis",
+  "interest": "Big Data Analytics, Machine Learning, and Data Visualization. Passionate about drawing insights from large data sets and utilizing data science to solve real-world problems.",
+  "goal": "Achieve a GPA above 3.7; Develop expertise in predictive analytics; Seek a data scientist position at a tech firm; Further education with a Ph.D. in Data Science.",
+  "experience": "Research assistant in a data analytics lab; Summer internship at a fintech company; Volunteer data analyst for a non-profit organization",
+  "course_taken": [
+    "CSC443H1 - Database System Technology",
+    " IRW220H1 - Statistics for Work and Organizations",
+    " JSC370H1 - Data Science II",
+    " RSM371H1 - Data and Information Management for Business Analytics",
+    " JSC270H1 - Data Science I",
+    " STA496H1 - Readings in Statistics",
+    " RSM338H1 - Applications of Machine Learning in Finance"
+  ],
+  "course_to_take": [
+    "CSC300H1 - Computers and Society",
+    " CSC367H1 - Parallel Programming"
+  ],
+  "recommendaion": [
+    {
+      "code": "ECO225H1",
+      "name": "Big-Data Tools for Economists",
+      "score": 95,
+      "reason": "This course aligns perfectly with your interest in Big Data Analytics and offers practical experience with the kind of unstructured data sources you're likely to encounter in tech industry data science roles."
+    },
+    {
+      "code": "RSM338H1",
+      "name": "Applications of Machine Learning in Finance",
+      "score": 90,
+      "reason": "Given your summer internship at a fintech company, this course's focus on machine learning applications in finance will enhance your predictive analytics expertise and your value in the financial technology sector."
+    },
+    {
+      "code": "CSC412H1",
+      "name": "Probabilistic Learning and Reasoning",
+      "score": 85,
+      "reason": "This course will deepen your understanding of probabilistic models, which are essential for advanced data science work, and will be a significant asset for a Ph.D. in Data Science."
+    },
+    {
+      "code": "CSC443H1",
+      "name": "Database System Technology",
+      "score": 80,
+      "reason": "Your past courses indicate a solid foundation in data management, and this course will build on that by covering advanced topics in database systems, which are vital for handling large data sets in a tech firm environment."
+    },
+    {
+      "code": "JSC470H1",
+      "name": "Data Science III",
+      "score": 75,
+      "reason": "This course is restricted to students in the Data Science Specialist program, which you are a part of, and it emphasizes collaboration and applied data science methods, thus fostering the teamwork and research skills needed for your Ph.D. and data scientist roles."
+    }
+  ],
+  "score": 0.0
+},
+{
+  "program": "PhD in Robotics Engineering",
+  "department": "Department of Robotics and Intelligent Systems",
+  "interest": "Artificial Intelligence, Autonomous Systems, and Human-Robot Interaction. Enjoys hands-on projects with robotic prototypes and algorithm development.",
+  "goal": "Targeting a GPA of 4.0; aiming to contribute to cutting-edge research in AI-driven robotics; aspiring to become a professor in robotics; plans to involve in international robotics competitions.",
+  "experience": "Research assistant in robotics lab; Co-author of paper on robot navigation; Engineering intern at a tech firm specializing in drone technology.",
+  "course_taken": [
+    "PHY151H1 - Foundations of Physics I",
+    " ECE368H1 - Probabilistic Reasoning"
+  ],
+  "course_to_take": [
+    ""
+  ],
+  "recommendaion": [
+    {
+      "code": "ECE1724H",
+      "name": "Special Topics in Software Systems: Artificial Intelligence",
+      "score": 95,
+      "reason": "This graduate-level course aligns closely with your interest in cutting-edge AI-driven robotics research and would provide valuable insights into AI, biology, and neuroscience that are relevant to autonomous systems and human-robot interaction."
+    },
+    {
+      "code": "ECE368H1",
+      "name": "Probabilistic Reasoning",
+      "score": 90,
+      "reason": "Since you have taken foundational physics, the probabilistic models and inference methods covered in this course would be highly relevant to algorithm development for robotics and could enhance your research in robot navigation."
+    },
+    {
+      "code": "CSC486H1",
+      "name": "Knowledge Representation and Reasoning",
+      "score": 85,
+      "reason": "The course is suited to your background and interests in AI and could provide you with advanced knowledge in automated reasoning, which is crucial for AI-driven robotics and autonomous systems."
+    },
+    {
+      "code": "ECE1786H",
+      "name": "Creative Applications of Natural Language Processing",
+      "score": 80,
+      "reason": "Given your robotics focus, understanding NLP could be beneficial for developing sophisticated human-robot interactions, and the project-based nature of the course aligns with your hands-on approach."
+    },
+    {
+      "code": "PHL342H1",
+      "name": "Minds and Machines",
+      "score": 75,
+      "reason": "This course would provide a philosophical perspective on cognitive science and AI, which could enrich your theoretical knowledge and contribute to a holistic understanding of AI's implications in robotics."
+    }
+  ],
+  "score": 0.0
+},
+{
+  "program": "Bachelor in Computer Science",
+  "department": "School of Computing",
+  "interest": "Software Development, Artificial Intelligence, and Cryptography. Enthusiastic about collaborative coding sessions and hackathons.",
+  "goal": "To maintain a GPA above 3.5; to intern with major software firms; to develop a portfolio of unique software projects; to pursue a master's degree specializing in AI.",
+  "experience": "Participation in national coding competitions; Summer coding bootcamp coach; Freelance developer for local businesses; Undergraduate research assistant in a cybersecurity lab.",
+  "course_taken": [
+    "CSC443H1 - Database System Technology",
+    " CSC148H1 - Introduction to Computer Science",
+    " CSC240H1 - Enriched Introduction to the Theory of Computation",
+    " CSC469H1 - Operating Systems Design and Implementation",
+    " CSC111H1 - Foundations of Computer Science II"
+  ],
+  "course_to_take": [
+    "CSC309H1 - Programming on the Web",
+    " CSC318H1 - The Design of Interactive Computational Media",
+    " ECE1778H - Creative Applications for Mobile Devices",
+    " CSC486H1 - Knowledge Representation and Reasoning"
+  ],
+  "recommendaion": [
+    {
+      "code": "CSC494Y1",
+      "name": "Computer Science Project",
+      "score": 95,
+      "reason": "This course allows for multidisciplinary collaboration, aligns with your interest in software development and AI, and provides an excellent opportunity to work on unique projects that can enhance your portfolio for graduate studies and internships."
+    },
+    {
+      "code": "CSC490H1",
+      "name": "Capstone Design Project",
+      "score": 90,
+      "reason": "The project-based nature fits your enthusiasm for collaborative coding and hackathons, and the experience will be valuable for your master's degree and software firm internships."
+    },
+    {
+      "code": "CSC486H1",
+      "name": "Knowledge Representation and Reasoning",
+      "score": 85,
+      "reason": "Directly related to your interest in AI, this course will deepen your understanding of symbolic reasoning, a fundamental area in AI, and contribute to your academic goals."
+    },
+    {
+      "code": "CSC473H1",
+      "name": "Advanced Algorithm Design",
+      "score": 80,
+      "reason": "Offers advanced knowledge in algorithms, crucial for competitive coding and software development, with elements of cryptography which align with your interests."
+    },
+    {
+      "code": "CSC367H1",
+      "name": "Parallel Programming",
+      "score": 75,
+      "reason": "This course covers parallel computing, which is essential for high-performance AI applications and will provide you with practical skills for collaborative development and hackathons."
+    }
+  ],
+  "score": 0.25
+},
+{
+  "program": "Bachelor in Environmental Sciences",
+  "department": "School of Earth and Environmental Sciences",
+  "interest": "Climate Change, Sustainable Development, Environmental Policy. Keen on field research and policy-formulation simulations.",
+  "goal": "Aim for a GPA of 3.8, engage in groundbreaking sustainability research, secure a role in an environmental NGO, and pursue a master's degree in Environmental Policy.",
+  "experience": "Interned with the state environmental agency; Participated in a university-led reforestation project; Volunteer for local river clean-up initiatives",
+  "course_taken": [
+    "TRN141Y1 - Environmental Science and Pathways to Sustainability",
+    " EEB465H1 - Advanced Topics in Biodiversity Science and Conservation Biology",
+    " EEB405H1 - Temperate Field Biology",
+    " EEB410H1 - Lake Ecosystem Dynamics",
+    " ENV338H1 - Environmental Research Data and Decision-making",
+    " ENV333H1 - Ecological Worldviews",
+    " ENV451H1 - Current Environmental Topics"
+  ],
+  "course_to_take": [
+    "ENV335H1 - Environmental Design",
+    " ENV199H1 - Debating & Understanding Current Environmental Issues",
+    " ENV100H1 - Introduction to Environmental Studies",
+    " ENV281H1 - Special Topics in Environment",
+    " ENV382H1 - Special Topics in Environment"
+  ],
+  "recommendaion": [
+    {
+      "code": "ENV338H1",
+      "name": "Environmental Research Data and Decision-making",
+      "score": 92,
+      "reason": "This course is highly relevant to your interest in field research and aligns with your goal to engage in sustainability research, focusing on data analysis and informed decision-making in environmental science."
+    },
+    {
+      "code": "ENV451H1",
+      "name": "Current Environmental Topics",
+      "score": 88,
+      "reason": "As a capstone course, it integrates various disciplines and is suitable for your academic stage, aligning with your interests in current environmental issues and policy."
+    },
+    {
+      "code": "ENV421Y1",
+      "name": "Community Research for Social & Environmental Change",
+      "score": 85,
+      "reason": "Offers practical experience in community-based group research projects, which aligns with your field research interest and your volunteer work, and prepares you for NGO roles."
+    },
+    {
+      "code": "POL384H1",
+      "name": "Global Environmental Governance from the Ground Up",
+      "score": 80,
+      "reason": "Focuses on non-state actors in environmental governance, relevant to your NGO aspirations and interest in environmental policy and governance."
+    },
+    {
+      "code": "ENV411H1",
+      "name": "Sustainability Thinking",
+      "score": 75,
+      "reason": "As a capstone course for the Certificate in Sustainability, it requires reflection on your sustainability education and experience, which will bolster your understanding of sustainability principles for your future master's degree."
+    }
+  ],
+  "score": 0.0
+},
+{
+  "program": "Master in Data Science",
+  "department": "Institute of Information and Data Sciences",
+  "interest": "Machine Learning, Big Data Analytics, and Neural Networks. Passionate about solving real-world problems through data-driven insights and machine learning models.",
+  "goal": "Aiming to achieve a GPA of 3.9; planning to work as a data scientist in a leading tech company; interested in developing machine learning algorithms for healthcare; considering a PhD in Data Analytics.",
+  "experience": "Data analyst intern at a financial firm; Worked on a predictive analytics project for a retail chain; Volunteer data consultant for a non-profit organization.",
+  "course_taken": [
+    "CSC443H1 - Database System Technology",
+    " STA492H1 - Seminar in Statistical Science",
+    " CSC473H1 - Advanced Algorithm Design",
+    " CSC412H1 - Probabilistic Learning and Reasoning",
+    " CSC324H1 - Principles of Programming Languages",
+    " JSC270H1 - Data Science I",
+    " ECE368H1 - Probabilistic Reasoning"
+  ],
+  "course_to_take": [
+    "RSM338H1 - Applications of Machine Learning in Finance",
+    " JSC470H1 - Data Science III",
+    " ECO225H1 - Big-Data Tools for Economists",
+    " JSC370H1 - Data Science II",
+    " RSM371H1 - Data and Information Management for Business Analytics"
+  ],
+  "recommendaion": [
+    {
+      "code": "RSM338H1",
+      "name": "Applications of Machine Learning in Finance",
+      "score": 95,
+      "reason": "This course aligns directly with your background in machine learning and interest in financial applications, as demonstrated by your data analyst internship at a financial firm."
+    },
+    {
+      "code": "ECO482H1",
+      "name": "Machine Learning Applications in Macroeconomic Finance",
+      "score": 90,
+      "reason": "Given your experience in predictive analytics and interest in financial data, this course offers relevant hands-on experience with machine learning in macro-finance."
+    },
+    {
+      "code": "HAD5751H",
+      "name": "AI Development and Implementation in Healthcare",
+      "score": 88,
+      "reason": "Your passion for applying machine learning to healthcare and considering a PhD in Data Analytics makes this course highly suitable for understanding AI's impact in the healthcare industry."
+    },
+    {
+      "code": "ECO225H1",
+      "name": "Big-Data Tools for Economists",
+      "score": 85,
+      "reason": "This course provides practical skills in big data, aligning with your interest in big data analytics and its applications in solving real-world problems."
+    },
+    {
+      "code": "JSC370H1",
+      "name": "Data Science II",
+      "score": 82,
+      "reason": "As you are in a Master's program for Data Science, this course will deepen your understanding and skills in data science, especially since you have already completed JSC270H1."
+    }
+  ],
+  "score": 0.6
+}
+]

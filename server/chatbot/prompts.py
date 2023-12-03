@@ -39,6 +39,22 @@ Output: Hist, Roman History, Ancient Civilizations, Ancient History, Ancient Gre
     ],
 )
 
+candid_prompt = ChatPromptTemplate(
+    messages=[
+        SystemMessagePromptTemplate.from_template(
+            """Act as an advisor at the University of Toronto. You select {candid_size} courses from the provided course list as recommended course candidates based on their alignment with the student's personal interests, relevance to their goals, and suitability to their experience.
+Output in the following format and do not provide anything else:
+{{Course code #1 - Course name #1, Course code #2 - Course name #2, ..., Course code #{candid_size} - Course name #{candid_size}}}
+
+{input_documents}
+
+"""
+        ),
+        HumanMessagePromptTemplate.from_template("{question}"),
+    ],
+    input_variables=["input_documents", "question", "candid_size"],
+)
+
 recommend_prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
