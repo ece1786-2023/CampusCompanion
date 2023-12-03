@@ -103,11 +103,12 @@ export default {
 }
 
 .text {
-  margin-top: -2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   margin-left: 10px;
   color: #ffffff;
   word-wrap: break-word; 
-  width:500px;
+  width:600px;
 }
 
 .header {
@@ -122,7 +123,7 @@ export default {
   overflow: hidden;
   position: relative;
   transition: transform 0.2s ease-in-out; /* Smooth transition effect */
-  width: 600px; /* Limit the maximum width */
+  width: 700px; /* Limit the maximum width */
   align-self: center;
 }
 
@@ -179,19 +180,19 @@ export default {
 }
 
 table {
-  width: 100%;
+  width: calc(100% - 20px);
   border-collapse: collapse;
   margin-top: 10px;
 }
 
 th, td {
-  border: 1px solid #ddd;
+  
   padding: 8px;
   text-align: left;
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: #1870b8;
 }
 
 .bubble table {
@@ -199,10 +200,10 @@ th {
 }
 
 .bubble table tr {
-  background-color: #fff;
+ background-color: #7ab4f5;
 }
 
 .bubble table tr:nth-child(even) {
-  background-color: #f9f9f9; /* Light gray background for alternating rows */
+  background-color: #1870b8; /* Light gray background for alternating rows */
 }
 </style>
