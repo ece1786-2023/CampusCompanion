@@ -128,14 +128,18 @@ const sendMessage = async () => {
     try {
       console.log(message.message)
       // wait for axios to return
-      const response = await axiosCom.post(`/chatbot/chat/${message.message}`, { withCredentials: true });
+      const response = await axiosCom.post('/chatbot/chat', {
+        message: message.message,
+      }, {
+        withCredentials: true
+      });
       console.log(response.data.message)
       const botMessage = {
         is_bot: true,
         message: response.data.message,
       };
       conversation.value.messages.push(botMessage);
-      conversation.value.focus()
+      // conversation.value.focus()
     } catch (err) {
       error.value = err.message;
       console.log(error.value);

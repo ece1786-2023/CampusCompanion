@@ -65,7 +65,10 @@ class Chat(APIView):
     throttle_scope = "chatbot"
     # permission_classes = [IsAuthenticated,]
 
-    def post(self, request, user_input):
+    def post(self, request):
+        json_string = request.body.decode('utf-8')
+        user_input = json.loads(json_string)['message']
+
         # bug not can run in local
         sess_id = request.session.session_key
         sess_state = session_state_pool.get_session_state(sess_id)
