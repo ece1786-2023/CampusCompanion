@@ -95,7 +95,11 @@ def generate(num_runs=2, file_path="student_info.json"):
         f.write("[\n")
         for i, stu in enumerate(synthetic_results):
             query = getRAGQuery(stu.degree_program + stu.department + stu.course_taken)
-            level = "undergraduate" if "undergraduate" in query else "graduate"
+            lowercased_query = query.lower()
+            is_graduate = "graduate" in lowercased_query or "grad" in lowercased_query or  "master" in lowercased_query
+            level = "undergrad_collection"
+            if (is_graduate):
+                level = "grad_collection"
             course_pool = searchRAG(query, level, 50, return_description=False)
             chain = getCoursePrompt | llm
             formal_course_taken = chain.invoke(
