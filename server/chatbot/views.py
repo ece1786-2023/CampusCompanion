@@ -93,8 +93,9 @@ class Chat(APIView):
                 lowercased_query = query.lower()
                 # Check if "graduate" or "grad" is used
                 is_graduate = "graduate" in lowercased_query or "grad" in lowercased_query or  "master" in lowercased_query
+                is_undergraduate = "undergraduate" in lowercased_query or "undergrad" in lowercased_query or  "undergraduate" in lowercased_query
                 level = "undergrad_collection"
-                if (is_graduate):
+                if (is_graduate and not is_undergraduate):
                     level = "grad_collection"
                 course_ctx = searchRAG(query, level, 30, True)
                 student_ctx = res
