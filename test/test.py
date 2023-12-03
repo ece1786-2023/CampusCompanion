@@ -31,7 +31,11 @@ def test_recomd(student_info, llm, eval_llm):
     for i, student in enumerate(student_info):
         stu = StuModel(llm, eval_llm, student)
         query = getRAGQuery(stu.getProfileWithoutCourse())
-        level = "undergraduate" if "undergraduate" in query else "graduate"
+        lowercased_query = query.lower()
+        is_graduate = "graduate" in lowercased_query or "grad" in lowercased_query or  "master" in lowercased_query
+        level = "undergrad_collection"
+        if (is_graduate):
+            level = "grad_collection"
         course_context = searchRAG(query, level, 30)
         course_list = course_context.split("\n\n")
         course_names = [

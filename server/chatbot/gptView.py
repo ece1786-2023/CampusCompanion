@@ -140,12 +140,12 @@ def Recommend(question, course_context, student_context, llm, memory):
     memory.save_context({"question": question}, {"output": res.content})
     recommendation_list = []
     if "Success!" in res.content:
-        recomd = res.content.split("Success!")[1]
-        recommendation_list = course_ext_chain.run(recomd)
+        rec_str = res.content.replace("Success!", "", 1)
+        recommendation_list = course_ext_chain.run(rec_str)
         res = dumps(recommendation_list)
         flag = True
     else:
-        res = res.content.split("Fail!")[1]
+        res = "Failed to find recommendations"
         flag = False
 
     if recommendation_list is not []:

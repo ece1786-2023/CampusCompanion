@@ -21,6 +21,21 @@ function scrollToEnd() {
 }
 </script>
 
+<script>
+export default {
+  methods: {
+    containsArray(message) {
+      try {
+        const parsedArray = JSON.parse(message.message);
+        return Array.isArray(parsedArray);
+      } catch (error) {
+        return false; // Handle the case when the string is not valid JSON
+      }
+    },
+  },
+};
+</script>
+
 <template>
   <div v-if="conversation.messages" ref="grab" class="chat-window">
     <v-container>
@@ -33,7 +48,29 @@ function scrollToEnd() {
                 <div class="user-info">
                   <span class="user-type">{{ message.is_bot ? 'CampusCompanion' : 'Student' }}</span>
                 </div>
-                <div class="text">{{ message.message }}</div>
+                <div>
+              <div v-if="containsArray(message)">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Code</th>
+                      <th>Name</th>
+                      <th>Score</th>
+                      <th>Reason</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="(item, index) in JSON.parse(message.message)" :key="index">
+                      <td>{{ item.code }}</td>
+                      <td>{{ item.name }}</td>
+                      <td>{{ item.score }}</td>
+                      <td>{{ item.reason }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div v-else class="text">{{ message.message }}</div>
+            </div>
               </div>
             </div>
           </div>
@@ -66,11 +103,12 @@ function scrollToEnd() {
 }
 
 .text {
-  margin-top: -2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   margin-left: 10px;
   color: #ffffff;
   word-wrap: break-word; 
-  width:500px;
+  width:600px;
 }
 
 .header {
@@ -85,7 +123,7 @@ function scrollToEnd() {
   overflow: hidden;
   position: relative;
   transition: transform 0.2s ease-in-out; /* Smooth transition effect */
-  width: 600px; /* Limit the maximum width */
+  width: 700px; /* Limit the maximum width */
   align-self: center;
 }
 
@@ -139,5 +177,33 @@ function scrollToEnd() {
 .chat-window {
   width: 70vw;
   justify-self: center;
+}
+
+table {
+  width: calc(100% - 20px);
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #1870b8;
+}
+
+.bubble table {
+  margin: 10px 0;
+}
+
+.bubble table tr {
+ background-color: #7ab4f5;
+}
+
+.bubble table tr:nth-child(even) {
+  background-color: #1870b8; /* Light gray background for alternating rows */
 }
 </style>
