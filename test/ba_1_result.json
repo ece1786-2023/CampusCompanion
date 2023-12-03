@@ -1,0 +1,580 @@
+[
+{
+  "program": "Bachelor of Science (BSc) in Environmental Science",
+  "department": "College of Natural Sciences",
+  "interest": "Climate Change Mitigation; Renewable Energy; Environmental Policy; Outdoor activities; Hands-on fieldwork",
+  "goal": "Work with government or non-profit organizations on environmental protection initiatives; Enhance research skills in environmental studies; Secure a PhD scholarship in Climate Science; Aspire to publish work on renewable energy solutions",
+  "experience": "Associate's degree in Biology; Internship with local environmental agency on water quality projects; Volunteer with a wildlife conservation NGO; Assisted with a university research project on air pollution trends",
+  "course_taken": [
+    "TRN141Y1 - Environmental Science and Pathways to Sustainability",
+    " ENV100H1 - Introduction to Environmental Studies",
+    " EEB465H1 - Advanced Topics in Biodiversity Science and Conservation Biology",
+    " ENV335H1 - Environmental Design",
+    " ENV338H1 - Environmental Research Data and Decision-making",
+    " ENV199H1 - Debating & Understanding Current Environmental Issues",
+    " HIS408H1 - Topics in Environmental History"
+  ],
+  "course_to_take": [
+    "ENV440H1 - Professional Experience Course"
+  ],
+  "recommendaion": [
+    {
+      "code": "ENV440H1",
+      "name": "Professional Experience Course",
+      "score": 98,
+      "reason": "This course provides practical experience through off-campus work on environmental projects, aligning perfectly with your goal of working with government or non-profit organizations and enhancing research skills."
+    },
+    {
+      "code": "ENV462H1",
+      "name": "Energy and Environment: Economics, Politics, and Sustainability",
+      "score": 92,
+      "reason": "The interdisciplinary approach of this course offers insights into economics, politics, and policies related to energy and environment, matching your interests in climate change mitigation and environmental policy."
+    },
+    {
+      "code": "ENV350H1",
+      "name": "Energy Policy and Environment",
+      "score": 88,
+      "reason": "With a focus on energy systems and their environmental impacts, as well as policy analysis, this course supports your aspirations in renewable energy solutions and environmental policy."
+    },
+    {
+      "code": "EEB403H1",
+      "name": "Tropical Field Biology",
+      "score": 85,
+      "reason": "This field course offers hands-on experience in biodiversity in tropical ecosystems, which complements your interests in outdoor activities and hands-on fieldwork, and builds on your biology background."
+    },
+    {
+      "code": "ENV421Y1",
+      "name": "Community Research for Social & Environmental Change",
+      "score": 80,
+      "reason": "This research course involves a community-based group project, encouraging action-focused study that aligns with your interest in environmental protection initiatives and desire to enhance research skills."
+    }
+  ],
+  "score": 1.0
+},
+{
+  "program": "Bachelor of Science (BSc) in Computer Science",
+  "department": "School of Engineering and Computer Science",
+  "interest": "Data structures and algorithms; Cybersecurity; Open-source collaboration; eSports and gaming; Jumping into hackathons",
+  "goal": "Maintain a GPA of 3.7 or higher; Land an internship at a top tech company; Contribute to major open-source projects; Transition into cybersecurity role post-graduation",
+  "experience": "Completed a summer coding bootcamp; Part-time developer at a startup; Contributor to several open-source projects; Volunteer IT support for a local non-profit organization",
+  "course_taken": [
+    "CSC148H1 - Introduction to Computer Science",
+    " CSC486H1 - Knowledge Representation and Reasoning",
+    " CSC469H1 - Operating Systems Design and Implementation",
+    " CSC443H1 - Database System Technology",
+    " CSC448H1 - Formal Languages and Automata",
+    " CSC458H1 - Computer Networking Systems"
+  ],
+  "course_to_take": [
+    "CSC473H1 - Advanced Algorithm Design",
+    " CSC367H1 - Parallel Programming",
+    " CSC410H1 - Software Testing and Verification."
+  ],
+  "recommendaion": [
+    {
+      "code": "CSC458H1",
+      "name": "Computer Networking Systems",
+      "score": 95,
+      "reason": "This course aligns closely with your interests in cybersecurity and provides essential knowledge for tech industry internships."
+    },
+    {
+      "code": "CSC473H1",
+      "name": "Advanced Algorithm Design",
+      "score": 90,
+      "reason": "Critical for enhancing your data structures and algorithms skills, which are vital for excelling in hackathons and technical interviews."
+    },
+    {
+      "code": "CSC494Y1",
+      "name": "Computer Science Project",
+      "score": 85,
+      "reason": "Offers practical experience collaborating on significant projects, which can help with open-source contributions and building a portfolio for internships."
+    },
+    {
+      "code": "CSC410H1",
+      "name": "Software Testing and Verification",
+      "score": 80,
+      "reason": "Understanding software testing is key for high-quality code in open-source projects and maintaining the high GPA required for top internships."
+    },
+    {
+      "code": "CSC309H1",
+      "name": "Programming on the Web",
+      "score": 75,
+      "reason": "Web development skills are in demand for startups and contribute to a well-rounded skill set for a cybersecurity role."
+    }
+  ],
+  "score": 0.6666666666666666
+},
+{
+  "program": "Bachelor of Arts (BA) in Graphic Design",
+  "department": "School of Visual Arts",
+  "interest": "Typography; UI/UX Design; Photography; Interactive project-based learning; Sketching and illustration",
+  "goal": "Achieve a portfolio of diverse design works; Land an internship in a prestigious design studio; Win a university design award; Secure a job at a leading tech company; Plan to master advanced design tools and techniques",
+  "experience": "Associate degree in Multimedia Arts; Freelance work creating logos and branding materials for local businesses; Participation in collaborative design projects; Volunteer graphic designer for a non-profit organization",
+  "course_taken": [
+    "VIC190Y1 - The Arts and Society",
+    " HIS194H1 - Power, Resistance, and the Graphic Novel",
+    " FAH102H1 - Art and Ideas",
+    " FAH388H1 - Art History Theories and Practices",
+    " FAH434H1 - The First Art Historians"
+  ],
+  "course_to_take": [
+    "VIC459Y1 - Special Topics Seminar",
+    " CRE349H1 - Special Topics in Creativity",
+    " FAH481H1 - Internship"
+  ],
+  "recommendaion": [
+    {
+      "code": "CSC318H1",
+      "name": "The Design of Interactive Computational Media",
+      "score": 95,
+      "reason": "This course aligns with your interest in UI/UX Design and interactive project-based learning. It will provide you with hands-on experience in user-centered design, which is crucial for a career in a leading tech company."
+    },
+    {
+      "code": "FAH382H1",
+      "name": "Art Writing",
+      "score": 92,
+      "reason": "Given your interest in typography and photography, this course is relevant as it will hone your skills in writing for museum exhibitions and publications, potentially enhancing your portfolio for prestigious design awards."
+    },
+    {
+      "code": "ENG394H1",
+      "name": "Creative Writing: Special Topics",
+      "score": 89,
+      "reason": "This course encourages creative practice in various writing contexts, which complements your skills in sketching and illustration, and could be beneficial for creating narratives in your design projects."
+    },
+    {
+      "code": "FAH280H1",
+      "name": "Special Topics in Art History",
+      "score": 85,
+      "reason": "This course offers thematic studies that can broaden your understanding of design's cultural and historical contexts, aiding in the creation of more informed and diverse design works."
+    },
+    {
+      "code": "WRR104H1",
+      "name": "Writing Reports",
+      "score": 80,
+      "reason": "As a designer, effective communication is key. This course will enhance your ability to write structured reports, which can be a valuable asset when presenting design projects or collaborating with teams."
+    }
+  ],
+  "score": 0.0
+},
+{
+  "program": "Bachelor of Science (BS) in Computer Science",
+  "department": "Department of Computer Science",
+  "interest": "Artificial Intelligence; Open Source Contribution; Hiking; Hackathons; Agile methodologies",
+  "goal": "Develop an innovative AI startup; Contribute to significant open-source projects; Graduate with a 3.9 GPA or above; Obtain a prestigious software development internship; Lead a major project in software engineering",
+  "experience": "Associate's degree in Mathematics; Internship at a tech startup focusing on AI solutions; Volunteer in coding workshops for high school students; Peer reviewer for an academic journal in computer science",
+  "course_taken": [
+    "CSC148H1 - Introduction to Computer Science",
+    " CSC111H1 - Foundations of Computer Science II",
+    " CSC473H1 - Advanced Algorithm Design",
+    " CSC469H1 - Operating Systems Design and Implementation",
+    " CSC443H1 - Database System Technology",
+    " CSC302H1 - Engineering Large Software Systems",
+    " CSC324H1 - Principles of Programming Languages"
+  ],
+  "course_to_take": [
+    "CSC367H1 - Parallel Programming",
+    " CSC309H1 - Programming on the Web"
+  ],
+  "recommendaion": [
+    {
+      "code": "ECE1724H",
+      "name": "Special Topics in Software Systems: Artificial Intelligence",
+      "score": 95,
+      "reason": "This graduate-level course aligns closely with your interest in Artificial Intelligence and your goal to develop an innovative AI startup. It offers a deep dive into AI, biology, and neuroscience, and provides an opportunity to engage with experts and conduct research, which is valuable for your academic and career ambitions."
+    },
+    {
+      "code": "CSC301H1",
+      "name": "Introduction to Software Engineering",
+      "score": 90,
+      "reason": "This course covers agile development methods and is relevant to your interest in Agile methodologies. It is suitable for your experience and will help you develop skills necessary for leading major projects in software engineering, which aligns with your goals."
+    },
+    {
+      "code": "CSC486H1",
+      "name": "Knowledge Representation and Reasoning",
+      "score": 85,
+      "reason": "As an AI-focused course, it complements your academic background and interest in contributing to open-source AI projects. The content is highly relevant to your startup aspirations and understanding AI at a deeper level."
+    },
+    {
+      "code": "CSC410H1",
+      "name": "Software Testing and Verification",
+      "score": 80,
+      "reason": "This course is relevant for ensuring the quality and reliability of software, which is crucial for your goal to lead major projects and contribute to open-source initiatives. It also aligns with your interest in developing robust AI systems for your startup."
+    },
+    {
+      "code": "CSC494Y1",
+      "name": "Computer Science Project",
+      "score": 75,
+      "reason": "This project-based course allows you to work on a significant multidisciplinary project in Computer Science, providing practical experience and contributing to your goal of a prestigious internship and high GPA. It may also offer opportunities to work on open-source contributions."
+    }
+  ],
+  "score": 0.0
+},
+{
+  "program": "Bachelor of Science in Environmental Studies",
+  "department": "Department of Earth and Atmospheric Sciences",
+  "interest": "Climate Change Mitigation; Renewable Energy Solutions; Wildlife Conservation; Outdoor activities like hiking and bird watching; Participatory learning",
+  "goal": "Achieve a GPA of 3.7 or higher; Work on impactful environmental projects; Gain fieldwork experience; Pursue a master's degree in Environmental Management; Contribute to policy-making for sustainability",
+  "experience": "Volunteer at local nature reserve for habitat restoration; Summer internship at an environmental consultancy; Research project on urban sustainability practices; Leadership role in university's environmental club; Organized a campus-wide recycling initiative",
+  "course_taken": [
+    "ENV100H1 - Introduction to Environmental Studies",
+    " ENV200H1 - Assessing Global Change: Science and the Environment",
+    " TRN141Y1 - Environmental Science and Pathways to Sustainability",
+    " HIS218H1 - Environmental History",
+    " ENV223H1 - Fundamental Environmental Skills",
+    " EEB465H1 - Advanced Topics in Biodiversity Science and Conservation Biology",
+    " ENV333H1 - Ecological Worldviews",
+    " ENV338H1 - Environmental Research Data and Decision-making"
+  ],
+  "course_to_take": [
+    "ENV335H1 - Environmental Design",
+    " ENV199H1 - Debating & Understanding Current Environmental Issues",
+    " ENV381H1 - Special Topics in Environment",
+    " ENV451H1 - Current Environmental Topics",
+    " EEB403H0 - Tropical Field Biology",
+    " EEB403H1 - Tropical Field Biology",
+    " ENV281H1 - Special Topics in Environment",
+    " ENV482H1 - Special Topics in the Environment"
+  ],
+  "recommendaion": [
+    {
+      "code": "FOR306H1",
+      "name": "Tropical Forest Ecology and Conservation Field Course",
+      "score": 95,
+      "reason": "This course offers practical experience in tropical forest conservation, which aligns with your interest in wildlife conservation and outdoor activities. It also provides fieldwork experience, which suits your academic goal of gaining practical experience and pursuing a master's degree in Environmental Management."
+    },
+    {
+      "code": "ENV462H1",
+      "name": "Energy and Environment: Economics, Politics, and Sustainability",
+      "score": 88,
+      "reason": "Given your interest in climate change mitigation and renewable energy solutions, this interdisciplinary course will deepen your understanding of the economic and political aspects of energy, which is essential for contributing to policy-making for sustainability."
+    },
+    {
+      "code": "ENV350H1",
+      "name": "Energy Policy and Environment",
+      "score": 85,
+      "reason": "This course focuses on energy systems and their environmental impacts, addressing technological and policy aspects of energy use reduction, which is relevant to your focus on renewable energy solutions and your desire to work on impactful environmental projects."
+    },
+    {
+      "code": "ENV421Y1",
+      "name": "Community Research for Social & Environmental Change",
+      "score": 80,
+      "reason": "The course's community-based group research projects align with your participatory learning preference and provide an opportunity to work on environmental projects that can contribute to your academic and career goals."
+    },
+    {
+      "code": "ENV341H1",
+      "name": "Environment and Health",
+      "score": 75,
+      "reason": "This course examines the intersection of human health and the environment, which is pertinent to your broader interest in environmental studies. It also offers interdisciplinary insights that may be valuable for your future master's program and environmental consultancy work."
+    }
+  ],
+  "score": 0.125
+},
+{
+  "program": "Bachelor of Arts in Psychology",
+  "department": "Department of Psychology",
+  "interest": "Cognitive Psychology; Developmental Psychology; Social Psychology; Painting and Photography; Collaborative learning environments",
+  "goal": "To understand the intricacies of human behavior; Excel in academic research; Obtain a GPA of 3.8 or higher; Engage in interdisciplinary studies; Prepare for a graduate program in Clinical Psychology",
+  "experience": "Associate's degree in Liberal Arts; Volunteer at a mental health awareness campaign; Conducted an independent study on the effects of social media on self-esteem; Assisted in a psychology lab analyzing cognitive development in children",
+  "course_taken": [
+    "PSY420H1 - Social Psychology Seminar"
+  ],
+  "course_to_take": [
+    "PSY450H1 - History of Psychology",
+    " PSY100H1 - Introductory Psychology",
+    " PSY203H1 - Psychological Research"
+  ],
+  "recommendaion": [
+    {
+      "code": "PSY422H1",
+      "name": "Community Psychology & Advocacy",
+      "score": 95,
+      "reason": "This course aligns closely with your interest in social psychology and your experience in mental health advocacy, while also offering a partnership-based experience that fits with your preference for collaborative learning environments."
+    },
+    {
+      "code": "PSY410H1",
+      "name": "Developmental Psychology Seminar",
+      "score": 90,
+      "reason": "Given your background in analyzing cognitive development and your academic interest in developmental psychology, this seminar will provide an in-depth examination that can strengthen your foundation for graduate studies."
+    },
+    {
+      "code": "HPS356H1",
+      "name": "Child Science: Knowing and Caring for Children in Modern World",
+      "score": 85,
+      "reason": "This interdisciplinary course connects with your interest in developmental psychology and offers historical and societal perspectives on childcare, which can enrich your understanding of human behavior."
+    },
+    {
+      "code": "COG401H1",
+      "name": "Seminar in Cognitive Science",
+      "score": 80,
+      "reason": "As a psychology major with a focus on cognitive psychology, this advanced seminar will enhance your academic research skills and contribute to your interdisciplinary studies, aiding in your graduate program preparation."
+    },
+    {
+      "code": "PSY203H1",
+      "name": "Psychological Research",
+      "score": 75,
+      "reason": "This course is relevant to your goal of excelling in academic research and will provide a solid grounding in research methods, critical for achieving a high GPA and success in graduate studies in clinical psychology."
+    }
+  ],
+  "score": 0.3333333333333333
+},
+{
+  "program": "Bachelor of Science in Astrophysics",
+  "department": "Department of Physics and Astronomy",
+  "interest": "Exoplanetary Science; Astrophysical Data Analysis; Stargazing; 3D Modeling; Hands-on and visual learning approaches",
+  "goal": "Publish original research on exoplanet atmospheres; Secure a research internship at a space observatory; Achieve a GPA of 3.9; Prepare for a PhD program in Astronomy; Develop advanced data analysis skills for large astronomical datasets",
+  "experience": "Associate's degree in Computer Science; Summer research assistantship at an astrophysics lab; Volunteer for public outreach events at the local planetarium; Developed a 3D visualization tool for astronomical phenomena",
+  "course_taken": [
+    "AST199H1 - Astronomy at the Frontier",
+    " PHY197H1 - Modern Physics for the Curious",
+    " AST301H1 - Observational Astronomy"
+  ],
+  "course_to_take": [
+    "CTA200H1 - Computational Astrophysics",
+    " PHY100H1 - The Magic of Physics",
+    " AST431Y1 - Supervised Study in Astronomy & Astrophysics"
+  ],
+  "recommendaion": [
+    {
+      "code": "AST431Y1",
+      "name": "Supervised Study in Astronomy & Astrophysics",
+      "score": 95,
+      "reason": "This course aligns closely with your goal to publish original research on exoplanet atmospheres and to prepare for a PhD program, offering individual study under the direction of a faculty member which can lead to a research internship."
+    },
+    {
+      "code": "PHY478H1",
+      "name": "Undergraduate Research Project",
+      "score": 90,
+      "reason": "This course offers an individual research project that corresponds with your interests in exoplanetary science and hands-on learning, and it would be instrumental for your goal to publish original research."
+    },
+    {
+      "code": "CTA200H1",
+      "name": "Computational Astrophysics",
+      "score": 85,
+      "reason": "Given your background in computer science and interest in astrophysical data analysis, this course is relevant for developing advanced data analysis skills for large astronomical datasets."
+    },
+    {
+      "code": "AST310H1",
+      "name": "Indigenous Worldviews & Astronomy",
+      "score": 75,
+      "reason": "This course provides a unique perspective on astronomy that can enrich your understanding of the field and contribute to your public outreach activities, although it is less directly aligned with your research goals."
+    },
+    {
+      "code": "CSC443H1",
+      "name": "Database System Technology",
+      "score": 60,
+      "reason": "While this course is less directly related to astrophysics, your computer science background and interest in data analysis make it a suitable choice for developing skills that are valuable for handling large datasets in research."
+    }
+  ],
+  "score": 0.6666666666666666
+},
+{
+  "program": "Bachelor of Science in Environmental Science",
+  "department": "Department of Environmental Studies",
+  "interest": "Conservation Biology; Climate Change Mitigation; Hiking and Wildlife Photography; Experiential and outdoor learning",
+  "goal": "Lead conservation projects; Achieve a GPA of 3.7; Publish research on sustainable practices; Pursue a master's degree in Ecology; Implement environmental policies",
+  "experience": "Associate's degree in Biology; Volunteer for a national park conservation program; Research assistant in a study on deforestation; Internship with an environmental NGO",
+  "course_taken": [
+    "ENV338H1 - Environmental Research Data and Decision-making",
+    " TRN141Y1 - Environmental Science and Pathways to Sustainability",
+    " EEB465H1 - Advanced Topics in Biodiversity Science and Conservation Biology",
+    " ENV333H1 - Ecological Worldviews",
+    " ENV451H1 - Current Environmental Topics."
+  ],
+  "course_to_take": [
+    "ENV335H1 - Environmental Design",
+    " ENV396Y0 - Special Topics Field Course"
+  ],
+  "recommendaion": [
+    {
+      "code": "EEB403H1",
+      "name": "Tropical Field Biology",
+      "score": 98,
+      "reason": "This course offers hands-on field experience in the tropics, aligning with your interest in experiential and outdoor learning, conservation biology, and climate change mitigation. The research projects included would support your goals to publish research and pursue further studies in Ecology."
+    },
+    {
+      "code": "ENV396Y0",
+      "name": "Special Topics Field Course",
+      "score": 95,
+      "reason": "The focus on Australia's environmental issues and hands-on fieldwork aligns closely with your experiential learning preferences and academic interests in conservation biology and climate change. Additionally, it offers a unique opportunity for wildlife photography which matches your personal interests."
+    },
+    {
+      "code": "ENV440H1",
+      "name": "Professional Experience Course",
+      "score": 92,
+      "reason": "This course enables you to gain practical experience working with professional environmental agencies, which is directly in line with your goals to lead conservation projects and implement environmental policies, as well as your past experiences."
+    },
+    {
+      "code": "FOR306H1",
+      "name": "Tropical Forest Ecology and Conservation Field Course",
+      "score": 89,
+      "reason": "This course provides practical experience in tropical forest conservation, which is relevant to your study in Environmental Science and your interest in hands-on learning and conservation projects."
+    },
+    {
+      "code": "ENV421Y1",
+      "name": "Community Research for Social & Environmental Change",
+      "score": 87,
+      "reason": "The community-based group research project would allow you to engage directly with social aspects of environmental change, which would be beneficial for your interest in implementing environmental policies and achieving a high academic standing."
+    }
+  ],
+  "score": 0.5
+},
+{
+  "program": "Bachelor of Arts in International Relations",
+  "department": "Department of Political Science",
+  "interest": "Global Politics; Diplomacy; Foreign Languages; Travel Blogging; Interactive seminar-style learning",
+  "goal": "Become a diplomat; Achieve a GPA of 3.8; Intern at the United Nations; Study abroad in Europe; Master multiple foreign languages",
+  "experience": "Associate's degree in Communications; Internship at a consulate; Volunteer translator for non-profit organizations; Study abroad experience in Latin America; Blog about political events and international travel",
+  "course_taken": [
+    "POL380H1 - Topics in International Politics",
+    " POL466H1 - Topics in International Politics III",
+    " AFR353H1 - International Relations of Africa",
+    " POL487H1 - Topics in International Politics II",
+    " POL486H1 - Topics in International Politics I",
+    " TRN409Y1 - Selected Topics in International Studies",
+    " POL477H1 - Advanced Topics in International Political Economy",
+    " CAS420H1 - Asia and the New Global Economy",
+    " TRN250Y1 - Empire, Nationalism, and the History of International Relations"
+  ],
+  "course_to_take": [
+    "POL456H1 - Global Summit Governance and Diplomacy",
+    " POL359H1 - Enlarging Europe: The European Union and Its Applicants",
+    " POL208H1 - Introduction to International Relations",
+    " VIC476H1 - Capstone Seminar in Foreign Policy",
+    " TRN421Y1 - Fragile and Conflict-Affected States in Global Politics"
+  ],
+  "recommendaion": [
+    {
+      "code": "TRN410H1",
+      "name": "Researching Critical Cases in Contemporary International Relations",
+      "score": 95,
+      "reason": "This course aligns closely with your interest in global politics and ambition to become a diplomat, as it involves original research on contemporary IR issues and will help develop analytical skills necessary for diplomatic work."
+    },
+    {
+      "code": "NEW371H0",
+      "name": "International Field Course",
+      "score": 90,
+      "reason": "The international experiential learning program is highly relevant to your interests in travel and diplomacy, while also offering interactive, seminar-style learning and a chance to potentially study abroad in Europe."
+    },
+    {
+      "code": "POL338H1",
+      "name": "Queer International Relations",
+      "score": 85,
+      "reason": "This course explores international relations through a critical lens that aligns with your background in communications and interest in global politics. It also offers a specialized perspective that may contribute to your blogging content."
+    },
+    {
+      "code": "GER355Y0",
+      "name": "Summer Course in Berlin",
+      "score": 80,
+      "reason": "Since mastering foreign languages and studying abroad in Europe are among your goals, this course would significantly benefit your language skills and provide valuable cultural experience."
+    },
+    {
+      "code": "EAS395Y0",
+      "name": "Topics in East Asian Studies (Summer Abroad)",
+      "score": 75,
+      "reason": "This course offers you the opportunity to study abroad, which aligns with your interest in travel blogging and international relations, and allows for interactive learning in a foreign environment."
+    }
+  ],
+  "score": 0.0
+},
+{
+  "program": "Bachelor of Science in Mechanical Engineering",
+  "department": "Department of Mechanical Engineering",
+  "interest": "Robotics; Automotive design; 3D printing; Participating in engineering competitions; Hands-on project-based learning",
+  "goal": "Design innovative mechanical systems; Maintain a GPA of 3.5 or higher; Win a national engineering design competition; Secure an internship at a leading automotive company; Pursue a Master's degree in Robotics",
+  "experience": "Associate's degree in Applied Sciences; Member of university's engineering club; Volunteered at a local makerspace; Summer research project on drone aerodynamics",
+  "course_taken": [
+    "PHY151H1 - Foundations of Physics I",
+    " ENV262H1 - The Science of Energy in the Environment"
+  ],
+  "course_to_take": [
+    "CSC486H1 - Knowledge Representation and Reasoning",
+    " ESS245H1 - Computational Geology",
+    " CSC410H1 - Software Testing and Verification",
+    " CSC465H1 - Formal Methods in Software Design",
+    " JCC250H1 - Computing for Science",
+    " CSC443H1 - Database System Technology"
+  ],
+  "recommendaion": [
+    {
+      "code": "BME498Y1",
+      "name": "Biomedical Engineering Capstone Design",
+      "score": 95,
+      "reason": "This course aligns with your interest in hands-on project-based learning, and it will offer you the opportunity to design innovative mechanical systems, which is one of your academic goals. It also fits your background in mechanics and involvement in engineering competitions by allowing you to work on an interdisciplinary team to solve real-world challenges."
+    },
+    {
+      "code": "CSC396Y0",
+      "name": "Designing Systems for Real World Problems",
+      "score": 90,
+      "reason": "This course emphasizes hands-on project work and real-world problem-solving, which are both aspects you've shown interest in. It also provides an excellent platform for you to work on innovative designs potentially relevant to automotive design and robotics, which could help you secure an internship in those fields."
+    },
+    {
+      "code": "EEB398Y0",
+      "name": "Research Excursion",
+      "score": 85,
+      "reason": "Though not directly related to your major, this course offers a unique, hands-on research experience that could enhance your practical skills and might be relevant to your interest in participating in engineering competitions. The excursion could also broaden your understanding of mechanical systems in different environments."
+    },
+    {
+      "code": "APS112H1",
+      "name": "Engineering Strategies & Practice II",
+      "score": 80,
+      "reason": "This course is designed to deepen your understanding of the design process and project management, which are crucial for your goal to win a national engineering design competition and work on automotive design projects."
+    },
+    {
+      "code": "CSC486H1",
+      "name": "Knowledge Representation and Reasoning",
+      "score": 75,
+      "reason": "While this course is more focused on computer science aspects, it does delve into topics such as the representation of action and planning, which can be beneficial for your interest in robotics and could contribute to your pursuit of a Master's degree in this field."
+    }
+  ],
+  "score": 0.16666666666666666
+},
+{
+  "program": "Bachelor of Fine Arts in Graphic Design",
+  "department": "Department of Art and Design",
+  "interest": "Visual Communication; Branding; Illustration; Photography; Interactive and studio-based learning",
+  "goal": "Establish a freelance design business; Achieve a GPA of 3.6; Win a national design award; Intern at a leading design agency; Build a professional portfolio",
+  "experience": "Diploma in Visual Arts; Freelance logo design for local businesses; Photography assistant for a media house; Volunteer graphic designer for a non-profit organization",
+  "course_taken": [
+    "FAH388H1 - Art History Theories and Practices",
+    " DHU435H1 - The Internet Archive",
+    " FAH396Y0 - Studies Abroad in Asian Art and Architecture"
+  ],
+  "course_to_take": [
+    "FAH102H1 - Art and Ideas",
+    " JIA400H1 - Interdisciplinary Practice for the Arts"
+  ],
+  "recommendaion": [
+    {
+      "code": "CSC318H1",
+      "name": "The Design of Interactive Computational Media",
+      "score": 95,
+      "reason": "This course aligns closely with your goals in interactive and studio-based learning, and it will be beneficial for establishing a freelance design business, especially if you are looking into web or app design. It also complements your background in visual communication and branding."
+    },
+    {
+      "code": "FAH354H1",
+      "name": "Art in Canada Since the 1960s",
+      "score": 90,
+      "reason": "Given your background in visual arts and your desire to build a professional portfolio, this course provides a deeper understanding of Canadian art history which can influence and inform your personal creative work."
+    },
+    {
+      "code": "CHC365H1",
+      "name": "Christianity, Art, and Architecture",
+      "score": 85,
+      "reason": "With your experience as a photography assistant and a volunteer graphic designer, this course offers an opportunity to explore the interplay between visual arts and architecture, which could enrich your design work with historical and cultural depth."
+    },
+    {
+      "code": "FAH465H1",
+      "name": "Exhibiting China",
+      "score": 80,
+      "reason": "This seminar offers hands-on experience with curating, which could be a valuable skill for your future freelance business and help in achieving a high GPA through an engaging and practical project."
+    },
+    {
+      "code": "CRE349H1",
+      "name": "Special Topics in Creativity",
+      "score": 75,
+      "reason": "While the specific topics vary, this course could provide unique perspectives that enhance your abilities in illustration and branding, and the course's creative focus is likely to support your goal of winning a national design award."
+    }
+  ],
+  "score": 0.0
+}
+]

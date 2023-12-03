@@ -2,7 +2,7 @@ import chromadb
 from chromadb.config import Settings
 
 
-def searchRAG(query):
+def searchRAG(query, level="undergraduate", n_results=10, return_description=True):
     chroma_client = chromadb.HttpClient(
         host="localhost",
         port=8000,
@@ -18,12 +18,15 @@ def searchRAG(query):
         except Exception as e:
             pass
 
-    results = document_collection.query(query_texts=query, n_results=15)
+    query = f"{query} AND level:{level}"
+    results = document_collection.query(query_texts=query, n_results=n_results)
     result_documents = results["documents"][0]
     print("RAG Search Results:")
     courseStr = ""
     i = 0
     for elem in result_documents:
+        if return_description is False:
+            elem = elem.split(".")[0]
         i += 1
         courseStr += str(i) + ".) " + elem
         courseStr += "\n\n"

@@ -6,7 +6,7 @@
           <div class="text-body-2 font-weight-light mb-n1 white-text">Welcome to</div>
           <h1 class="text-h2 font-weight-bold white-text">CampusCompanion</h1>
         </div>
-        <chatWindow :conversation="conversation"/>
+        <chatWindow :conversation="conversation" />
       </div>
       <div class="py-14" />
     </v-responsive>
@@ -103,6 +103,7 @@
 import chatWindow from "./ChatWindow.vue";
 import { ref } from "vue";
 import axiosCom from "@/components/axios"
+import { useEventBus } from "@/eventBus";
 
 const messages = ref([]);
 const newMessageText = ref("");
@@ -127,7 +128,7 @@ const sendMessage = async () => {
     try {
       console.log(message.message)
       // wait for axios to return
-      const response = await axiosCom.post(`/chatbot/${message.message}`, {withCredentials: true});
+      const response = await axiosCom.post(`/chatbot/chat/${message.message}`, { withCredentials: true });
       console.log(response.data.message)
       const botMessage = {
         is_bot: true,
@@ -141,4 +142,15 @@ const sendMessage = async () => {
     }
   }
 };
+
+const bus = useEventBus();
+bus.$on("reset-conversation", () => {
+  // Logic to reset the conversation in chat.vue
+  conversation.value.messages = [
+    { is_bot: true, message: "Hi there! How can I assist you today with Course Recommendations?" }
+  ];
+  error.value = null;
+  newMessageText.value = "";
+
+});
 </script>
