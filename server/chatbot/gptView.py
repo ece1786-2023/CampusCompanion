@@ -118,8 +118,7 @@ def Recommend(question, course_context, student_context, llm, memory):
         res = dumps(recommendation_list)
         flag = True
     else:
-        print(res)
-        res = res.content.split("Fail!")[1]
+        res = "Failed to find recommendations"
         flag = False
 
     if recommendation_list is not []:

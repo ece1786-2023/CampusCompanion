@@ -87,7 +87,13 @@ class Chat(APIView):
             # End quiry
             if end_flag == True:
                 query = RAGQuery(res, llm)
-                course_ctx = searchRAG(query)
+                lowercased_query = query.lower()
+                # Check if "graduate" or "grad" is used
+                is_graduate = "graduate" in lowercased_query or "grad" in lowercased_query or  "master" in lowercased_query
+                level = "undergrad_collection"
+                if (is_graduate):
+                    level = "grad_collection"
+                course_ctx = searchRAG(query, level)
                 student_ctx = res
                 state = "RECOMMEND"
                 user_input = "Hi! Can you recommend courses for me?"

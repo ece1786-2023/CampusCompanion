@@ -21,6 +21,21 @@ function scrollToEnd() {
 }
 </script>
 
+<script>
+export default {
+  methods: {
+    containsArray(message) {
+      try {
+        const parsedArray = JSON.parse(message.message);
+        return Array.isArray(parsedArray);
+      } catch (error) {
+        return false; // Handle the case when the string is not valid JSON
+      }
+    },
+  },
+};
+</script>
+
 <template>
   <div v-if="conversation.messages" ref="grab" class="chat-window">
     <v-container>
@@ -34,7 +49,7 @@ function scrollToEnd() {
                   <span class="user-type">{{ message.is_bot ? 'CampusCompanion' : 'Student' }}</span>
                 </div>
                 <div>
-              <div v-if="Array.isArray(message.message)">
+              <div v-if="containsArray(message)">
                 <table>
                   <thead>
                     <tr>
@@ -45,7 +60,7 @@ function scrollToEnd() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr v-for="(item, index) in message.message" :key="index">
+                    <tr v-for="(item, index) in JSON.parse(message.message)" :key="index">
                       <td>{{ item.code }}</td>
                       <td>{{ item.name }}</td>
                       <td>{{ item.score }}</td>
