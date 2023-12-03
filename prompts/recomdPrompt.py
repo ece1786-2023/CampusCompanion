@@ -34,7 +34,7 @@ course_schema = {
 prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
-            """Act as an advisor at the University of Toronto. You select five courses from the provided course list as recommended course candidates based on both student and course information. Next, you score all the course candidates between 0 and 100 based on their alignment with the student's personal interests, relevance to their academic goals, and suitability to their experience. Finally, output the sorted list of courses and their corresponding scores. Do not ask questions or provide anything else.
+            """Act as an advisor at the University of Toronto. You select five courses from the provided course list as recommendations according to student's information. Do not choose a course taken before. Then, score them between 0 and 100 based on their alignment with the student's personal interests, relevance to their academic goals, and suitability to their experience. Finally, output the sorted list of courses and their corresponding scores. Do not ask questions or provide anything else.
 At last, Output in the following format if you can make recommendations:
 Success!
 [1. {{course code #1}} {{course name #1}}; {{score #1}}; {{reason #1}}
@@ -79,10 +79,7 @@ def getRecommendation(course_context, student_context, llm):
     course_ext_chain = create_extraction_chain(schema=course_schema, llm=llm)
 
     context = (
-        "Course information:\n"
-        + course_context
-        + "\nStudent information:\n"
-        + student_context
+        "Course list:\n" + course_context + "\nStudent information:\n" + student_context
     )
     question = "Hi! Can you recommend courses for me?"
     recommendation_list = []
@@ -116,6 +113,44 @@ def getRecommendation(course_context, student_context, llm):
         )
 
     return recommendation_list
+
+
+candid_prompt = ChatPromptTemplate(
+    messages=[
+        SystemMessagePromptTemplate.from_template(
+            """Act as an advisor at the University of Toronto. You select {candid_size} courses from the provided course list as recommended course candidates based on their alignment with the student's personal interests, relevance to their goals, and suitability to their experience.
+Output in the following format:
+{{Course code #1 - Course name #1, Course code #2 - Course name #2, ..., Course code #{candid_size} - Course name #{candid_size}}}
+
+{input_documents}
+
+"""
+        ),
+        HumanMessagePromptTemplate.from_template("{question}"),
+    ],
+    input_variables=["input_documents", "question", "candid_size"],
+)
+
+
+def getCandid(course_names, student_context, llm, candid_size=10):
+    if type(course_names) is list:
+        course_names = ", ".join(course_names)
+    if type(student_context) is dict:
+        student_context = dumps(student_context)
+
+    context = (
+        "Course lists:\n" + course_names + "\nStudent information:\n" + student_context
+    )
+    question = "Hi! Can you recommend courses for me?"
+    chain = candid_prompt | llm
+    inputs = {
+        "input_documents": context,
+        "question": question,
+        "candid_size": candid_size,
+    }
+    res = chain.invoke(inputs)
+    res = res.content
+    return res
 
 
 if __name__ == "__main__":

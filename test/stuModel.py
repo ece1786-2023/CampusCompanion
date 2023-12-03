@@ -19,8 +19,8 @@ class StuModel:
     def __init__(self, llm, eval_llm, profile):
         self.degree_program = profile["degree_program"]
         self.department = profile["department"]
-        self.course_taken = profile["course_taken"].split(";")
-        self.course_to_take = profile["course_to_take"].split(";")
+        self.course_taken = [course.strip() for course in profile["course_taken"].split(";")]
+        self.course_to_take = [course.strip() for course in profile["course_to_take"].split(";")]
         self.interest = profile["interest"]
         self.goal = profile["goal"]
         self.experience = profile["experience"]
@@ -56,6 +56,18 @@ class StuModel:
             | prompt
             | self.llm
         )
+
+    def getProfileWithoutCourse(self) -> str:
+        return f"{self.degree_program} {self.department} {self.interest} {self.goal} {self.experience}"
+    
+    def getProfileWithTakenCourse(self) -> str:
+        return f"{self.degree_program} {self.department} {self.interest} {self.goal} {self.experience} {' '.join(self.course_taken)}"
+    
+    def getProfile(self) -> str:
+        return f"{self.degree_program} {self.department} {self.interest} {self.goal} {self.experience} {' '.join(self.course_taken)} {' '.join(self.course_to_take)}"
+
+    def getProfileDict(self) -> dict:
+        return {"program": self.degree_program, "department": self.department, "interest": self.interest, "goal": self.goal, "experience": self.experience, "course_taken": self.course_taken, "course_to_take": self.course_to_take}
 
     def getResponse(self, message):
         response = self.chain.invoke({"input": message})
@@ -125,4 +137,5 @@ Score 10: The answer is completely accurate and aligns perfectly with the refere
             )
             hit += eval_result["score"]
             print(eval_result)
-        return hit / len(self.course_to_take)
+        print(f"total hit {hit} in {len(self.course_to_take)}")
+        return hit, len(self.course_to_take)

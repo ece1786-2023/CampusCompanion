@@ -1,7 +1,7 @@
 import chromadb
 from chromadb.config import Settings
 
-def searchRAG(query, level='undergraduate', n_results=10):
+def searchRAG(query, level='undergraduate', n_results=10, return_description = True):
     chroma_client = chromadb.HttpClient(host="localhost", port = 8000, settings=Settings(allow_reset=True, anonymized_telemetry=False))
     collection_status = False
     while collection_status != True:
@@ -18,6 +18,8 @@ def searchRAG(query, level='undergraduate', n_results=10):
     courseStr = ""
     i = 0
     for elem in result_documents:
+        if return_description is False:
+            elem = elem.split(".")[0]
         i+= 1
         courseStr += str(i) + ".) " + elem
         courseStr += '\n\n'
