@@ -4,20 +4,21 @@ import botIcon from '@/assets/cap-logo.svg';
 import userIcon from '@/assets/person-icon.png';
 
 const props = defineProps(["conversation"]);
-const grab = ref(null);
-const lastMessageCount = ref(0);
+const chatWindow = ref(null);
 
 onMounted(() => {
   scrollToEnd();
 });
 
-watch(() => props.conversation.messages.length, () => {
+watch(() => props.conversation.messages, () => {
   scrollToEnd();
-})
+});
 
 function scrollToEnd() {
-    const chatWindow = grab.value;
-    chatWindow.scrollTop = chatWindow.clientHeight;
+  const element = chatWindow.value;
+  if (element) {
+    element.scrollTop = element.scrollHeight;
+  }
 }
 </script>
 
@@ -37,7 +38,7 @@ export default {
 </script>
 
 <template>
-  <div v-if="conversation.messages" ref="grab" class="chat-window">
+  <div v-if="conversation.messages" ref="chatWindow" class="chat-window">
     <v-container>
       <v-row>
         <v-col v-for="(message, index) in conversation.messages" :key="index" cols="12">

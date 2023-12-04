@@ -18,6 +18,17 @@
             <v-icon>mdi-send</v-icon>
           </v-btn>
         </transition>
+        <v-row align="center" class="slider">
+          <v-col class="text-right">
+            <v-subheader class="text-right">Undergraduate</v-subheader>
+          </v-col>
+          <v-col>
+            <v-switch v-model="isGraduate" color="primary"></v-switch>
+          </v-col>
+          <v-col>
+            <v-subheader class="text-left">Graduate</v-subheader>
+          </v-col>
+        </v-row>
       </template>
     </v-text-field>
   </v-container>
@@ -26,6 +37,13 @@
 <style scoped>
 .align-center {
   align-items: center;
+}
+
+.slider {
+  padding-left: 100px;
+  margin-top:-10px;
+  display: flex;
+  flex-direction:row;
 }
 
 .text-center {
@@ -56,11 +74,11 @@
 }
 
 .chat-input {
-  width: 40vw;
+  width: 70vw;
   margin: auto;
   position: absolute;
   left: 50%;
-  transform: translateX(calc(-20vw + 100px));
+  transform: translateX(calc(-35vw + 100px));
   bottom: 10px;
   z-index: 1;
 }
@@ -105,7 +123,6 @@ import { ref } from "vue";
 import axiosCom from "@/components/axios"
 import { useEventBus } from "@/eventBus";
 
-const messages = ref([]);
 const newMessageText = ref("");
 const conversation = ref({
   messages: [
@@ -113,15 +130,19 @@ const conversation = ref({
   ],
 });
 const error = ref(null);
+const isGraduate = ref(false);
 
 const sendMessage = async () => {
   const message = {
     is_bot: false,
-    message: newMessageText.value.trim(),
+    message: newMessageText.value.trim()
   };
 
   if (message.message !== "") {
-    conversation.value.messages.push(message);
+     conversation.value.messages = [
+      ...conversation.value.messages,
+      message,
+    ];
 
     // REST CALL
     newMessageText.value = "";
@@ -130,6 +151,7 @@ const sendMessage = async () => {
       // wait for axios to return
       const response = await axiosCom.post('/chatbot/chat', {
         message: message.message,
+        isGraduate: isGraduate.value
       }, {
         withCredentials: true
       });
@@ -138,8 +160,10 @@ const sendMessage = async () => {
         is_bot: true,
         message: response.data.message,
       };
-      conversation.value.messages.push(botMessage);
-      // conversation.value.focus()
+      conversation.value.messages = [
+      ...conversation.value.messages,
+      botMessage,
+    ];
     } catch (err) {
       error.value = err.message;
       console.log(error.value);
@@ -155,6 +179,7 @@ bus.$on("reset-conversation", () => {
   ];
   error.value = null;
   newMessageText.value = "";
+  isGraduate.value = false;
 
 });
 </script>

@@ -68,6 +68,8 @@ class Chat(APIView):
     def post(self, request):
         json_string = request.body.decode('utf-8')
         user_input = json.loads(json_string)['message']
+        is_graduate_student = json.loads(json_string)['isGraduate']
+        
 
         # bug not can run in local
         sess_id = request.session.session_key
@@ -90,12 +92,9 @@ class Chat(APIView):
             # End quiry
             if end_flag == True:
                 query = RAGQuery(res, llm)
-                lowercased_query = query.lower()
-                # Check if "graduate" or "grad" is used
-                is_graduate = "graduate" in lowercased_query or "grad" in lowercased_query or  "master" in lowercased_query
-                is_undergraduate = "undergraduate" in lowercased_query or "undergrad" in lowercased_query or  "undergraduate" in lowercased_query
+                
                 level = "undergrad_collection"
-                if (is_graduate and not is_undergraduate):
+                if (is_graduate_student):
                     level = "grad_collection"
                 course_ctx = searchRAG(query, level, 30, True)
                 student_ctx = res

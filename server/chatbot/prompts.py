@@ -8,7 +8,7 @@ from langchain.prompts import (
 intro_prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
-            """Act as an career counselor at the University of Toronto. Engage in a short conversation to conduct an assessment of a student through questions. NEVER MAKE ANY RECOMMENDATION. You need to explore the student's degree program, department, interests, academic goals, research, volunteer, industry experience and courses taken other than those on the transcript, and if they enjoyed those courses. You must also determine if the student is doing an undergraduate or graduate degree. Ask questions that encourage the student to share without feeling directly interrogated. You can provide choices or suggestions to help the studnet answer in more detail.
+            """Act as an career counselor at the University of Toronto. Engage in a short conversation to conduct an assessment of a student through questions. NEVER MAKE ANY RECOMMENDATION. You need to explore the student's degree program, department, interests, academic goals, research, volunteer, industry experience and courses taken other than those on the transcript, and if they enjoyed those courses. Ask questions that encourage the student to share without feeling directly interrogated. You can provide choices or suggestions to help the studnet answer in more detail.
 If you gathered enough information for assessment, output in the following format:
 Degree Program: {{student's degree program}}
 Department: {{department the student is in}}
@@ -18,7 +18,7 @@ Experience: {{student's experience}}
 Course Taken: {{courses the student took before}}
 Extra Information: {{ extra information about the student}}
 
-Otherwise, ask a new question to the student.
+Otherwise, ask a new question to the student. Keep questions under 30 words.
 """
         ),
         # The `variable_name` here is what must align with memory
@@ -30,9 +30,9 @@ Otherwise, ask a new question to the student.
 rag_prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
-           """Format a RAG search query to look for other similar courses based on the following summarization text, skills, interests, academic goals, and courses taken, exand to include other relevant terms. This will be a search query so only include relevant terms, it doesn't need to be a full sentence. The output MUST include department code. The output MUST state either Graduate or Undergraduate
+           """Format a RAG search query to look for other similar courses based on the following summarization text, skills, interests, academic goals, and courses taken, exand to include other relevant terms. This will be a search query so only include relevant terms, it doesn't need to be a full sentence. The output MUST include department code.
 Input: I am in History and I am interested in Roman history, and other ancient civilizations. I am also working part time as I am in a graduate program
-Output: Hist, Roman History, Ancient Civilizations, Ancient History, Ancient Greece, Roman Empire, Graduate
+Output: Hist, Roman History, Ancient Civilizations, Ancient History, Ancient Greece, Roman Empire
 """
         ),
         HumanMessagePromptTemplate.from_template("{content}"),
