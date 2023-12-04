@@ -133,7 +133,7 @@ const error = ref(null);
 const isGraduate = ref(false);
 
 const sendMessage = async () => {
-  const message = {
+  const  message = {
     is_bot: false,
     message: newMessageText.value.trim()
   };
@@ -149,8 +149,14 @@ const sendMessage = async () => {
     try {
       console.log(message.message)
       // wait for axios to return
+      let inputReq = message.message;
+      if (conversation.value.messages.length === 2) {
+        const level = isGraduate.value ? "graduate" : "undergraduate";
+        inputReq = inputReq + ". I am doing a " + level + " degree";
+      }
+
       const response = await axiosCom.post('/chatbot/chat', {
-        message: message.message,
+        message: inputReq,
         isGraduate: isGraduate.value
       }, {
         withCredentials: true
