@@ -14,7 +14,7 @@ This course provides a comprehensive coverage of the theoretical foundation and 
 ECE1508H - Special Topics in Communications: Multiuser Information Theory
 This course will focus on a systematic approach for proving coding theorems for a variety of multi-user channels. A few basic techniques will be introduced in the first part of the course and their application to several multi-user source and channel coding problems will be discussed. Topics include: Point to Point Information Theory, Multiple Access Channel, Broadcast Channel, Distributed Source Coding, Information Theoretic Secrecy, Relay Channels and Source and Channel Coding over Networks.
 
-ECE1508H - Special Topics in Communications: Advanced Cellular Systems (4G/5G) – Fundamental Principles and Software Radio Implementation
+ECE1508H - Special Topics in Communications: Advanced Cellular Systems (4G/5G) - Fundamental Principles and Software Radio Implementation
 This course will cover the fundamental concepts in the design of state of the art cellular systems including the theory and implementation of the physical layer in software radio.
 The course will cover the basic properties of multipath fading channels including channel variation over frequency, time, and space, and models for fading channel simulation. Sate of the art modulation schemes include QAM, SC-FDMA, and OFDM with soft-decision detection. Advanced antenna techniques including receiver and transmitted diversity, beamforming, and MIMO. The concepts of channel matrix rank, transmission layers, precoding, MU-MIMO, and antenna port concepts as used in LTE/5G.
 The physical layer in LTE/5G including frame structure, design of sequences, physical signals, physical shared channels, control channels (4G/5G), broadcast, and access channels. Fundamental channels and physical signals in 5G and their evolution from LTE, including demodulation reference signals, channel sounding signals, position reference signals, and phase tracking signals. Error control techniques including CRC, convolutional code, turbo code, polar codes, and LDPC codes, including Hybrid-ARQ, will be discussed. Basic concepts in software radio, including down-conversion, sampling, synchronization, carrier offset estimation and correction, symbol and frame synchronization, channel estimation, extraction of the various channels from a noisy signal.
@@ -54,7 +54,7 @@ This interdisciplinary course examines issues of identity, privacy and security 
 
 ECE1520H - Data Communications I
 Prerequisites: ECE417H1 or equivalent.
-This is an introductory course on digital transmission. Topics include: signal space concepts, signals with memory and Markovian models, power spectrum of digital signals, bandwidth, baseband transmission: intersymbol interference and Nyquist pulse shaping, optimum coherent symbol detection, binary and M-ary modulation, differential and noncoherent demodulation, error rate – bandwidth efficiency comparisons, sequence detection and the Viterbi algorithm. Equalization. Multi-carrier modulation.
+This is an introductory course on digital transmission. Topics include: signal space concepts, signals with memory and Markovian models, power spectrum of digital signals, bandwidth, baseband transmission: intersymbol interference and Nyquist pulse shaping, optimum coherent symbol detection, binary and M-ary modulation, differential and noncoherent demodulation, error rate - bandwidth efficiency comparisons, sequence detection and the Viterbi algorithm. Equalization. Multi-carrier modulation.
 
 ECE1521H - Detection and Estimation Theory
 Prerequisites: ECE302H1 or equivalent.
@@ -63,7 +63,7 @@ This course presents an introduction to the principles and applications of detec
 ECE1524H - Service Provider Networks
 In last decade telecom industry has gone through transformational changes that started with the introduction of the concept of software defined networking or SDN and the emergence of Big Data as well as Machine Learning techniques. With hyper-scalers like Google and Amazon in the horizon, the landscape for traditional Telco service providers are changing. The course is primarily about this change and its profound impacts in telco service providers from different angles, including architecture, service design, business model, security and privacy. The SDN journey starts by network programmability, that is why the first part of will be walking the students through different steps of building a programmable network. Having programmable network we will have to start building intelligence by introducing closed loop control logics, the second part of the course deals with ideas around creating multilayer control logics, where we employ concepts of Big Data and Machine Learning to create innovative services. Given that SDN is meaningless without proper abstraction and interface modeling, we will discuss model driven approach to network management and from there we open the door to discuss orchestration strategies. Nowadays all telco discussions end with 5G; therefore, we explain 5G with the focus on the role of SDN there, followed by some important 5G use cases including smart cities and IoT. In the last part of the course we zoom into software defined security aspects, as well as a discussion on new methods of creating innovative services. the course will be concluded by discussing some operational aspects of SDN and the role of AI and Machine Learning there.
 
-ECE1528H - Special Topics in Data Communications: Internet of Things – From Protocols to Applications
+ECE1528H - Special Topics in Data Communications: Internet of Things - From Protocols to Applications
 The course exposes students to concepts of the Internet of Things and Fog/Edge computing. The course will provide hands-on experience with IoT devices and IoT networking. Learning Objectives: understanding IoT network technologies and standards; of REST paradigm; IoT protocols; IoT system components; fog/edge networking architectures and IoT security concerns and solutions. Exposure to IoT platforms in edge and cloud; programming platforms for sensors and actuators. Ability to: build IoT application on microcontroller; build interfaces between microcontrollers and gateways/edge devices. Design an IoT device to work with a cloud infrastructure and transfer IoT data to the cloud and between cloud providers.
 
 ECE1529H - Adaptive Systems for Signal Processing and Communications
@@ -146,7 +146,7 @@ ECE1724H - Special Topics in Software Systems: Designing Modern Web-Scale Applic
 The last decade has seen an enormous shift in computing, with the rise of cloud computing and big data processing, powered by web-scale applications. This course discusses the principles, key technologies and trends in the design of web-scale applications. The course will examine and compare the architectures and implementation of several types of web-scale applications. Students will learn how these applications are designed to achieve high scalability, reliability and high availability.
 This is a seminar-style course in which students will be required to read, analyze, present and discuss seminal and cutting-edge research in this area. The aim is to both learn from prior work and extract exciting research questions. A course project will provide concrete experience and deeper understanding of the material.
 
-ECE1724H = Special Topics in Computing: Wearable AI – Building Superintelligence for People
+ECE1724H - Special Topics in Computing: Wearable AI - Building Superintelligence for People
 This course will consist of weekly lectures, seminars, and presentations, on Wearable AI (Artificial Intelligence), wearable sensing, meta-sensing, and “wearables” in the broader intellectual landscape.  Experts and invited speakers will provide specific questions that will be asked and moderated by course professor.  Students will be given ample opportunity participate in discussions and pose questions.  The weekly meetings will consist of:
 Intro + course overview: Wearable AI/HI Today; History and future of wearable AR/VR/XR, important fundamental questions to be explored in the course;
 Applied wearable AI platforms: Vuzix Blade and Vuzix Smart Swim; InteraXon Muse; BlueberryX.com brain-and-world-sensing eyeglass; GPS, location-based, cloud-based, heart monitors; physical, affective, and mental health sensing.
@@ -164,13 +164,13 @@ In the second part of the course selected research topics will be examined. This
 The projects can be done individually or in small teams of two or three people. The project outcome will be presented in a class session at the end of the semester.
 Recommended: an undergraduate course in operating systems.
 
-ECE1749H Interconnection Networks for Parallel Computer Architectures
+ECE1749H - Interconnection Networks for Parallel Computer Architectures
 Interconnection networks form the communication backbone of computers at a variety of scales, from the internet to on-chip networks in multi-core/many-core architectures. With growing emphasis on parallelism as a means of extracting additional processor performance, the communication substrate is a critical factor in both the performance and power consumption of many-core architectures. This course will explore the architecture and design of interconnection networks including topology, routing, flow control and router microarchitecture. This course will also look into the impact on communication requirements of various parallel architectures and cache coherence mechanism. This graduate-level course will focus on interconnection network architectures used in multiprocessor systems and many-core designs with emphasis on recent research innovations in these areas.
 
 ECE1754H - Compilation Techniques for Parallel Processors
 An introduction to compiler analyses and techniques used in the automatic parallelization of programs.  Topics include:  data dependence, dependence testers, loop-level parallelization, loop transformations, loop scheduling, locality management, data distribution, computation partitioning, task-level parallelization, case studies.  Students carry out a significant literature survey or a programming project in one of the course topics.
 
-ECE1755H Parallel Computer Architecture and Programming
+ECE1755H - Parallel Computer Architecture and Programming
 Prerequisites: basic computer architecture and operating systems
 With the advent of multicore processors, we are faced with the challenge of exploiting this ubiquitous multi-threaded hardware. This course explores the evolution of modern parallel architectures and programming models, and is divided into two phases. In the first phase, we will investigate in detail the design and operation of modern parallel architectures, with a brief look at how they are programmed.
 The second phase of the course will switch gears: we will study current research and development of emerging parallel architectures including multicore processors, interconnection networks, and accelerators and heterogeneous systems-on-chip. In this phase we will read research papers, and through the class project, implement and evaluate new ideas. Students are welcome to suggest topics for class discussion and/or projects.
@@ -197,7 +197,7 @@ This course presents theory and practice for the synthesis of digital systems at
 
 ECE1770H - Trends in Middleware Systems –Blockchain Technology
 The objectives of this course are to understand the characteristics of emerging blockchain abstractions, how they differ in conception and use, and how to apply blockchains to build distributed applications. We refer to these abstractions as “blockchain middleware”.
-A “middleware system” — middleware for short, — constitutes services and (programming) abstractions that facilitate the development of distributed applications and systems in heterogeneous networked environments. The primary objectives of middleware are to increase application reliability, availability, fault-tolerance, scalability, and security. At least conceptually, the “middleware layer” comprises a layer below the application and above the operating system and network substrate.
+A “middleware system” - middleware for short, - constitutes services and (programming) abstractions that facilitate the development of distributed applications and systems in heterogeneous networked environments. The primary objectives of middleware are to increase application reliability, availability, fault-tolerance, scalability, and security. At least conceptually, the “middleware layer” comprises a layer below the application and above the operating system and network substrate.
 This course targets research-oriented graduate students who would like to learn more about blockchain middleware. We will discuss the Bitcoin blockchain, the Ethereum blockchain, and the Hyperledger blockchain as well as explore how to build blockchain-based applications. The course will feature invited speakers and student paper presentations. A course project will be a mandatory aspect of the course.
 
 ECE1771H - Quality of Service
@@ -257,7 +257,7 @@ This course provides an overview and hands-on experience with a core of qualitat
 ECE1786H - Creative Applications of Natural Language Processing
 Prerequisites: APS360H, CSC311H, ECE324H, ECE1513H, or equivalent
 There has been truly remarkable progress in the capabilities of computers to process and generate language. This course covers Deep Learning approaches in Natural Language Processing (NLP), from word vectors to Transformers, including chatGPT and GPT-4. It is a project-based course that teaches the fundamentals of neural-network-based NLP and gives students the opportunity to pursue a unique project.
-The course lecture material begins with the basics of word-level embeddings – their properties and training. These form the basis of neural-network-based classifiers employed to do classification of sentiment, named entity recognition and many other language tasks. A significant part of the course is about the Transformer architecture – its structure, training and how it generates language. This will include the use of the transformer as a classifier, but also as in generative mode, in which language is produced in response to input language. Much of the learning will be applied in four hands-on programming assignments and in a major project. Students will work in groups of 2 to propose a project of their own choosing that makes use of these capabilities. They will execute the project and both present it formally and write a report on it.
+The course lecture material begins with the basics of word-level embeddings - their properties and training. These form the basis of neural-network-based classifiers employed to do classification of sentiment, named entity recognition and many other language tasks. A significant part of the course is about the Transformer architecture - its structure, training and how it generates language. This will include the use of the transformer as a classifier, but also as in generative mode, in which language is produced in response to input language. Much of the learning will be applied in four hands-on programming assignments and in a major project. Students will work in groups of 2 to propose a project of their own choosing that makes use of these capabilities. They will execute the project and both present it formally and write a report on it.
 
 ECE1228H - Electromagnetic Theory
 Prerequisites: ECE320 or ECE357.
@@ -270,7 +270,7 @@ This course deals with the analysis and design of a range of antennas. Topics ad
 ECE1243H - Topics in EM Waves: Advanced EM Theory
 The course builds on undergraduate electromagnetics to systematically develop advanced concepts in electromagnetic theory for engineering applications from dc to light. The following topics are covered. Maxwell’s equations, constitutive relations, wave equation; power flow, Poynting vector; field sources and representations, potentials; Green’s functions; plane waves: homogeneous and inhomogeneous waves, radiation from sources on a plane, plane wave transmission and reflection at boundaries, guided waves; rectangular waveguides and cavities: parallel-plate, rectangular and slab waveguides; wave equation in cylindrical coordinates; cylindrical waveguides (circular, coaxial waveguides and optical fibers); scattering from cylindrical objects and cylindrical waves; wave equation in spherical coordinates, spherical waves; electromagnetic theorems and concepts: duality, uniqueness, image theory, equivalence, reciprocity, induction.
 
-ECE1252 -H Introduction to Computational Electrodynamics
+ECE1252H - Introduction to Computational Electrodynamics
 This course is an introduction to computational methods for the solution of operator problems in microwave, millimeter-wave and optical engineering. It presents a unified, field-theoretical approach to the derivation of numerical techniques, based on the application of the Method of Moments for the discretization of Maxwell’s equations. Emphasis is given in the Finite Difference Time Domain method, by providing a thorough study of such concepts as order of accuracy, stability, dispersion, convergence and error propagation. Theoretical derivation and practical implementation of source, material and absorbing boundary conditions is pursued. Higher order, multi-step, ADI and operator splitting methods are explained. Applications to wave propagation (including propagation in complex media and shock waves), antenna and circuit modeling are presented.
 
 ECE1254H - Modeling of Multiphysics Systems
@@ -507,50 +507,74 @@ ECE1660H - Risk-Aware and Stochastic Control Theory with Learning
 Prerequisites: ECE411 (or equivalent). It is recommended that students have taken rigorous mathematical courses in control theory and probability theory. Students may wish to take linear control theory (e.g., ECE 557) and random processes (e.g., ECE 537) concurrently. Courses from the mathematics department including Introduction to Real Analysis (MAT337) would be helpful.
 The related areas of risk-aware control theory, stochastic control theory, and reinforcement learning are becoming ever more important in the modern age of data. In lectures, we focus on studying mathematical foundations and the pros and cons of existing methods to highlight research gaps (e.g., quality-of-approximation guarantees vs. scalability to high-dimensional systems). Lecture topics include introductions to measure theory, Borel spaces, continuous-state Markov decision processes (MDPs), finite-horizon MDP problems, stochastic safety analysis, solution methods via value iteration, risk functionals, risk-aware control theory, and parametric approximation methods. The exploration of additional topics and applications related to stochastic control and reinforcement learning is encouraged through literature critiques and research projects. This course is designed to practice and enhance creative thinking skills and to launch and inspire your research.
 
-CSC2103HF/CSC410HF — Software Architecture and Design
+CSC2103HF - Software Architecture and Design
 Concepts and state-of-the-art techniques in quality assessment of software engineering; quality attributes, formal specifications and their analysis; testing, verification, and validation.
 
-CSC2104HF/CSC465HF — Formal Methods of Program Design
+CSC410HF - Software Architecture and Design
+Concepts and state-of-the-art techniques in quality assessment of software engineering; quality attributes, formal specifications and their analysis; testing, verification, and validation.
+
+CSC2104HF - Formal Methods of Program Design
 Using mathematics to write error-free programs. Proving each refinement; identifying errors as they are made. Program development to meet specifications; modifications that preserve correctness. Useful for all programming; essential for programs that lives depend on. Basic logic, formal specifications, refinement. Conditional, sequential, parallel, interaction, probabilistic programming, and functional programming. 
 Prerequisite: CSC236H1/ CSC240H1/ MAT309H1 
 Recommended Preparation: CSC463H1
 
-CSC2107/CSC488 — Compilers and Interpreters
+CSC465HF - Formal Methods of Program Design
+Using mathematics to write error-free programs. Proving each refinement; identifying errors as they are made. Program development to meet specifications; modifications that preserve correctness. Useful for all programming; essential for programs that lives depend on. Basic logic, formal specifications, refinement. Conditional, sequential, parallel, interaction, probabilistic programming, and functional programming. 
+Prerequisite: CSC236H1/ CSC240H1/ MAT309H1 
+Recommended Preparation: CSC463H1
+
+CSC2107 - Compilers and Interpreters
 The structure of compilers, Programming language processing. Scanning based on regular expressions, Parsing using context free grammars, Semantic analysis (type and usage checking), Compiler dictionaries and tables. Runtime organization and storage allocation, code generation, optimization. Use of modern compiler building tools. Course project involves building a complete compiler.
 
-CSC2125HF — Topics in Software Engineering: Software engineering for machine learning
+CSC488 - Compilers and Interpreters
+The structure of compilers, Programming language processing. Scanning based on regular expressions, Parsing using context free grammars, Semantic analysis (type and usage checking), Compiler dictionaries and tables. Runtime organization and storage allocation, code generation, optimization. Use of modern compiler building tools. Course project involves building a complete compiler.
+
+CSC2125HF - Topics in Software Engineering: Software engineering for machine learning
 The course discusses software engineering challenges and explores state of the art solutions for building software systems with significant machine learning or AI components.  Rather than modeling and learning itself, this course focuses on issues of design, implementation, operation, validation and assurance and how these interact with the ML perspective.  The course is a mix of lectures and student presentations.
 
-CSC2125HF — Topics in Software Engineering: Types and Programming Languages
+CSC2125HF - Topics in Software Engineering: Types and Programming Languages
 We will study programming languages viewed through the lens of their type structure. Half of the course will cover an introduction to programming language principles, and the other half will be reading group. After taking this course, students will be able to define programming languages via their type system and operational semantics, state and prove their properties, and appreciate the deep philosophical and mathematical underpinnings of programming language design.
 Prerequisite: The introductory part has no formal prerequisites, but an exposure of various forms of mathematical induction will be helpful.
 
-CSC2125HS — Topics in Software Engineering: Blockchain Technology and Engineering
+CSC2125HS - Topics in Software Engineering: Blockchain Technology and Engineering
 This course will be half lecture and half reading group. We will cover techniques and software engineering challenges behind blockchain systems. Through the study of this course, students would learn the overall architecture of blockchain systems. The course would also dive into important sub-topics such as Proof-of-Work, consensus protocol, and smart contract VMs.
 Prerequisite: We expect students who take this course have basic understanding of system engineering and system programming experience with C/C++/Go/Rust. Prior experience in distributed systems is strongly preferred.
 
-CSC2130HS/ECE1785 — Empirical Research Methods in Software Engineering 
+CSC2130HS - Empirical Research Methods in Software Engineering 
 This course provides an overview and hands-on experience with a core of qualitative and quantitative empirical research methods, including interviews, qualitative coding, survey design, and large-scale mining and analysis of data. There will be extensive reading with occasional student presentations about the reading in class, weekly homework assignments, and a semester-long research project for which students must prepare in-class kickoff and final presentations as well as a final report. 
 We will focus on software-engineering related research questions in readings and assignments. Students will mine and integrate data from and across online software repositories (e.g., GitHub and Stack Overflow) and employ a spectrum of data analysis techniques, ranging from statistical modeling to social network analysis. 
 For the final research project, we encourage students to come up with a research question of interest to themselves. The delivery will be a research paper, and one or more empirical methods presented in class have to be part of the paper.
 
-CSC2206HS — Computer Systems Modelling
+ECE1785 - Empirical Research Methods in Software Engineering 
+This course provides an overview and hands-on experience with a core of qualitative and quantitative empirical research methods, including interviews, qualitative coding, survey design, and large-scale mining and analysis of data. There will be extensive reading with occasional student presentations about the reading in class, weekly homework assignments, and a semester-long research project for which students must prepare in-class kickoff and final presentations as well as a final report. 
+We will focus on software-engineering related research questions in readings and assignments. Students will mine and integrate data from and across online software repositories (e.g., GitHub and Stack Overflow) and employ a spectrum of data analysis techniques, ranging from statistical modeling to social network analysis. 
+For the final research project, we encourage students to come up with a research question of interest to themselves. The delivery will be a research paper, and one or more empirical methods presented in class have to be part of the paper.
+
+CSC2206HS - Computer Systems Modelling
 The emphasis of the course is on models for systems with uncertainty. We study the properties of various models and discuss how they can be applied to analyze algorithm and system performance. This course is useful for students interested in the analysis of algorithms and systems with uncertainty that arise in computer systems, artificial intelligence, social networks, online markets etc. Concepts covered include Poisson, renewal, and Markov processes.
 Prerequisite: Solid knowledge of basic probability theory.
 
-CSC2208HS/CSC469HS — Advanced Operating Systems
+CSC2208HS - Advanced Operating Systems
 Principles of operating systems. The operating system as a control program and a resource allocator. Comparison of OS types: monolithic, microkernel, etc., as well as virtualization methods. Covers advanced topics in synchronization, mutual exclusion, and deadlock. Additional topics include performance analysis, process scheduling in a multiprocessor context, advanced memory management, file systems design and crash recovery, and protection. Fault tolerance will also be covered in the context of a distributed system.
 Prerequisite: Requires advanced C systems programming skills and strong intro OS knowledge.
 
-CSC2209HF/CSC458HF — Computer Networking Systems
+CSC469HS - Advanced Operating Systems
+Principles of operating systems. The operating system as a control program and a resource allocator. Comparison of OS types: monolithic, microkernel, etc., as well as virtualization methods. Covers advanced topics in synchronization, mutual exclusion, and deadlock. Additional topics include performance analysis, process scheduling in a multiprocessor context, advanced memory management, file systems design and crash recovery, and protection. Fault tolerance will also be covered in the context of a distributed system.
+Prerequisite: Requires advanced C systems programming skills and strong intro OS knowledge.
+
+CSC2209HF - Computer Networking Systems
 Computer networks with an emphasis on network programming and applications. An overview of networking basics: layering, naming, and addressing, packet switching fundamentals, socket programming, protocols, congestion control, routing, network security, wireless networks, multimedia, web 2.0, software-defined networking, and online social networks.
 Prerequisite: CSC209H1, CSC258H1, CSC263H1/ CSC265H1, STA247H1/ STA255H1/ STA257H1/ ECO227Y1
 
-CSC2221HF — Introduction to Distributed Computing
+CSC458HF - Computer Networking Systems
+Computer networks with an emphasis on network programming and applications. An overview of networking basics: layering, naming, and addressing, packet switching fundamentals, socket programming, protocols, congestion control, routing, network security, wireless networks, multimedia, web 2.0, software-defined networking, and online social networks.
+Prerequisite: CSC209H1, CSC258H1, CSC263H1/ CSC265H1, STA247H1/ STA255H1/ STA257H1/ ECO227Y1
+
+CSC2221HF - Introduction to Distributed Computing
 This course studies fundamental models and problems in distributed computing with an emphasis on synchronization and fault tolerance. Algorithms and impossibility results will both be considered. 
 Prerequisite: A course in algorithm design and analysis.
 
-CSC2226HS — Topics in Verification: Theory of Concurrency
+CSC2226HS - Topics in Verification: Theory of Concurrency
 The goal of this course will be to build background in intersection of verification and automata theory, and a little bit of program synthesis towards the end. We will do this by covering seminal papers introducing all the key results. 
 There will be a special focus on:
 Verification of recursive programs and the literature on visible pushdown languages
@@ -562,62 +586,62 @@ Temporal Logics (LTL/CTL), and their corresponding model checking algorithms
 at least elementary understanding of automata on infinite words (as it related to LTL model checking)
 to be able to proceed with building graduate-level knowledge in this course.
 
-CSC2227HS — Topics in the Design and Implementation of Operating Systems
+CSC2227HS - Topics in the Design and Implementation of Operating Systems
 Seminar and discussion of a number of topics in operating system design and implementation, based on a collection of papers as class reading. Emphasis on multiprocessor and distributed operating systems. Case studies of contemporary operating systems. An independent course project and an oral student presentation is required. 
 Prerequisites: Introductory Operating Systems (CSC369 or equivalent), CSC2208/CSC469 recommended.
 
-CSC2229HS — Topics in Computer Networks: Cloud Computing
+CSC2229HS - Topics in Computer Networks: Cloud Computing
 Cloud computing underpins today's largest online services. Enabling cloud computing are hyperscale data centers where data is stored, processed, and moved at unprecedented scales. Networks in and between data centers are one of the most fundamental components in clouds---they connect millions of servers to provide computing as a utility. In this seminar course, we first introduce cloud networks and then delve into the design principles and cutting-edge advancements of these networks. Specifically, we will discuss classic papers that have stood the test of time and recent groundbreaking research published in top networking conferences, such as SIGCOMM and NSDI.
 Prerequisites: CSC458/2209
 
-CSC2231HF — Topics in Computer Systems: Secure Computer Systems and Hardware
+CSC2231HF - Topics in Computer Systems: Secure Computer Systems and Hardware
 In recent years, numerous hardware vulnerabilities have surfaced leaving software systems exposed to exploitation. Notable examples include processor speculation attacks like Spectre and Meltdown, Cache Side-Channel attacks, and Rowhammer attacks. These attacks enable malicious software to extract sensitive data from systems, tamper critical data, and even seize control of entire systems. This course will discuss various aspects of hardware and systems security. Students will gain a thorough understanding of micro-architectural attacks, such as Spectre, Cache Side-Channels, and Rowhammer, while also exploring emerging defense mechanisms designed to thwart these exploits. The course will also cover classic topics in hardware and systems security like trusted execution environments, memory safety and other topics. This course is intended for graduate and advanced undergraduate-level students who have some background in hardware or systems. Students with a software/systems background will gain insights into the influence of micro-architectural designs on system security. Conversely, students with a hardware background will explore the techniques employed by malicious software to reverse-engineer hardware and compromise systems. By bridging these perspectives, students will develop a comprehensive understanding of secure computer architecture. The course lecture material will be derived from the research papers in system security conferences (e.g., IEEE S&P, USENIX Security) and computer architecture conferences (e.g., ISCA, MICRO, HPCA, ASPLOS). The course will also include hands-on assignments where students will learn to construct micro-architectural attacks on real systems. Students will also undertake a mini-research project to hone their expertise in secure computer architecture. 
 Prerequisites: Undergraduate Computer Organization (e.g., CSC258, CSC385 or equivalent), Introductory Operating Systems (CSC369 or equivalent).
 
-CSC2231HS — Topics in Computer Systems: Visual and Mobile Computing Systems
+CSC2231HS - Topics in Computer Systems: Visual and Mobile Computing Systems
 Visual computing encompasses many transformative tasks in a wide range of applications including 2D/3D graphics, image processing, image understanding, and computational photography. These applications have driven many of the latest innovations in the design of computer systems, ranging from smartphones and AR/VR headsets, to autonomous robots and large-scale data centers. 
 This course will summarize key concepts in visual computing including image processing, image/video understanding with DNNs, diffusion models, neural implicit representations, and various robotics tasks. This course will then cover key principles, ideas, techniques, and challenges associated with the design of high performance processors and software frameworks that serve to accelerate visual computing applications. This course will cover how these techniques are applied in modern robotics, autonomous vehicles, computational photography, and in architectures such as TPUs, GPUs, and FPGAs. 
 This course is intended for graduate and advanced undergraduate-level students, and will start with basic principles and then cover the latest research. For ML, vision, or graphics students, you will gain an understanding of the difference between hardware architectures (e.g., TPUs, GPUs, and FGPAs), the principles behind software frameworks (e.g., TensorFlow, Halide, CUDA), etc. and the tradeoffs/techniques in writing high-performance algorithms for visual computing applications. For systems students, this course will serve as an introduction to cutting-edge vision, graphics, DL, robotics applications and their optimization.
 This course will include lectures, interactive discussions of state-of-art research, industry guest lectures, and a research project. 
 Prerequisites: No prerequisites required and the course does not assume any prior background on any of the topics being covered.
 
-CSC2233HF — Topics in Storage Systems
+CSC2233HF - Topics in Storage Systems
 Over 90% of all new information produced in the world is being stored on digital storage systems and storage systems are the backbone of many enterprises. In particular in today's data-driven world, the success of many enterprises depends on their ability to efficiently and reliably storage large amounts of data. Storage systems often dominate overall systems performance and the exponentially growing need for data capacity and access speed makes this an important and exciting area of research. In this class you will learn about the foundations as well as the most recent advances in storage systems. You will also perform a cutting-edge mini-research project, where you design, build and/or evaluate a system. This year's offering of the course will pay special attention to how machine learning can be used to build better computer systems.
 
-CSC2305H/CSC466H — Numerical Methods for Optimization Problems
+CSC2305H/CSC466H - Numerical Methods for Optimization Problems
 Numerical methods for unconstrained optimization problems, in particular line search methods and trust region methods. Topics include steepest descent, Newton’s method, quasi-Newton methods, conjugate gradient methods and techniques for large problems. This course will normally be offered every other year. 
 Prerequisites: CSC336H1, MAT221H1/ MAT223H1/ MAT240H1, MAT235Y1/ MAT237Y1/ MAT257Y1
 
-CSC2321HF — Matrix Calculations
+CSC2321HF - Matrix Calculations
 Review the basic concepts in the numerical solution of linear systems, introduce state-of-the-art developments in numerical linear algebra/PDEs, develop and study efficient linear solvers, implement the above solvers as software, use existing software (routines and higher level environments), study the performance of methods and software. Topics among basic iterative methods, acceleration, perconditioning, multigrid, domain decomposition, fast Fourier transform linear solvers. 
 Prerequisites: Calculus, numerical linear algebra, interpolation, some knowledge of PDEs, proficiency in a programming language, preferably MATLAB or FORTRAN
 
-CSC2401HS — Introduction to Computational Complexity
+CSC2401HS - Introduction to Computational Complexity
 This is a graduate introductory level course in computational complexity theory. It is appropriate for all graduate students in Computer Science. The main part of the course will be an introduction to complexity theory where we will discuss uniform and non-uniform models of computation, time and space complexity classes, complexity hierarchies, reductions and completeness, randomization in computation, approximation algorithms, and lower bound methods. 
 In the latter part of the course, we will discuss several new results in complexity theory. Such advanced topics may include: Hastad’s famous switching lemma and its applications, including lower bounds for constant-depth circuits, better upper bounds for satisfiability, and connections to learning theory; communication complexity and its applications; NP, coNP and propositional proof complexity.
 
-CSC2412HF — Algorithms for Private Data Analysis
+CSC2412HF - Algorithms for Private Data Analysis
 In this course we will study individual privacy in data analysis from a rigorous theoretical perspective. We will focus on Differential Privacy: a recent approach to achieving strong provable privacy protection guarantees in the analysis of sensitive data. Informally, a data analysis algorithm is differentially private if changing the data of a single individual changes the output distribution of the algorithm only slightly. This guarantee ensures that the privacy risk to any individual increases only slightly by participating in data collection. Our focus will be on the design of efficient differentially private algorithms. In the process, we will learn about fascinating connections between differential privacy and game theory, statistics, learning theory, and geometry. While we focus on the algorithms, there will be proofs: it is important to prove formally that an algorithm provides privacy: this is not something that can be verified experimentally. Most proofs are simple, but the course does require mathematical maturity and a background in probability theory, and the design and analysis of algorithms.
 
-CSC2415HS — Advanced Topics in the Theory of Distributed Computing
+CSC2415HS - Advanced Topics in the Theory of Distributed Computing
 Advanced course on distributed computing, aimed at students who wish to explore in depth a topic in this area. It will be run largely as a research seminar course. Each student will pick a topic from a list suggested by the instructors or a topic of the student’s own choosing approved by the instructors. The student will then study the relevant literature, and will eventually present the subject to the class in one or more 2-3 hour sessions. A course in theory of distributed computing, such as CSC2221. 
 People with good backgrounds in complexity theory are welcome to take the course, provided they are willing to do some background reading.
 
-CSC2420HF — Algorithm Design, Analysis and Theory
+CSC2420HF - Algorithm Design, Analysis and Theory
 This course serves as a foundational course, appropriate for students in computer science, computer engineering, and mathematics. However, the course should also be of interest to “theory students” looking for research topics. We will begin with topics normally discussed in undergraduate courses such as our CSC373 using some standard less standard examples and also discussing some precise models for standard algorithmic paradigms such as greedy, local search and dynamic programming algorithms. We will be discussing topics such as algorithmic mechanism design, the random order model and other stochastic optimization models for combinatorial problems, randomized algorthims, LP rounding, primal dual algorithms, and a brief introduction to online convex optimization.
 
-CSC2421HS — Topics in Algorithms: Mathematical Foundations of Algorithmic Fairness
+CSC2421HS - Topics in Algorithms: Mathematical Foundations of Algorithmic Fairness
 This course will survey the literature on algorithmic fairness within the broader umbrella of ethical algorithm design. Specifically, we will study mathematical definitions of fairness that apply to a wide range of decision-making settings from voting to resource allocation to machine learning, and algorithms and AI systems that provably (often approximately) satisfy such fairness notions. The course will be theoretical in nature and will assume a strong background in algorithm design, formal proof techniques, and probability theory/statistics as well as working knowledge of complexity theory. No prior background in AI or algorithmic fairness will be assumed.
 
-CSC2426HF — Fundamentals of Cryptography
+CSC2426HF - Fundamentals of Cryptography
 Rigorous definitions of security for pseudo-random generators, shared private-key cryptosystems, public-key cryptosystems, and digital signature schemes. Methods (including number-theoretic conjectures) for constructing secure cryptographic primitives. Methods for using secure primitives to construct secure systems.
 
-CSC2429HF — Topics in Theory of Computation: Introduction to Quantum Information Theory
+CSC2429HF - Topics in Theory of Computation: Introduction to Quantum Information Theory
 This course provides a rigorous introduction to quantum information theory designed for graduate students in computer science, physics or mathematics.  The aim of the course is to provide a mathematical understanding of how to quantify information in quantum mechanical systems and to understand the limitations that quantum mechanics places on our abilities to transmit information between parties.  This understanding lays the mathematical foundation for technologies such as quantum cryptography and quantum computing and the foundations of physics.  Topics covered include introduction to quantum states and channels, quantum and classical Shannon theory, bipartite entanglement theory, state and channel distinguishability,  quantum cryptography and two player quantum games such as the CHSH game.  No prior knowledge of quantum physics or computing will be assumed in this course.
 Textbook: The theory of quantum information, John Watrous, 2018
 Prerequisite: Strong familiarity with linear algebra and formal proof.  CSC2332 is not a prerequisite but may be helpful.
 
-CSC2429HF/MAT1304HF — Topics in Theory of Computation: Finite Fields
+CSC2429HF - Topics in Theory of Computation: Finite Fields
 This course will cover some important classical and modern themes in the study of finite fields. 
 There will be an emphasis on explicit constructions of pseudorandom and extremal objects, as well as on algorithmic techniques.
 Topics include:
@@ -628,73 +652,107 @@ Algebraic curves over finite fields, the Weil theorems
 Additive combinatorics and the sum-product phenomenon
 Applications to combinatorics, theoretical computer science and number theory
 
-CSC2429HS — Topics in Theory of Computation: Derandomization and its connections in complexity theory, interactive proof systems, and cryptography
+MAT1304HF - Topics in Theory of Computation: Finite Fields
+This course will cover some important classical and modern themes in the study of finite fields. 
+There will be an emphasis on explicit constructions of pseudorandom and extremal objects, as well as on algorithmic techniques.
+Topics include:
+Solutions of equations
+Pseudorandomness
+Exponential sums and Fourier techniques
+Algebraic curves over finite fields, the Weil theorems
+Additive combinatorics and the sum-product phenomenon
+Applications to combinatorics, theoretical computer science and number theory
+
+CSC2429HS - Topics in Theory of Computation: Derandomization and its connections in complexity theory, interactive proof systems, and cryptography
 Randomized algorithms are everywhere in computer science, and they're crucial for areas such as cryptography and learning. Why then do theorists believe that when solving decision problems, random algorithmic choices can always be efficiently replaced by carefully planned deterministic choices? More generally, can we simulate algorithmic randomness in efficient ways, and if so -- how?
 In this course we'll dive into the BPP = P conjecture, which is one of the main conjectures in complexity theory. Starting from the definitions and classical results from the 1990s, we'll make our way to very recent research, passing through areas such as circuit complexity, error-correcting codes, interactive proof systems, cryptography, and more. Our goal will be to understand the conjecture and its theoretical basis, to learn about its recent strengthenings and new approaches to studying it, and to get introduced to its broader implications on computer science.
 The course will assume basic background in complexity theory, which means that should have studied at least one course that includes complexity content (e.g., CSCC63 or CSC463 or CSC2401). If you're interested in the course but are unsure whether or not you have the necessary prerequisites, you're more than welcome to ask the instructor.
 
-CSC2431HS — Topics in Computational Biology 
+CSC2431HS - Topics in Computational Biology 
 This course will introduce students to the variety of ways that computational methods are utilized in modern medicine. The topics will include the use of probabilistic and deterministic techniques in the analysis of genomic data, machine learning and NLP to analyze medical texts, HCI considerations for medical software, as well as other topics. While we will not cover any particular CS research area in depth, the students are expected to have a broad computational background to be able to read research literature in a variety of subject areas, as well as the ability to do independent exploration of topics in medicine.
 
-CSC2501HF/CSC485HF — Computational Linguistics
+CSC2501HF - Computational Linguistics
 Computational linguistics and the processing of language by computer. Topics include: language models; context-free grammars; chart parsing, statistical parsing; semantics and semantic interpretation; ambiguity resolution techniques; reference resolution. Emphasis on statistical learning methods for lexical, syntactic, and semantic knowledge.
 Prerequisite: STA247H1/ STA255H1/ STA257H1 or familiarity with basic probability theory, including Bayes’s theorem; CSC207H1/ CSC209H1 or proficiency in Python and software development.
 
-CSC2506HS/CSC412HS — Probabilistic Learning and Reasoning
+CSC485HF - Computational Linguistics
+Computational linguistics and the processing of language by computer. Topics include: language models; context-free grammars; chart parsing, statistical parsing; semantics and semantic interpretation; ambiguity resolution techniques; reference resolution. Emphasis on statistical learning methods for lexical, syntactic, and semantic knowledge.
+Prerequisite: STA247H1/ STA255H1/ STA257H1 or familiarity with basic probability theory, including Bayes’s theorem; CSC207H1/ CSC209H1 or proficiency in Python and software development.
+
+CSC2506HS - Probabilistic Learning and Reasoning
 An introduction to probability as a means of representing and reasoning with uncertain knowledge. Qualitative and quantitative specification of probability distributions using probabilistic graphical models. Algorithms for inference and probabilistic reasoning with graphical models. Statistical approaches and algorithms for learning probability models from empirical data. Applications of these models in artificial intelligence and machine learning.
 Prerequisite: CSC411H1/STA314H1
 
-CSC2508HF — Advanced Data Systems
+CSC412HS - Probabilistic Learning and Reasoning
+An introduction to probability as a means of representing and reasoning with uncertain knowledge. Qualitative and quantitative specification of probability distributions using probabilistic graphical models. Algorithms for inference and probabilistic reasoning with graphical models. Statistical approaches and algorithms for learning probability models from empirical data. Applications of these models in artificial intelligence and machine learning.
+Prerequisite: CSC411H1/STA314H1
+
+CSC2508HF - Advanced Data Systems
 This is a graduate topic course that assumes familiarity with database management systems and database internals. The purpose of the course is to expose students in research topics and fundamental techniques at the intersection of Machine Learning and data management. We will cover topics related to storage and indexing of high dimensional data as well as query processing and optimization over large data repositories. We will also cover topics related to data preparation for machine learning tasks and focus on certain advanced applications of machine learning including video query processing and data programming.
 
-CSC2511HS/CSC401H1 — Natural Language Computing
+CSC2511HS - Natural Language Computing
 Introduction to techniques involving natural language and speech in applications such as intelligent Web searching; speech recognition and synthesis; and multi-lingual systems including machine translation. N-grams, POS-tagging, semantic distance metrics, neural models of language, corpus analysis. Python and other software.
 Prerequisite: CSC207H1/ CSC209H1; STA247H1/ STA255H1/ STA257H1
 
-CSC2512HF — Advanced Propositional Reasoning
+CSC401H1 - Natural Language Computing
+Introduction to techniques involving natural language and speech in applications such as intelligent Web searching; speech recognition and synthesis; and multi-lingual systems including machine translation. N-grams, POS-tagging, semantic distance metrics, neural models of language, corpus analysis. Python and other software.
+Prerequisite: CSC207H1/ CSC209H1; STA247H1/ STA255H1/ STA257H1
+
+CSC2512HF - Advanced Propositional Reasoning
 Many problems in Computer Science can be represented as instances of propositional reasoning problems. For example, any problem in NP can be represented as a SAT problem (Boolean Satisfiability) since SAT is complete for the class NP. For many problems, their representation in SAT is very natural, and more importantly, can often be effectively solved by a general purpose SAT solver. This means that instead of developing and implementing a problem specific algorithm, we can often solve our problems by the much simpler device of encoding them into SAT and then using a SAT solver. Surprisingly, the SAT solver can often outperform problem specific algorithms. 
 In this course you will be introduced to the basic algorithms that are used to SAT and other types of propositional reasoning problems. In addition, we will discuss various encoding techniques for translating various problems into SAT–the encoding used can have a dramatic effect on performance. Besides problems that can be encoded into SAT we often need to deal problems that require some form of optimization, or some form of quantification (e.g., to reason about two person games). Such problems can be encoded as MAXSAT problems, or QBF problems. We will also cover algorithms for solving these kinds of propositional problems. 
 The aim of the course is to provide you with the background needed to exploit modern SAT–MAXSAT–QBF solvers in your own work. Knowledge of the basics of propositional logic; be familiar and comfortable with programming, data structures and algorithms. 
 
-CSC2514H/CSC428H1 — Human-Computer Interaction
+CSC2514H - Human-Computer Interaction
 Understanding human behaviour as it applies to user interfaces: work activity analysis, observational techniques, questionnaire administration, and unobtrusive measures. Operating parameters of the human cognitive system, task analysis and cognitive modelling techniques and their application to designing interfaces. Interface representations and prototyping tools. Cognitive walkthroughs, usability studies and verbal protocol analysis. Case studies of specific user interfaces. 
 Prerequisites: CSC318H1; STA247H1/ STA255H1/ STA257H1; CSC209H1/ proficiency C++ or Java 
 Recommended Preparation: A course in PSY; CSC209H1; (STA248H1/ STA250H1/ STA261H1)/(PSY201H1)
 
-CSC2516HS/CSC413H1 — Neural Networks and Deep Learning
+CSC428H1 - Human-Computer Interaction
+Understanding human behaviour as it applies to user interfaces: work activity analysis, observational techniques, questionnaire administration, and unobtrusive measures. Operating parameters of the human cognitive system, task analysis and cognitive modelling techniques and their application to designing interfaces. Interface representations and prototyping tools. Cognitive walkthroughs, usability studies and verbal protocol analysis. Case studies of specific user interfaces. 
+Prerequisites: CSC318H1; STA247H1/ STA255H1/ STA257H1; CSC209H1/ proficiency C++ or Java 
+Recommended Preparation: A course in PSY; CSC209H1; (STA248H1/ STA250H1/ STA261H1)/(PSY201H1)
+
+CSC2516HS - Neural Networks and Deep Learning
 It is very hard to hand-design programs to solve many real-world problems, e.g. distinguishing images of cats vs. dogs. Machine learning algorithms allow computers to learn from example data, and produce a program that does the job. Neural networks are a class of machine learning algorithms originally inspired by the brain, but which have recently have seen a lot of success at practical applications. They’re at the heart of production systems at companies like Google and Facebook for image processing, speech-to-text, and language understanding. This course gives an overview of both the foundational ideas and the recent advances in neural net algorithms.
 
-CSC2518HS — Spoken Language Processing
+CSC413H1 - Neural Networks and Deep Learning
+It is very hard to hand-design programs to solve many real-world problems, e.g. distinguishing images of cats vs. dogs. Machine learning algorithms allow computers to learn from example data, and produce a program that does the job. Neural networks are a class of machine learning algorithms originally inspired by the brain, but which have recently have seen a lot of success at practical applications. They’re at the heart of production systems at companies like Google and Facebook for image processing, speech-to-text, and language understanding. This course gives an overview of both the foundational ideas and the recent advances in neural net algorithms.
+
+CSC2518HS - Spoken Language Processing
 An introduction to working with speech in natural language processing systems. Topics include: articulatory and acoustic phonetics, prosody and information structure, introduction to digital signal processing of speech, automated speech recognition, text-to-speech synthesis, language models, dialogue modelling and dialogue systems.
 
-CSC2521HF — Topics in Computer Graphics: Seminar on Physics-based Animation
+CSC2521HF - Topics in Computer Graphics: Seminar on Physics-based Animation
 This course is designed to introduce students to the field of physics-based animation by exposing them to the underlying mathematical and algorithmic techniques required to understand and develop efficient numerical simulations of physical phenomena such as rigid bodies, deformable bodies and fluids. Students should have a strong background in Linear Algebra and Multivariate Calculus. Familiarity with Convex Optimization and Differential Geometry is a plus, but not required.
 In physics-based animation we will learn how to develop algorithms that produce visually compelling representations of physical systems. We will learn the underlying continuous mathematics describing the motion of physical objects, explore how to discretize them and how to solve the resulting discrete equations quickly and robustly. Topics covered include rigid body simulation, elasticity simulation, cloth simulation, collision detection and resolution and fluid simulation. Along the way, we will explore the underlying mathematics of ordinary differential equations, discrete time integration, finite element methods and more. 
 
-CSC2521HF — Topics in Computer Graphics: 3D Facial Modeling and Animation
+CSC2521HF - Topics in Computer Graphics: 3D Facial Modeling and Animation
 Human ability to communicate via the subtlest of facial nuance makes animating an engaging anthropomorphic face arguably the most challenging aspect of character animation. The greater the rendered realism, the smaller the margin for animated imperfection before the character irreversibly loses credibility. This course provides instruction on the 3D modeling and animation of faces. The course will be conducted as a mix of instructor and guest lectures, student paper and project presentations. The main pre-requisite for this course is a basic graduate level CS background and a desire to be visually creative. The course will make significant use of Maya and possibly Unreal, so some familiarity working with 3D modeling/animation software and game engines is a plus.
 
 CSC2521HS - Topics in Computer Graphics: Seminar in Geometry and Animation (CANCELLED)
 This course will take a deep look at a broad collection of seminal papers in computer graphics, focusing on topics in geometry processing and computer animation. The course is structured around weekly paper readings. All students will read the same paper each week, but each student will have a unique, rotating role. This role defines the lens through which they read the paper and determines what they prepare for the group in-class discussion. Students will obtain a thorough understanding of the chosen papers and will develop their paper reading, literature review and prototyping skills. Prior exposure to computer graphics or geometry processing is suggested but not required. Students should have taken courses in Linear Algebra and Computer Programming. 
 Recommended but not required: CSC418/CSC2504/CSC2520/CSC419
 
-CSC2524HF — Using LLMs & GPT for Ubiquitous Computing
+CSC2524HF - Using LLMs & GPT for Ubiquitous Computing
 In this course, we will examine uses of LLMs and GPT in ubiquitous computing applications. This course is targeting students interested in designing and evaluating applications that leverage AI technologies. Student marks will be comprised of their grades for a term project, student presentation and participation in class discussion. Students will conduct weekly readings, with student led presentations and discussions each week. Students will work on a term project which explores novel applications of AI technologies.
 
-CSC2524HS — Topics in Interactive Computing: Large Language Models for Intelligent User Interfaces
+CSC2524HS - Topics in Interactive Computing: Large Language Models for Intelligent User Interfaces
 In this course we will examine Human Computer Interaction research on the use of Large Language Models (LLMs) for the development of intelligent user interfaces. We will look at how LLMs can enhance interactive systems across three specific usage domains: Education, Human-Robot Interaction, and Creativity Support Tools. This course is targeting students wishing to design new interactive systems that leverage AI technologies, or students interested in conducting studies to explore how LLMs will impact the ways we interact with technology. Students will conduct weekly readings, with student led presentations and discussions each week. A final project will make up most of the grade, while student presentation skills and participation in class and in readings will also be emphasized.
 
-CSC2525H/CSC443H — Research Topics in Database Management: Database System Technology
+CSC2525H - Research Topics in Database Management: Database System Technology
 This course covers the algorithms and data structures that form the bedrock of modern data management systems. We will first discuss modern hardware and how it motivates the design of database systems. We will then delve deeply into buffer pool management, indexing (B-trees, LSM-trees & circular logs), counting sketches, membership filters, query operators, query optimization, concurrency control, transaction management, recovery algorithms, data layouts (row-stores vs. column-stores). Students will implement a mini-database system from the ground up. 
 
-CSC2525 — Research Topics in Database Management: Bigger, Faster, and Stronger Systems
-This course covers advanced research topics in the design of big database management systems. We will explore hardware topics including SSDs, non-volatile memory, shingled HDDs, NUMA, CPU pipelining, SIMD, etc. We will discuss the limits of traditional relational database systems and emerging database architectures such as NoSQL, NewSQL, KV-stores, stream processors, and graph databases. We will delve deeply into state-of-the-art data organization techniques such as indexing, compression, data sketching, and especially set-membership filtering. This is a more advanced course than CSC2525H/CSC443H — Research Topics in Database Management: Database System Technology.
+CSC443H - Research Topics in Database Management: Database System Technology
+This course covers the algorithms and data structures that form the bedrock of modern data management systems. We will first discuss modern hardware and how it motivates the design of database systems. We will then delve deeply into buffer pool management, indexing (B-trees, LSM-trees & circular logs), counting sketches, membership filters, query operators, query optimization, concurrency control, transaction management, recovery algorithms, data layouts (row-stores vs. column-stores). Students will implement a mini-database system from the ground up. 
 
-CSC2526HF — Topics in Ubiquitous Computing: Seminar on Mobile Health
+CSC2525 - Research Topics in Database Management: Bigger, Faster, and Stronger Systems
+This course covers advanced research topics in the design of big database management systems. We will explore hardware topics including SSDs, non-volatile memory, shingled HDDs, NUMA, CPU pipelining, SIMD, etc. We will discuss the limits of traditional relational database systems and emerging database architectures such as NoSQL, NewSQL, KV-stores, stream processors, and graph databases. We will delve deeply into state-of-the-art data organization techniques such as indexing, compression, data sketching, and especially set-membership filtering. This is a more advanced course than CSC2525H/CSC443H - Research Topics in Database Management: Database System Technology.
+
+CSC2526HF - Topics in Ubiquitous Computing: Seminar on Mobile Health
 This course will examine the growing prominence of mobile health over the past twenty years. After briefly discussing various definitions of mobile health, we will focus our attention on how people are using the sensors embedded in ubiquitous and novel devices to capture indicators of physical and mental health. More specifically, we will study how sensors are being used to measure physiological signals, psychomotor function, and disease-specific symptoms. We will also explore the how human factors play an important role in these technologies. 
 This course requires an undergraduate-level understanding of machine learning and programming, although familiarity with computer vision, signal processing, and human-computer interaction will also be beneficial. Beyond weekly readings and an in-class presentation, students will be expected to complete and present a course project at the end of the term.
 
-CSC2527HS/CSC454H1 — Business of Software
+CSC2527HS - Business of Software
 This course introduces you to the nature, structure, and dynamics of the contemporary software industry. It focuses on the key factors involved in ideating, hypothesizing, validating, and executing a viable and investable/return driven business model to launch a sustainable, scalable and profitable tech-based (software and/or hardware) business venture as a company founder or as an employee of an established company. The course will be a team effort of four students per team. The scope of the course does not include not-for-profit or charity business models.
 Course objectives include a meaningful understanding of: 
 The high-technology business environment in general and the software industry in particular.
@@ -705,15 +763,26 @@ Upon successful completion of the course, you will have first-hand experience of
 In this course, you will learn techniques and methodologies that will give you a distinct career advantage after graduation, whether or not you intend to work in a tech field. It is designed to give you a true-to-life experience of the thought processes behind successful tech business ventures, which apply whether you are planning on creating your own startup or working for an established employer. You and your team will devise a cool, innovative solution to a significant market problem. This will involve researching your customer base, forming and testing hypotheses, and producing a value proposition that will form the basis for your business model. You will investigate your customer base and market by identifying the key activities, resources and partners needed for fulfillment. This process culminates in a business model that both makes sense in a financial context and resonates with a venture capital (VC) or funding audience—the kind of audience who will eventually be visiting the class to critique your final product and business model.
 This course sets very high standards for you because the business world demands nothing less. We have an obligation to ensure that your business education is thorough and demanding, and only students who are exceptionally dedicated and committed to developing mastery over the techniques and methodologies in this course will excel. To apply to take the course please follow this link www.dcsil.ca/student-courses.
 
-CSC2529HF — Computational Imaging
+CSC454H1 - Business of Software
+This course introduces you to the nature, structure, and dynamics of the contemporary software industry. It focuses on the key factors involved in ideating, hypothesizing, validating, and executing a viable and investable/return driven business model to launch a sustainable, scalable and profitable tech-based (software and/or hardware) business venture as a company founder or as an employee of an established company. The course will be a team effort of four students per team. The scope of the course does not include not-for-profit or charity business models.
+Course objectives include a meaningful understanding of: 
+The high-technology business environment in general and the software industry in particular.
+The business concepts and principles behind creating and launching a successful tech venture. 
+How to produce, present, and critique business proposals and plans for ventures, and how to develop business simulation and forecasting models in support of these plans. 
+How to converse with and present to investors, executives, judging panels, incubators and accelerators. 
+Upon successful completion of the course, you will have first-hand experience of the stages, processes, and challenges involved in transforming an idea into an investable and scalable business venture, and will be ideally positioned to begin launching your own tech venture. 
+In this course, you will learn techniques and methodologies that will give you a distinct career advantage after graduation, whether or not you intend to work in a tech field. It is designed to give you a true-to-life experience of the thought processes behind successful tech business ventures, which apply whether you are planning on creating your own startup or working for an established employer. You and your team will devise a cool, innovative solution to a significant market problem. This will involve researching your customer base, forming and testing hypotheses, and producing a value proposition that will form the basis for your business model. You will investigate your customer base and market by identifying the key activities, resources and partners needed for fulfillment. This process culminates in a business model that both makes sense in a financial context and resonates with a venture capital (VC) or funding audience—the kind of audience who will eventually be visiting the class to critique your final product and business model.
+This course sets very high standards for you because the business world demands nothing less. We have an obligation to ensure that your business education is thorough and demanding, and only students who are exceptionally dedicated and committed to developing mastery over the techniques and methodologies in this course will excel. To apply to take the course please follow this link www.dcsil.ca/student-courses.
+
+CSC2529HF - Computational Imaging
 Computational imaging systems have a wide range of applications in consumer electronics, scientific imaging, HCI, medical imaging, microscopy, and remote sensing. We discuss digital photography and basic image processing, convolutional neural networks for image processing, denoising, deconvolution, single pixel imaging, inverse problems in imaging, proximal gradient methods, wave optics, time-of-flight imaging, and end-to-end optimization of optics. Emphasis is on applied image processing and solving inverse problems using formal optimization and modern machine learning techniques. Students apply material by implementing and investigating image processing algorithms in Python. Term project. Experience in linear algebra and signal processing will be helpful.
 
-CSC2530HS — Computational Imaging and 3D Sensing
+CSC2530HS - Computational Imaging and 3D Sensing
 From the advanced depth cameras in today's smartphones to the 3D sensors of next-gen autonomous vehicles, 3D sensing has already began to revolutionize the way we sense the world. This, however, is just the beginning: cameras that can see in pitch-black darkness and around corners, depth sensors with sub-micron accuracy or a range of several kilometers, and cameras that can see under the skin are already becoming a reality. Key to these developments is the rapid convergence of optics, photonics, sensing and computation.
 This seminar course will provide an in-depth look at 3D sensing and related technologies, and the computational techniques used to model and exploit them. Specific topics will include "extreme imaging" with single-photon detectors; principles of time-of-flight imaging and LiDAR; structured-light imaging; 3D imaging through scattering media; and imaging around corners. Class format will be discussed based, with approximately one paper covered per week and a term project. 
 Recommended preparation: Graduate-level exposure to one or more computer vision, computer graphics, sensing or numerical optimization is desirable but not required. Prior enrollment in CSC2529 (Computational Imaging) is not necessary.
 
-CSC2532HS — Statistical Learning Theory
+CSC2532HS - Statistical Learning Theory
 This course covers several topics in classical learning theory. Required background for this course includes probability, linear algebra, and multivariate calculus. Minor coding will be required, i.e., the course will provide guidance for verifying the mathematical concepts using numerical experiments/simulations.
 Topics include: 
 1. Asymptotic statistics
@@ -723,174 +792,179 @@ Topics include:
 5. Online Learning
 6. Sampling and optimization
 
-CSC2537H/STA2555H — Information Visualization
+CSC2537H - Information Visualization
 This course will study techniques and algorithms for creating effective visualizations based on principles from graphic design, visual art, perceptual psychology, and cognitive science. The course is targeted both towards students interested in using visualization in their own work, as well as students interested in learning about cutting edge research in the field. Students will conduct reading and critical analysis of scientific research papers, that will be discussed in class. A final project will make‐up most of the grade, while student presentation and critical analysis skills will also be emphasized.
 
-CSC2541HF — Topics in Machine Learning: Machine Learning for Healthcare
+STA2555H - Information Visualization
+This course will study techniques and algorithms for creating effective visualizations based on principles from graphic design, visual art, perceptual psychology, and cognitive science. The course is targeted both towards students interested in using visualization in their own work, as well as students interested in learning about cutting edge research in the field. Students will conduct reading and critical analysis of scientific research papers, that will be discussed in class. A final project will make‐up most of the grade, while student presentation and critical analysis skills will also be emphasized.
+
+CSC2541HF - Topics in Machine Learning: Machine Learning for Healthcare
 This course will give a broad overview of machine learning for health. We begin with an overview of what makes healthcare unique, and then explore machine learning methods for clinical and healthcare applications through recent papers. We discuss the recent successes of graphical models, deep learning, time series analysis, and transfer learning in the context of health. We also broadly cover concepts of learning, algorithmic fairness, interpretability, and causality. We emphasize the importance of collaboration between technical and non-technical researchers, and consider the implications of machine learning in healthcare governance and policy. Students will choose and complete a course project, and make project presentations at the end of the course. This course requires a background in linear algebra and probability theory, as well as exposure and ideally completion of a machine learning course. 
 
-CSC2542HF — Topics in Knowledge Representation and Reasoning: KR and Modern AI
+CSC2542HF - Topics in Knowledge Representation and Reasoning: KR and Modern AI
 Knowledge representation (KR) is a long-standing subfield of AI which studies symbolic representations of knowledge and associated mechanisms for automated reasoning. In this advanced course, we will overview topics in KR and consider the role they may play in modern AI research and systems, such as large language models and reinforcement learning systems. The course will comprise a mix of lectures and student presentations. Students will read research papers, participate in seminar-style presentations, and complete assignment(s) and a course project. Topics include: commonsense reasoning, logics for KR, probabilistic programming, representing goals and preferences, and the relationship between large language models and knowledge bases.
 Prerequisites: an introductory course in formal logic or an introductory course in symbolic AI comparable to CSC384, an introductory course in machine learning, and basic familiarity with reinforcement learning.
 
-CSC2547HF — Topics in Machine Learning: Reinforcement Learning
+CSC2547HF - Topics in Machine Learning: Reinforcement Learning
 This is an introductory course on reinforcement learning (RL) and sequential decision-making under uncertainty with an emphasis on understanding the theoretical foundation. We study how dynamic programming methods such as value and policy iteration can be used to solve sequential decision-making problems with known models, and how those approaches can be extended in order to solve reinforcement learning problems, where the model is unknown. Other topics include, but not limited to, function approximation in RL, policy gradient methods, model-based RL, and balancing the exploration-exploitation trade-off.
 The course is introductory in the sense that it does not assume prior exposure to RL. It is not, however, focused on describing a collection of algorithms or only providing high-level intuition. Instead, it tries to build the mathematical intuition behind many important ideas and concepts often encountered in RL. We prove many basic, or sometimes not so basic, results in RL.
 As the emphasis is on understanding the foundation, you should expect to go through mathematical detail and proofs. You need to have some level of mathematical maturity. Required background for this course includes being comfortable with probability theory and statistics, calculus, linear algebra, optimization, and (supervised) machine learning.
 The course will be delivered as a mix of lectures and reading of classical and recent papers assigned to students. The deliverables include homework assignments, quizzes, project, reading assignments, exam, etc. 
 
-CSC2547HS — Topics in Machine Learning:  Automated Reasoning with Machine Learning
+CSC2547HS - Topics in Machine Learning:  Automated Reasoning with Machine Learning
 This course introduces the cutting-edge research on combining reasoning with machine learning. We will first study the logical foundations and algorithms behind many reasoning engines, and then learn how machine learning can be used to improve complicated reasoning systems. This course will cover the following topics: Boolean Satisfiability (SAT), Satisfiability modulo Theories (SMT), program synthesis, statistical approaches for software debugging, inductive logic programming, and neuro-symbolic systems. Extensive paper readings, in-class discussions, and project presentations are expected.
 
-CSC2547HS-S1 — Topics in Machine Learning:  AI Alignment
+CSC2547HSS1 - Topics in Machine Learning:  AI Alignment
 As AI systems become more capable, it becomes important to ensure that they behave in socially beneficial ways. This course examines techniques for aligning AI systems with human values. We first study alignment in the context of several idealized models of AI agents. We then address current-day issues in large language models, including truthfulness and misuse prevention.
 
-CSC2552HF — Topics in Computational Social Science: AI, Data, and Society
+CSC2552HF - Topics in Computational Social Science: AI, Data, and Society
 Computational and algorithmic systems are now embedded in all parts of society, which introduces both great opportunities and challenges. This course presents an introduction to computational social science, a rapidly growing interdisciplinary field that studies questions at the intersection of AI, data, and society. We focus on the spectrum of methodologies now available for conducting social research in the digital age, from large-scale observational studies to online experimentation, as well as research skills including reading state-of-the-art papers, writing reviews, and doing a research project. Topics covered will include online misinformation, algorithmic bias, and social media platforms.
 
-CSC2558HS — Topics in Multidisciplinary HCI
+CSC2558HS - Topics in Multidisciplinary HCI
 This course covers topics in HCI that draw on methods and theories from other subfields of computer science and other scientific disciplines, in developing computational principles for designing user-facing systems. Students will learn how to design experiments to investigate the design of technology by drawing on methodology and theories from social and behavioral sciences, as well as to adapt user technologies using models and algorithms from fields such as statistics, machine learning, and artificial intelligence.
 
-CSC2600HS/CSC491H1 — Topics in Computer Science: Capstone Design
+CSC2600HS - Topics in Computer Science: Capstone Design
 This course is designed and delivered by industry experts form the Software/tech fields. Students will work with teammates from CSC2527H1 to develop a marketable startup on a selected theme. The class will be small and highly interactive. You will work to develop working software industry best practices. You are expected to have experience writing software and be able to learn on the go. For more details, visit our website at https://www.dcsil.ca/student-courses. Not eligible for CR/NCR option.
 Students submit a single application for CSC2600H1 and CSC2527H1, describing relevant interests, experience, and skills and general academic history. Application questions are set and assessed by the instructor. Applications are due in summer for the Fall term, and late fall for the Winter term.
 Please visit https://q.utoronto.ca/courses/221753/pages/400-level-course-balloting-and-applications for application deadlines and details. A decision on your application will be confirmed approximately 2-3 weeks after the application deadline, so students should enroll in an alternate course until the results of their application are confirmed.
 Prerequisite: This course requires permission from the instructor.
 
-CSC2604HF — Topics in Human-Centred and Interdisciplinary Computing: HCI & Intellectual Property
+CSC491H1 - Topics in Computer Science: Capstone Design
+This course is designed and delivered by industry experts form the Software/tech fields. Students will work with teammates from CSC2527H1 to develop a marketable startup on a selected theme. The class will be small and highly interactive. You will work to develop working software industry best practices. You are expected to have experience writing software and be able to learn on the go. For more details, visit our website at https://www.dcsil.ca/student-courses. Not eligible for CR/NCR option.
+Students submit a single application for CSC2600H1 and CSC2527H1, describing relevant interests, experience, and skills and general academic history. Application questions are set and assessed by the instructor. Applications are due in summer for the Fall term, and late fall for the Winter term.
+Please visit https://q.utoronto.ca/courses/221753/pages/400-level-course-balloting-and-applications for application deadlines and details. A decision on your application will be confirmed approximately 2-3 weeks after the application deadline, so students should enroll in an alternate course until the results of their application are confirmed.
+Prerequisite: This course requires permission from the instructor.
+
+CSC2604HF - Topics in Human-Centred and Interdisciplinary Computing: HCI & Intellectual Property
 Research seminar on intellectual property issues that arise in protecting and leveraging contemporary human-machine interface innovations both in the academic and commercial arenas.
 
-CSC2611HF — Computational Models of Semantic Change
+CSC2611HF - Computational Models of Semantic Change
 Words are fundamental components of human language, but their meanings tend to change over time, e.g., face (‘body part’ -> ‘facial expression’), gay (‘happy’-> ‘homosexual’), mouse (‘rodent’ -> ‘device’). Changes like these present challenges for computers to learn accurate representations of word meanings—a task that is crucial to natural language systems. This course explores data-driven computational approaches to word meaning representation and semantic change. Topics include latent models of word meaning (e.g., LSA, word2vec), corpus-based detection of semantic change, probabilistic diachronic models of word meaning, and cognitive mechanisms of word sense extension (e.g., chaining, metaphor). The course involves a strong hands-on component that focuses on large-scale text analyses and seminar-style presentations.
 
-CSC2702HF — Technical Entrepreneurship — MScAC only
+CSC2702HF - Technical Entrepreneurship - MScAC only
 The MScAC degree is intended to create technical leaders capable of transferring new technologies from academia to industry. This course introduces fundamental concepts from business and management that are relevant to students thinking about starting their own business or bringing new ideas to fruition within existing ones. This course will also equip students with the experience of presenting and defending their scientific research through various research activities and communications.
 Note: This is a mandatory course for students enrolled in the MSc in Applied Computing. At this time non-MScAC students are not eligible to enrol in this course.
 
-CHE1053H – Electrochemistry
+CHE1053H - Electrochemistry
 This course provides a working knowledge of modern electrochemistry. The topics dealt with include, the physical chemistry of electrolyte solutions, ion transport in solution, ionic conductivity,
 electrode equilibrium, reference electrodes, electrode kinetics, heat effects in electrochemical cells, electrochemical energy conversion (fuel cells and batteries), and industrial electrochemical processes. Numerous problems are provided to clarify the concepts.
 
-CHE1100H – Fundamentals of Chemical Engineering
+CHE1100H - Fundamentals of Chemical Engineering
 This course is intended for graduate students who don’t have an undergraduate degree in chemical engineering. A high level introduction to the underlying principles of chemical engineering for students who do not have a chemical engineering undergraduate education. Principles will be illustrated through both research examples and classical chemical engineering situations.
 Students with an undergraduate degree in Mechanical Engineering or Chemical Engineering are excluded from this course
 
-CHE1102H Research Methods and Project Execution
+CHE1102H - Research Methods and Project Execution
 This course provides core graduate training in critical research, argumentation, implementation, and communication skills. Through facilitated activity-based tutorials students will develop their research and project management skills, acquiring strategies to identify and articulate a research hypothesis, set research goals and plan their approach (including quantification of results and validation of quantitative metrics), and share research findings effectively via oral, written and graphical communication. Students will develop these skills while learning how to position themselves and their research for employment purposes.
 
-CHE1107H – Applied Mathematics
+CHE1107H - Applied Mathematics
 Review of basic modelling leading to algebraic and ordinary differential equations. Models leading to partial differential equations. Vector analysis. Transport equations. Solution of equations by: Separation of variables, Laplace Transformation, Green’s Functions, Method of Characteristics, Similarity Trans­formation, others time permitting. Practical illustrations and exercises applied to fluid mechanics, heat and mass transfer, reactor engineering, environmental problems and biomedical systems. Lecture notes provided.
 
-CHE1108H – Numerical Methods in Chemical Engineering
+CHE1108H - Numerical Methods in Chemical Engineering
 The purpose of this course is to introduce a first year graduate level numerical methods course with an emphasis on applications in chemical engineering. The course will consist of three main topic areas relevant to chemical engineering, namely: 1) numerical integration, 2) optimization and 3) solution of partial differential equations. The skills developed for numerical integration are fundamental to many more complex problems in numerical methods relevant to chemical engineering. In this course, we will first focus on the solution of initial value problems (IVP) of ordinary differential equations (ODEs) as this is a building block for advanced numerical integration. Many chemical engineering problems require the solution of ODE-IVPs, most prominently, chemical reaction kinetics and simple fluid flow problems. Next, we will introduce basic concepts in numerical optimization. Numerical optimization is another fundamental tool utilized by numerical methods analysts and there are many chemical engineering problems that require the use of numerical optimization. Some examples include the prediction of the geometry of a molecule, optimization of plant processes and optimal control. Finally, we will explore numerical methods for solving PDEs. PDEs are fundamental to chemical engineering processes and in all but some very simple cases, numerical methods are required to arrive at approximate solutions. Classical examples in chemical engineering include fluid mechanics and heat and mass transfer.
 
-CHE1118H – Industrial Catalysis
+CHE1118H - Industrial Catalysis
 The course covers adsorption, the nature of the catalyst surface, kinetics of catalytic reactions, catalyst selection and preparation, deactivation and poisoning, and specific catalytic reactions. The types of reactions and the examples considered will depend to some extent on the particular interests of those selecting the course but will include, in any case, nitrogen fixation, Cl chemistry, catalysis in petroleum refining (cracking, reforming, alkylation, hydrorefining, etc.), and catalysis by transition metal complexes.
 
-CHE1123H – Liquid Biofuels
-An introduction and overview of bioenergy production technologies, including: first generation biochemical technologies to produce biofuels (e.g, from sugarcane, starch, and oilseeds). The course will then describe second generation technologies to produce biofuels (e.g., from lignocellulosics) followed by advanced technologies as well as the so-called “drop-in fuels.” It will include the theory and process aspects of hydrogenation-derived renewable diesel. An overview of fuel properties will also be given. Finally the course will conclude with environmental impacts – benefits and issues, economic aspects as well as infrastructure requirements and trade-offs.
+CHE1123H - Liquid Biofuels
+An introduction and overview of bioenergy production technologies, including: first generation biochemical technologies to produce biofuels (e.g, from sugarcane, starch, and oilseeds). The course will then describe second generation technologies to produce biofuels (e.g., from lignocellulosics) followed by advanced technologies as well as the so-called “drop-in fuels.” It will include the theory and process aspects of hydrogenation-derived renewable diesel. An overview of fuel properties will also be given. Finally the course will conclude with environmental impacts - benefits and issues, economic aspects as well as infrastructure requirements and trade-offs.
 
-CHE1125H – Modelling and Optimization of Chemical/Biomedical Networks
+CHE1125H - Modelling and Optimization of Chemical/Biomedical Networks
 Components of biological networks, their biochemical properties and function along with the technology used for obtaining component lists will be emphasized. Top-down and bottom-up approach to modeling and reconstruction of chemical reaction networks along with biochemical networks, such as metabolic networks, regulatory networks and signaling networks from data will be presented. Mathematical models of reconstructed reaction networks, and simulation of their emergent properties will be studied. The course will also cover classical kinetic theory, network simulation methods and constraints-based models of biochemical networks. Multi-scale modeling methods that integrate multiple cellular processes at different time and length scales will be emphasized. Existing biological models will be described and computations performed. Iterative methods for discovering novel biological function through comparison of model predictions and experimental data will be discussed in the context of Systems Biology and Bioengineering. PREREQ: Engineering Biology, Calculus, Differential Equations
 
-CHE1126H – Radiation Chemistry and Radiochemistry
+CHE1126H - Radiation Chemistry and Radiochemistry
 Radiation chemistry is the study of the chemical effects of electromagnetic radiation, radioactive particles, and fission fragments. Radiochemistry is concerned with the chemistry of molecules that incorporate  radioactive  atoms.  This  introductory  course  aims  at  explaining  the  physical  and chemical  mechanisms  of  radiation-related  phenomena encountered  in  science  and  engineering. The  following  topics  are  covered:  radiation  physics;  chemical  effects  of  ionizing  radiation  on matter  including  radiolytic  processes  in  gases  and aqueous  solutions;  radioactivity;  elements  of radiochemistry including the synthesis of radioisotopically labeled compounds, isotopic exchange reactions, applications; hot-atom chemistry, and the chemical effects of nuclear transformations.
 
-CHE1450H – Bioprocess Engineering
+CHE1450H - Bioprocess Engineering
 In this course, students will learn theoretical and practical aspects of Bioprocess Engineering which uses biological, biochemical, and chemical engineering principles for the conversion of raw materials to bioproducts in the food, pharmaceutical, fuel, and chemical industries, among others. Emphasis will be placed on the understanding of biomanufacturing principles and processes during the upstream production and downstream purification of bioproducts. Microbial and mammalian cell processes will be discussed. Basic concepts of scale up and the types of bioreactors used in industry will be introduced. Challenges in biomanufacturing and process validation will be discussed as well. The course includes (5) labs in which students will apply some of the concepts learned in class.
 
-CHE1134H – Advances in Bioengineering
+CHE1134H - Advances in Bioengineering
 This course, designed for graduate students whose research is at the interface of Engineering and Biology, will review recent advances in molecular and analytical methods relevant to bioprocess engineering, environmental microbiology and biotechnology, biomedical engineering, and other related topics. Following fundamental instruction on specific molecular and analytical methods, students will be required to prepare a critical review of chosen, peer reviewed articles that demonstrate the utility of discussed methods for the advancement of bioengineering concepts and applications. Discussion of the scientific, technological, environmental, economic, legal, and ethical impacts of the research will follow.
 
-CHE1141H – Advanced Chemical Reaction Engineering (co-taught with CHE412)
+CHE1141H - Advanced Chemical Reaction Engineering (co-taught with CHE412)
 This second-level course in reactor design and analysis focuses upon the following topics: multiphase kinetics and catalysis; simultaneous diffusion and reaction, including an analysis using effectiveness factors and Thiele modulus; analysis of models of complex flow and mixing in reactors; reactor modelling; reactor performance and stability of operation for simple and complex kinetic schemes; design considerations for heterogeneous reactors; industrial and research applications of chemical reactors.
 
-CHE1142H – Applied Chemical Thermodynamics
+CHE1142H - Applied Chemical Thermodynamics
 This course has the objective of reviewing the basic concepts of thermodynamics with specific applications to processes involving phase equilibrium or equilibrium in chemical reactions. The course is divided in three parts. In the first part we will review the laws of thermodynamics, and the thermodynamic properties and phase behavior of pure substances. In the second part we will review the thermodynamic properties in mixtures and multiphase equilibria in non-reactive systems. In the last part of the course we will review the energy balance and equilibrium in chemical reactions. The evaluation will consist of a midterm at the end of the review section, and a final exam that will evaluate the last two parts of the course. This course also involves a term project where the student uses some of these concepts in a specific example related to his/her thesis project.
 
-CHE1143H – Transport Phenomena
+CHE1143H - Transport Phenomena
 Momentum, heat and mass transfer. General balances: continuity, species continuity, energy, and linear momentum equations. Rate expressions: Newton’s law of viscosity, Fourier’s law of conduction, and Fick’s law of diffusion. Applications to multi-dimensional problems, convective transport, transport in turbulent flow, interphase transport, boundary layer theory. Discussion of transport analogies.
 
-CHE1147H – Data Mining in Engineering
+CHE1147H - Data Mining in Engineering
 Extracting useful knowledge from data requires interdisciplinary skills in scientific computing methods and algorithms. The broader term that captures all the skills is called data science or data mining. Data-driven organizations leverage their data effectively and generate business insights that enable better decision-making and problem solving. In this course, we will present both the theoretical background and practical application of data science including programming, machine learning algorithms and data engineering. Students will gain hands-on experience on major data science techniques and tools and how they are applied to real-world data sets. Some basic knowledge of programming and statistics is expected. Python is the programming language that will be used in class.
 
-CHE1148H – Process Data Analytics
+CHE1148H - Process Data Analytics
 The driving force of the fourth industrial revolution is the processing and analysis of big data to extract knowledge, patterns and information. Chemical, biologics/pharma, oil/gas, financial and manufacturing organizations are in a unique position to benefit from this data revolution, as they collect and store massive amounts of heterogeneous data. Big data is characterized by the 5 V’s: volume, velocity, variety, veracity and value and distributed computing architectures are used to process the data. The first part of this course will be on Apache Spark, a big data processing and computing engine. In the second part, special topics in analytics such as visualization, data quality, interpretable/fair ML and MLOps will be discussed. Prerequisites: An introductory course in data science or machine learning (e.g. CHE1147 or other similar courses). Familiarity with Python.
 
-CHE1150H – Industrial Water Technology
+CHE1150H - Industrial Water Technology
 This is a basic course on technologies used for Produced Water in the resource sector. The course will cover theory and practice of membranes (UF, NF, RO), ion exchange, lime softening, demineralization, and filtration as applied in this sector. The lecture material delivered by professionals in the field will be supplemented by a hands-on project operating a triple membrane water treatment system.
 
-CHE1151H – Engineering Systems Sustainability
+CHE1151H - Engineering Systems Sustainability
 This is a multidisciplinary course that provides the necessary components, concepts and frameworks of sustainability and its relation to engineering projects. It introduces the basic ideas of systems thinking that are used to understand and model complex problems, such as input, output, control, feedback, boundary and hierarchy. It then describes sustainability as a complex challenge of interacting technical, social, economic and environmental systems, and introduces systemic sustainability frameworks such as The Natural Step. It then focuses on the sustainability of organizations and the standards (e.g. ISO 26000 and GRI) that can help design effective sustainability improvement initiatives and strategies. A primary focus of the course is on life cycle assessment (LCA) and related standards (ISO14044, ISO14025) as a tool to understand the broad impacts of engineering projects, unit processes, products and services and the inevitable trade-offs in design decisions. Specific process case studies are examined related to chemical engineering and their relation to promoting a circular economy, including recycling of energy and material flows. Finally, the course presents the economic aspect of sustainability and how to create the business case to secure the support of decision makers in the implementation of sustainable processes in organizations.
 
-CHE1213H – Corrosion
+CHE1213H - Corrosion
 The following topics amongst others, are treated: the various types and forms of corrosion, electrochemical theories of corrosion, corrosion testing methods, corrosion behaviour of iron, steel, and other common engineering metals, corrosion of steel and aluminum in reinforced concrete, passivity, atmospheric corrosion, underground corrosion, seawater corrosion, effects of stress, corrosion in the chemical process industries, the use of Pourbaix diagrams and methods of corrosion protection and control (selection of materials, coatings, corrosion inhibitors, cathodic protection, anodic protection). A number of problems (with worked solutions) are provided to clarify the concepts.
 
-CHE1310H – Chemical Properties of Polymers
+CHE1310H - Chemical Properties of Polymers
 This graduate course will cover modern methods of polymer synthesis and characterization, structure-property relationships, chemical modification of polymers, thermal behaviour and rheology, self-assembly, hydrogels, and related topics. Emphasis will be given to areas of current academic and industrial interest within polymer science, including analysis of recent scholarly literature and novel polymer-based commercial technologies.
-Pre-requisite:  CHE562H1:  Applied Chemistry IV – Applied Polymer Chemistry, Science and Engineering (or equivalent).
+Pre-requisite:  CHE562H1:  Applied Chemistry IV - Applied Polymer Chemistry, Science and Engineering (or equivalent).
 
-CHE1333H – Biomaterials Engineering for Nanomedicine
+CHE1333H - Biomaterials Engineering for Nanomedicine
 Overview of principles of nanoengineering for biotechnology and pharmaceutical industries. This course will study the formulation and manufacturing processes for producing nanomaterials for medical applications; pharmacokinetics, biocompatibility, immunogenicity of nanobiomaterials. The course will also introduce basic concepts in entrepreneurship and regulatory affairs associated bringing nano/bio-technologies from a lab environment to commercial products. In addition to course lectures, students will complete two laboratory exercises that will provide hands-on learning in emulsified formulations and characterizations involving nanostructures.
 
-CHE1334H – Organ-on-a-Chip
+CHE1334H - Organ-on-a-Chip
 This graduate course will focus on the latest developments in the field of Organ-on-a-Chip Engineering, with a specific focus on Organ-on-a-Chip Industry. Topics related to on-chip engineering of heart, kidney, cancer, vasculature and liver will be discussed.
 
-CHE1335H – Applied Colloid Science
+CHE1335H - Applied Colloid Science
 This course introduces the composition, methods of production and characterization, and uses of colloidal systems, including suspensions, emulsions, foams, aerosols and gels. The thermodynamic-based and kinetic-based theories of colloid formation and stability are introduced. The hydrodynamics of colloids and complex fluids is also discussed along with the connection between colloid composition, its rheological properties, its mass transfer properties and the connection between these properties and the performance of colloid-based products. The course will also introduce fundamental concepts towards characterization emulsion structures using light scattering, microscopy and spectroscopy. Finally, the chemistry and formulation principles of colloid-based products is also revised, in particularly the selection of solvents, surfactants, and polymers required.
 
-CHE1430H – Hydrometallurgy, Theory & Practise
+CHE1430H - Hydrometallurgy, Theory & Practise
 The course focus in on metals recovery from mineral recourses by hydrometallurgical technology. Ore formation, geology and mineralogy is reviewed. Mining techniques are also briefly reviewed and generic hydrometallurgy flowsheets are discussed. Mineral upgrading methods are discussed followed by leaching fundamentals (chemistry-thermodynamics-kinetrics), including bioleaching technology, and equipment. Solid-liquid separation and solution purification techniques such as by chemical precipitation, ion exchange and solvent extraction are also discussed. Examples from pure metal recovery and effluent treatment; residue disposal technologies for environmental compliance are presented. Finally, process development, plant design, plant control strategies, Economic, Social and Environmental Considerations, followed by several industrial examples is offered.
 
-CHE1431H – Environmental Auditing
+CHE1431H - Environmental Auditing
 The goals of the course will be to: (a) understand fundamental concepts and principles of environmental auditing; (b) understand relevant federal and provincial environmental legislation; (c) understand environmental management system and similar standards; (d) improve audit skills and knowledge of principles; (e) understand the Environmental Management System (EMS) auditing and certification/registration process. The course will be structured to provide sufficient background in the concepts of environmental management, due diligence, environmental protection, and the process of auditing these topics for verification purposes. The course material will be presented in a combination of lecture and workshop formats.
 
-CHE1432H – Technical Aspects of Environmental Regulations
+CHE1432H - Technical Aspects of Environmental Regulations
 Environmental regulations are based on the existence and/or likely occurrence of adverse effects. This course will examine the legal definitions of adverse effects and present possible scientific methods that can be used to establish the presence/absence of adverse effects. The specific regulations for Air, Waste, Contaminated Sites, and Water will then be examined to establish scientific methodologies that can be applied to show compliance with the letter and intent of the regulations. Particular emphases will be placed on the existence of variable scientific interpretations of the key general statements in the respective regulations.
 
-CHE1433H – Air Dispersion Modelling
+CHE1433H - Air Dispersion Modelling
 The goal of the course will be to provide the students with an understanding of the fundamental principles of air quality modelling, the use of screening and advanced air dispersion models, as well as the limitations of these tools in actual practice. The course will also address other relevant air quality related subjects such as ambient monitoring and dispersion model verification. The course will be structured to provide sufficient background in dispersion modelling theory to allow the users to make informed decisions on model inputs, modelling methodologies and approximations. The course will feature both theory sessions as well as hands on training in the use of dispersion models (US EPA SCREEN 3 and AERMOD models) and data processing.
 
 CHE1434H- Six Sigma for Chemical Processes
 Six Sigma is a proven process improvement methodology currently being employed across nearly every type of business and industry including numerous Chemical Process Industry companies. Design for Six Sigma (DfSS) has been developed more recently with the goal to apply the Six Sigma principles to the design of new products and processes. This course will also provide a working know-how of the Six Sigma problem solving and process improvement protocol (DMAIC). It is based on the lecturer’s own experience as a double Black Belt in Lean Six Sigma and Design for Lean Six Sigma at Xerox Research Centre of Canada. This course will include examples and case studies in order to show the students the practical value of Six Sigma in the chemical and related industries. The students will use themselves Six Sigma and Design for Six Sigma process and statistical tools to solve problems and explore designing new chemical process in workshops that will be part of each class.
 
-CHE1435H – Aerosol Physics and Chemistry
+CHE1435H - Aerosol Physics and Chemistry
 This course is concerned with physical and chemical properties of aerosols and their impacts on earth’s climate, air quality and human health. This course will cover the fundamentals of aerosol physics and chemistry, and relate these principles to the overall impacts. The first section will cover single particle processes (particle drag, gravitational settling, diffusion) and evolution of an aerosol population (new particle formation, condensation and coagulation, deposition and cloud droplet formation). In the second section, the various components in atmospheric aerosol will be discussed in detail, including kinetics and thermodynamics of organic and inorganic compounds. Applications to industrial processes, such as drug delivery and chemical manufacturing, will also be explored. This course is critical to those students pursuing careers in atmospheric science and air pollution control, who will need to measure, model and control airborne particles.
 
 CHE1436H- Risk Assessment for Chemical Process Safety
-The course will address chemical hazards that impact process safety – specifically fires, explosions and toxic effects.  Students will learn how model consequences, model likelihood, analyze risk and evaluate risk.  Students will be exposed to the most popular/widely used methods in industry.   In addition, the course will also cover: Risk management – framework, description of risk concepts, risk reduction, managing residual risk; Process design and facility siting; Prevention and mitigation – safety systems -what they are, their design; A thorough description of risk evaluation – risk tolerance criteria – how they are established and used, risk informed decision-making, benefit cost analysis; Human factors – how human error affects process safety.
+The course will address chemical hazards that impact process safety - specifically fires, explosions and toxic effects.  Students will learn how model consequences, model likelihood, analyze risk and evaluate risk.  Students will be exposed to the most popular/widely used methods in industry.   In addition, the course will also cover: Risk management - framework, description of risk concepts, risk reduction, managing residual risk; Process design and facility siting; Prevention and mitigation - safety systems -what they are, their design; A thorough description of risk evaluation - risk tolerance criteria - how they are established and used, risk informed decision-making, benefit cost analysis; Human factors - how human error affects process safety.
 
-CHE1471H – Modelling in Biological and Chemical Systems
+CHE1471H - Modelling in Biological and Chemical Systems
 To review the methodology for the analytical modeling of physical systems with emphasis on chemical engineering applications. The course will cover the following topics: Analysis and Modelling of Physical Systems Review of ODEs’; Mass Balance and Continuity Equation
 Species Balance, Stoichiometry and Reaction Kinetics; Force Balances and Mechanics of Materials; Fluid Mechanics and Navier-Stokes Equations; Flow Through Porous Media; Conservation of Mechanical Energy; First Law of Thermodynamics and Thermal Energy Balance
 Heat Transfer, Fourier Law, and Equation of Energy; Mass Transfer, Fick’s Law, and Species Continuity Equation; Probabilistic Modelling.
 
-CHE1475H – Biocomposite Materials
+CHE1475H - Biocomposite Materials
 This course will teach students about structure, properties and application of natural and biological materials, biomaterials for biomedical applications, and fibre reinforced composites including composites based on renewable resources. The course has a strong focus in fundamental principles related to polymeric material linear elasticity, linear viscoelasticity, dynamic response, composite reinforcement mechanics, and time-temperature correspondence that are critical to understand the functional performance of these types of materials. Novel concepts about comparative biomechanics, biomimetic and bio-inspired material design, and ecological impact are discussed. Key processing methods and testing and characterization techniques of these materials are also covered.
 
-CHE3001H – Seminars in Chemical Engineering
+CHE3001H - Seminars in Chemical Engineering
 This course exposes graduate students to the latest developments in a wide range of topics in Chemical Engineering and Applied Chemistry. Students are provided with a breadth of understanding of the current trends in the many fields which fall under the umbrella of Chemical Engineering and Applied Chemistry, through seminars given by internationally renowned experts through the Department’s Lectures at the Leading Edge series. This course is mandatory for all M.A.Sc. and Ph.D. students and is to be taken annually.
 
-JCB1349H – Molecular Assemblies
+JCB1349H - Molecular Assemblies
 This course will focus on the mechanisms associated with the assembly of molecular and biomolecular systems, including colloids, small molecule organic crystals, and protein complexes. The goal of the course is to foster an understanding of the subtle interactions that influence the process of assembly, which has wide ranging implications in fields ranging from materials science to structural biology. Examples will be drawn from the current literature encompassing studies of self-assembly in solution, at surfaces, and into the solid state. Supplementary reading and a term project targeting some aspect of molecular assembly will be assigned.
 
-JCC1313H – Environmental Microbiology
+JCC1313H - Environmental Microbiology
 The objective of this course is to develop fundamental aspects of microbiology and biochemistry as they relate to energetics and kinetics of microbial growth, environmental pollution and water quality, bioconversions, biogeochemical cycles, bioenergy and other bioproducts.
-
-JCR1000Y – An Interdisciplinary Approach to Addressing Global Challenges
-A full (Y) course covering two sessions – September to April
-In order to create sustainable solutions to the world’s most important challenges, global development professionals must reach beyond the traditional boundaries of their field of expertise combining scientific/technological, business, and social ideas in an approach known as integrated innovation.   In this project-based course, students from multiple disciplines (engineering, management, health and social sciences) will work together – using participatory methods with an international partner – to address a locally relevant challenge.  Students will be expected to communicate with and understand team members from other disciplines, integrate their knowledge and experience of global issues in order to: (a) identify and analyze the strengths and weaknesses of existing technical approaches to addressing the challenge, (b) analyze the characteristics of existing social frameworks (ethical, cultural, business, political) (c) identify gaps and needs (d) propose an appropriate integrated solution approach that incorporates an analysis of the challenge through these disparate lenses. The final deliverables for addressing the challenge at the end of the school year will include:  a prototype of the end product, a business plan, a policy analysis, and analysis of impact on global health.
 
 JNC2503H- Environmental Pathways
 The objective of this course is to convey an appreciation of the sources, behaviour, fate and effects of selected toxic compounds which may be present in the environment. Emphasis is on organic compounds, including hydrocarbons, halogenated hydrocarbons and pesticides. The approach will be to examine, for each compound, physical and chemical properties, sources, uses, mechanisms of release into the environment, major environmental pathways and fates (including atmospheric dispersion and deposition), movement in aquatic systems (including volatilization, incorporation into sediments, biodegradation, photolysis, sorption), movement in soils, and bioconcentration. Toxicology and analytical methodology will be described very briefly. Each student will undertake a detailed individual study of a specific toxic compound.
 
-JTC1134H – Applied Surface and Interface Science
-This course covers basic surface physical chemistry relevant to applied science and engineering materials. Among the topics covered are: Surface structures of both crystalline and non-crystalline materials – relaxation, surface electronic structure – work function, band structure, interfacial phenomena, surface thermodynamics, the Gibbs construct, double layer theory, micellular structure, surface kinetics, catalysis, adsorption, adhesion and wetting. This is a companion course to JTC1135, APPLIED SURFACE ANALYSIS which covers analytical techniques for the study of surfaces and interfaces.
+JTC1134H - Applied Surface and Interface Science
+This course covers basic surface physical chemistry relevant to applied science and engineering materials. Among the topics covered are: Surface structures of both crystalline and non-crystalline materials - relaxation, surface electronic structure - work function, band structure, interfacial phenomena, surface thermodynamics, the Gibbs construct, double layer theory, micellular structure, surface kinetics, catalysis, adsorption, adhesion and wetting. This is a companion course to JTC1135, APPLIED SURFACE ANALYSIS which covers analytical techniques for the study of surfaces and interfaces.
 
-JTC1135H – Applied Surface and Interface Analysis
-There is no single or simple analytical technique for the study of surfaces and interfaces. Multiple techniques are available, each limited in what it can reveal. A knowledge of most current analytical techniques, their strengths and limitations, is the main material delivered in this course. The fundamentals of the techniques will be presented sufficient to understand the techniques; the material will be presented in the context of relevant technological problems, including individual projects. The fundamentals of surface and interface chemistry is covered extensively in a separate companion course (JTC1134 Applied Surface and Interface Science – taught in alternate winter terms). No prerequisite knowledge of surface chemistry fundamentals is assumed.
+JTC1135H - Applied Surface and Interface Analysis
+There is no single or simple analytical technique for the study of surfaces and interfaces. Multiple techniques are available, each limited in what it can reveal. A knowledge of most current analytical techniques, their strengths and limitations, is the main material delivered in this course. The fundamentals of the techniques will be presented sufficient to understand the techniques; the material will be presented in the context of relevant technological problems, including individual projects. The fundamentals of surface and interface chemistry is covered extensively in a separate companion course (JTC1134 Applied Surface and Interface Science - taught in alternate winter terms). No prerequisite knowledge of surface chemistry fundamentals is assumed.
 
-JTC1331H – Biomaterials
+JTC1331H - Biomaterials
 This course presents an introduction to the science of biomaterials, focusing on polymeric biomaterials and biocompatibility. Topics include biomaterial surface analysis, hydrogel rheology and swelling, protein adsorption, cell adhesion and migration and the foreign body response. Primary focus is on implantable biomaterials but some attention will be given to applications of biomaterials in biotechnology and drug delivery. Specific device or other examples as well as the research literature will be used to illustrate the topic at hand.
 Required: Students need to have taken at least one Biology undergraduate course and should have taken a Polymers undergraduate course.
 
@@ -1102,7 +1176,7 @@ Michael Thomas, University of New Brunswick
 Prerequisites
 The participants are expected to have a reasonably advanced knowledge of cements and concrete technology. Graduate students shall have previously taken CIV514: Concrete Technology or a pre-approved equivalent from another university.
 Contact Hours
-Approximately 27 contact hours during the period of May 15 – 19, 2023. Lectures and any exercises will be given during morning and afternoon sessions, running from 9 a.m. to 5 p.m. (to noon on Friday). On Monday May 15, registration. starts at 8:30 a.m. ET.
+Approximately 27 contact hours during the period of May 15 - 19, 2023. Lectures and any exercises will be given during morning and afternoon sessions, running from 9 a.m. to 5 p.m. (to noon on Friday). On Monday May 15, registration. starts at 8:30 a.m. ET.
 REGISTRATION PAGE: https://civmin.utoronto.ca/civ1260/
 
 CIV1262H - Microscopy Applied to Building and Geomaterials
@@ -1127,7 +1201,7 @@ CIV1298H - New Topics in Civil and Mineral Engineering: Indoor Air Quality - Moi
 Prof. Sarah Haines
 We spend most of our time indoors exposed to a variety of organic and inorganic compounds. Accounting for and minimizing potentially harmful exposures is critical to indoor air quality. Through this course, students will gain new knowledge in the field of indoor air quality and develop skills to engineer solutions to create healthy, sustainable and equitable indoor environments. Focus will be given to moisture transport through materials, water activity, the impact of moisture on organic indoor contaminants such as bioaerosols, and methodologies to prevent, remediate and monitor indoor mould growth. Further, this course will investigate tools, such as next-generation sequencing and bioinformatics, used to characterize indoor microbiomes and bioaerosols. Interest will also be given to issues in indoor environmental quality specifically in Indigenous housing as well as low-socioeconomic communities in Canada. Through a course project, students will engineer a solution using resources and skills developed throughout the course for a particular issue of interest in indoor air quality.
 
-CIV1299H - New Topics in Civil and Mineral Engineering:  Advanced Technologies for Smart Buildings – Energy Performance and Indoor Environmental Quality
+CIV1299H - New Topics in Civil and Mineral Engineering:  Advanced Technologies for Smart Buildings - Energy Performance and Indoor Environmental Quality
 Prof. Seungjae Lee
 This course provides students with knowledge of advanced technologies and explores their potential in realizing smart buildings. It focuses on how these cutting-edge technologies can enhance building energy performance and indoor environmental quality. It primarily consists of four parts. In the first part, students will explore diverse modelling approaches for building, system, and disturbance (including occupant) modelling. The course will delve into forward (physics-based), inverse (data-driven), and hybrid modelling approaches. The second part of the course centers around the optimal control of building energy systems. Students will gain a deep understanding of two widely used techniques: model predictive control and reinforcement learning. The third part introduces students to modern methods for automated fault detection and diagnostics. Key topics include the concept of digital twinning, which allows for the virtual representation of physical systems, and anomaly detection methods. In the last part of the course, students will focus on sensors and user interfaces. Throughout the course, students will engage in hands-on exercises to enhance their practical skills and gain valuable experience. They will have the opportunity to implement and test different technologies in virtual environments using computer emulators and physical mock-up models developed with Raspberry Pi. 
 Pre-requisite:  CIV375/575 or equivalent; CME538 or equivalent 
@@ -1232,7 +1306,7 @@ As governments around the world make long term commitments to zero carbon future
 It is often said that all the necessary technical tools are already in place to solve climate change. Question is: how to deploy them and how does that deployment affect the status quo? Are there others that will need to be fast-tracked to make up any shortfall? How does an approach in one location affect others?
 The course will begin with the basics of climate science and carbon cycles, coupled with an understanding of Earth’s natural energy budget and balance. Where are our emissions currently and what reductions are being promised? Students will evaluate Canada and the world’s carbon budgets, before focusing on key Canadian GHG generation sectors that this course is targeting: fossil fuel production, transportation, energy generation & delivery, buildings, efficiency, industry, farming, forestry and soils, all aligning with our current GHG footprint. We will introduce more international perspectives as and when appropriate.
 There will be a review of the history and functioning of primary and secondary energy generation & distribution systems. Students will study both the potential for disruption and mitigation strategies necessary for the mass adoption of intermittent generation, the electrification of heating and the elimination of carbon from transportation
-in particular. Energy storage will be a key part of this review. Buildings will be considered – both for the potential efficiency gains to be achieved and for technological changes to displace fossil fuel consumption.
+in particular. Energy storage will be a key part of this review. Buildings will be considered - both for the potential efficiency gains to be achieved and for technological changes to displace fossil fuel consumption.
 We will consider where Canada’s largest industrial emitters must move to in order to eliminate their carbon contributions, recognizing the transitional role of cement, iron and steel, fossil fuels and the existing economic systems that rely on them. Hydrogen’s potential role will be considered, alongside carbon capture and storage.
 Finally, students will consider farming and forestry as potential carbon sequestration interventions, given Canada’s enormous farming and forestry sectors and our unique custody of one of the world’s greatest carbon sinks.
 Each of these broad areas will be viewed through multiple lenses, aimed at understanding all drivers necessary for both widespread and sustainable intervention: policy, political, economic, environmental, financial, technical. The intent is for students to appreciate that there are multiple strands associated with the successful and widespread adoption of any new technology, while appreciating the significant systemic changes that mass adoption will bring.
@@ -1426,7 +1500,7 @@ MIE1001H - Advanced Dynamics
 Variational principles and Lagrange´s Equations, Hamilton´s principle. Kinematics of rigid body motion, Euler angles, rigid body equations of motion. Hamilton´s equations, cyclic coordinates, Legendre transformations. Canonical transformations, Hamilton-Jacobi theory.
 
 MIE1005H - Theory of Vibrations
-Multi-degree of freedom systems, using both analytical and approximate methods. Vibrations of continuous systems, including strings, bars and membranes. Natural modes of plate vibration – approximate methods such as Rayleigh’s Energy Methods, Rayleigh-Ritz Method, Galerkin’s Method, and assumed mode method. Introduction to finite element analysis.
+Multi-degree of freedom systems, using both analytical and approximate methods. Vibrations of continuous systems, including strings, bars and membranes. Natural modes of plate vibration - approximate methods such as Rayleigh’s Energy Methods, Rayleigh-Ritz Method, Galerkin’s Method, and assumed mode method. Introduction to finite element analysis.
 
 MIE1010H - Acoustics and Noise Control
 The purpose of the course is to introduce the theory and practical application of acoustics noise and vibration control. While the emphasis of the study will be on the built environment, both indoor and outdoor, the methods taught can also apply to other industries, e.g. the automotive industry. Both the physics and perception of sound will be discussed covering such wide ranging topics as concert hall design, speech intelligibility, HVAC noise control design and building isolation from rail noise, to name a few. The course combines theoretical introductions to the subjects of acoustics, noise and vibration and follows them up with case studies from industry.
@@ -1491,7 +1565,6 @@ MIE1208H - Microfluidic Biosensors
 This course will present the fundamentals and applications of biosensors realized on microfluidic platforms. Topics to be covered include: Microfabrication techniques for constructing silicon, glass, and polymer devices; Microfluidic principles; Biosensing mechanisms; Design and analysis of microfluidic biosensors; Microfluidic immunosensors; Microfluidic nucleic acid sensors; Microfluidic chemical sensors; Other applications of microfluidic biosensors
 
 MIE1210H - Computational Fluid Mechanics and Heat Transfer
-
 This is an introductory course that will teach a Finite Volume (FV) and Finite Difference (FD) approaches to Computational Fluid Dynamics (CFD) and Heat Transfer. Since the advent of commercially available computers, CFD has been an important engineering research domain as it gave researchers the ability to solve analytically intractable problems of industrial relevance. In the last two decades, the immense demand for CFD research and expertise has spawned the commercialization of software packages such as Fluent/CFX and FEMlab. Despite these readily available software packages, there is a recognized importance to user expertise, fundamental knowledge, and critical understanding of their inner workings. In addition, home spun research codes are still prominent in academia and industry. This is due in large part to the fact that commercial software packages are geared toward a broad range of research topics, and may not function as efficiently as a code designed with a specific problem in mind, and to the fact that developments in CFD are typically achieved in research before they are adopted by software companies. This course is appropriate both for students who wish to become knowledgeable users of commercial CFD programs, and students who plan to create, develop, or enhance research codes. Therefore, the overreaching goals of this course are threefold: 1. To give you an introduction to fundamental discretization and solution techniques for heat transfer and fluid dynamics problems; 2. To give you an understanding of solution methodologies, advantages, downfalls, considerations (stability, accuracy, efficiency), and the inner workings of CFD software; and 3. To have you gain experience writing programs and solving 1D and 2D problems, and in using these programs to demonstrate and reinforce 1 and 2.
 
 MIE1212H - Convective Heat Transfer
@@ -1531,7 +1604,7 @@ MIE1402H - Experimental Methods in Human Factors Research
 The course deals with practical problems associated with the design of experiments in Human Factors research, with an emphasis on the use of statistical packages and data analysis tools. Topics covered will include analysis of variance, non- parametric statistics, balanced and unbalanced block designs (including Latin squares), confidence intervals, etc. Stress is given to practical problems and the intuitive understanding of applied statistics.
 
 MIE1403H - Analytical Methods in Human Factors Research
-The course covers a variety of topics in Human Factors / Ergonomics research related to the acquiring, analysing, and modelling of human behavioural data. Topics to be covered include the following (in approximate order of presentation): Selecting Measures for Human Factors Research; Psychophysical methods of measurement: – Classical psychophysical methods – Signal Detection Theory – Indirect and direct subjective scaling; Protocol Analysis – Interviewing and Questionnaires – Knowledge Elicitation; Estimating mental workload & situational awareness; Manual Control – Tracking paradigms – Modelling of human manual control performance
+The course covers a variety of topics in Human Factors / Ergonomics research related to the acquiring, analysing, and modelling of human behavioural data. Topics to be covered include the following (in approximate order of presentation): Selecting Measures for Human Factors Research; Psychophysical methods of measurement: - Classical psychophysical methods - Signal Detection Theory - Indirect and direct subjective scaling; Protocol Analysis - Interviewing and Questionnaires - Knowledge Elicitation; Estimating mental workload & situational awareness; Manual Control - Tracking paradigms - Modelling of human manual control performance
 
 MIE1411H - Design of Work Places
 Introduction to ergonomics in industrial settings. Biomechanics related to manual materials handling, repetitive strain injuries, visual and auditory limitations, human information processing and short term memory limitations, psychomotor skill, anthropometry and workspace layout, population stereotypes, design of controls and displays, circadian rhythms and design of shift work schedules.
@@ -1946,7 +2019,7 @@ Prerequisite: AER1520H - “Microsatellite Design I
 AER1601H - Aerospace Engineering and Operations Management
 Instructor: S Armstrong
 Lecture course
-Aerospace is a broad field of technological activity. The course will focus on managing an aerospace enterprise with a specialization in aircraft engineering and production operations. Students in this course will work with industrial partners (examples: DeHavilland Aircraft Canada – Q400 Operations – Downsview, Safran Lading Gear Systems – Ajax, and Bombardier Aerospace – Toronto) on live projects applying the theory learned in the course. Upon course completion, the participants will be able to apply the tools and methods of Aerospace Enterprise Management Sciences and will:
+Aerospace is a broad field of technological activity. The course will focus on managing an aerospace enterprise with a specialization in aircraft engineering and production operations. Students in this course will work with industrial partners (examples: DeHavilland Aircraft Canada - Q400 Operations - Downsview, Safran Lading Gear Systems - Ajax, and Bombardier Aerospace - Toronto) on live projects applying the theory learned in the course. Upon course completion, the participants will be able to apply the tools and methods of Aerospace Enterprise Management Sciences and will:
 gain an understanding and appreciation of the principles and applications relevant to management of the Aerospace Business Enterprise;
 develop skills necessary to effectively analyze and synthesize the issues aerospace companies must address to scale and advance their capabilities in the marketplace;
 acquire the analytical skills, tools and methods to scale the enterprise including lean design, lean engineering and manufacturing, voice of customer, process management, integrated product development, group technology, concurrent engineering, programme management, phase/milestone, agility, knowledge based engineering, expert systems, and ERP for aerospace environments;
@@ -1985,9 +2058,6 @@ This course is offered to MEng students only. The projects associated with this 
 AER1820H - Directed Reading in Aerospace Studies
 This course involves reading assigned by a professor to a graduate student on a mutually agreed topic. The student's knowledge is subsequently assessed for course credit. The total work load is consistent with a standard 0.5 FCE lecture course. Students are limited to counting a maximum of one reading course toward their degree requirements.
 
-RST9999Y - Thesis/Research
-Students registering in the MASc and PhD programs are required to include this along with their enrollment forms.
-
 JDE1000H - Ethics in Research
 Students registered in the MASc and PhD programs are required to participate in this non-credit seminar course during their first or second term of registration.
 
@@ -2001,7 +2071,7 @@ This course is aimed at helping engineering students to combine their knowledge 
 
 TEP1026H - Positive Psychology for Engineers
 Robin Sacks
-Many disciplines have explored happiness – philosophy, anthropology, psychology, sociology, neurobiology, film, art and literature – to name a few. Why not engineering? During the first part of the course we will play catch-up, examining the scholarly and creative ways that people have attempted to understand what makes for a happy life. Then we turn our attention to our own domain-expertise, applying engineering concepts like “balance”, “flow”, “amplitude”, “dynamic equilibrium”, “momentum” and others to explore the ways that your technical knowledge can contribute to a deep understanding of happiness. This course is designed to challenge you academically as we analyze texts from a variety of disciplines, but it is also designed to challenge you personally to explore happiness as it relates to yourself, your own personal development and your success and fulfillment as an engineer.
+Many disciplines have explored happiness - philosophy, anthropology, psychology, sociology, neurobiology, film, art and literature - to name a few. Why not engineering? During the first part of the course we will play catch-up, examining the scholarly and creative ways that people have attempted to understand what makes for a happy life. Then we turn our attention to our own domain-expertise, applying engineering concepts like “balance”, “flow”, “amplitude”, “dynamic equilibrium”, “momentum” and others to explore the ways that your technical knowledge can contribute to a deep understanding of happiness. This course is designed to challenge you academically as we analyze texts from a variety of disciplines, but it is also designed to challenge you personally to explore happiness as it relates to yourself, your own personal development and your success and fulfillment as an engineer.
 
 TEP1027H - Engineering Presentations
 Lydia Wilkinson
@@ -2012,7 +2082,7 @@ Daniel Cushing
 This course is designed for (best suited for) full time and part time engineering students with work experience
 A growing body of social science research offers clear evidence that emotional intelligence (EQ) plays a crucial role in leadership effectiveness. We know that the most successful managers are able to motivate and achieve best performances through the ability to understand others, and the key to this is to first understand yourself. In this course, you will complete the most scientifically validated EQ assessment available, The Emotional Quotient Inventory (EQ-i) and receive a detailed report that identifies your leadership strengths and targets areas for development. You will acquire an enhanced level of self-knowledge and a deeper awareness of your impact on others. This will form the basis of a personal development plan that will help you improve your leadership effectiveness.In this course we will also examine evidence-based research that links leadership effectiveness to authenticity and mindfulness, both of which can be enhanced through mindfulness training programs. Simply defined, mindfulness is the awareness of one’s mental processes and the understanding of how one’s mind works. Using case studies, we will discover why companies such as Carlsberg, Google, Sony and General Electric have trained hundreds of employees in mindfulness.
 
-TEP1030H - Engineering Careers – Theories & Strategies to Manage your Career for the Future
+TEP1030H - Engineering Careers - Theories & Strategies to Manage your Career for the Future
 Mark Franklin
 21st century career management skills and knowledge are critical success factors for engineers, to develop their own careers for the future, and as leaders and project managers, to help develop others’ careers. Especially in engineering where career engagement influences innovation and productivity, career management is arguably the most important learning to bridge the gap between an engineering education and an engineer’s ability to apply their learning in the real world.
 In this course, students will learn about contemporary theories and issues in career development so they can apply their knowledge and skills, to benefit their own careers, and those of their team members, organization, and society. Students will learn an evidence-based framework for career clarification and exploration. Using this framework, students gain career management and job search strategies, increase hope and confidence, expand their network and use practical career management tools. In an increasingly volatile, uncertain, complex, and ambiguous world of work, students will consider career paths, hear and tell career stories, and gain skills to navigate a lifetime of transitions.
@@ -2040,7 +2110,7 @@ The course will provide students with the core concepts of innovation including;
 
 APS1013H - Applying Innovation in Engineering
 Stephen Armstrong
-Applying Innovation is delivered in collaboration with external industry partners across many industry sectors.  It has been designed to develop practical management skills that can be applied in the workplace immediately.  Its purpose is to accelerate career advancement.   It has been designed for those who desire a career path leading to a role as a corporate change agent such as CEO, COO, Senior VP’s, C-Level Certified Management Consultants, or as entrepreneurs.  It will teach students the application of the tools and techniques of innovation management including; strategic and systems thinking, business process analysis, creativity and problem solving, solution design & implementation, effective organizational teamwork and project management. This seminar style course aims to equip students with the knowledge and skills to apply the tools of creativity and innovation to solve a real world technological business problem. Applying innovation will enable students in a team approach to actually use the tools in the class and on an industrial project either at their employer or an external enterprise. This course will also incorporate academic scholarly papers that will build on the readings in the Management of Innovation APS1012 course. In addition the instructor will provide coaching based on many years of hands on practical experience solving technological problems in a variety of industry sectors. Though not mandatory it would be ideal if students have completed the course APS1012 – Management of Innovation that provides students with a conceptual understanding of the broad field of strategic innovation.
+Applying Innovation is delivered in collaboration with external industry partners across many industry sectors.  It has been designed to develop practical management skills that can be applied in the workplace immediately.  Its purpose is to accelerate career advancement.   It has been designed for those who desire a career path leading to a role as a corporate change agent such as CEO, COO, Senior VP’s, C-Level Certified Management Consultants, or as entrepreneurs.  It will teach students the application of the tools and techniques of innovation management including; strategic and systems thinking, business process analysis, creativity and problem solving, solution design & implementation, effective organizational teamwork and project management. This seminar style course aims to equip students with the knowledge and skills to apply the tools of creativity and innovation to solve a real world technological business problem. Applying innovation will enable students in a team approach to actually use the tools in the class and on an industrial project either at their employer or an external enterprise. This course will also incorporate academic scholarly papers that will build on the readings in the Management of Innovation APS1012 course. In addition the instructor will provide coaching based on many years of hands on practical experience solving technological problems in a variety of industry sectors. Though not mandatory it would be ideal if students have completed the course APS1012 - Management of Innovation that provides students with a conceptual understanding of the broad field of strategic innovation.
 
 APS1015H - Social Entrepreneurship
 Alex Kjorven
@@ -2055,7 +2125,7 @@ This course examines technical and organizational aspects of managing new produc
 APS1033H - Business Innovation Leading to the Future, based on Imagineering
 Joseph C. Paradi
 This course will demonstrate how an entrepreneurial person could get ahead of the curve as the future of technology develops. Instructors and guests will train the students to use their technical skills and problem solving abilities to identify where the world around them will be 10 or more years from now. The future is where the students in this course will have to live and prosper.
-However, the skills learned here will be immediately useful when getting a job now – your accomplishments in the course will show how ready you are to tackle problems now and in the future. The core goal is to assess opportunities many years in the future and using “Imagineering” to identify startup possibilities and how to pick the best ones.
+However, the skills learned here will be immediately useful when getting a job now - your accomplishments in the course will show how ready you are to tackle problems now and in the future. The core goal is to assess opportunities many years in the future and using “Imagineering” to identify startup possibilities and how to pick the best ones.
 Topics covered will all be designed to increase the student's competence in the Canadian business world. Such aspects include the assessment of what future technological challenges will emerge and how to find the business opportunities to solve such problems in both private and public contexts. The students will learn how seek business opportunities for their firms or themselves and communicate such vision to decision makers. Thus, they will improve their marketability when seeking a job.
 The delivery is via 12 three hour sessions with a mix of lectures, outside speakers, group work and presentations on topics on emerging/future opportunities. There is an emphasis on technological leadership as the course teaches you how to be out front and be seen as a leader. Topics may include the social problems of wastewater engineering, air/particulate emissions, traffic engineering, project definition and financing and others.
 A highly interactive environment will encourage out of the box thinking and innovative approaches to large problems which impresses potential employers and your co-workers. There will be a number of assignments, projects and a term report. Class interaction with grading will be done in 6 of the sessions where both individual and group presentations will be required. Cases will be used for some of the projects. There will be no written final examination.
@@ -2092,10 +2162,10 @@ Steve Treiber
 This is a course on how to start and run a successful Canadian business that is profitable on day ONE, using a real start-up example. If your ambition is to be your own boss one day this is the course for you. The course was developed and is taught by successful Canadian entrepreneurs who imagined, built and sold at least one of their successful businesses. The course and materials provides students with a toolkit for starting and running a successful business, and through the course project an exercise in how to do that.
 If you already have a business idea the course will assist you in making that business idea a success and if you don’t have an idea the course will teach you how to find and develop one of your own.
 
-APS500H1: Negotiations in an Engineering Context
+APS500H1 - Negotiations in an Engineering Context
 Instruction of concepts, theories, and research but most importantly the practice of negotiation skills. The course will cover all kinds of negotiations scenarios that individuals might face in the course of their careers as Engineers; this could include a range of single-issue single-party negotiations to multi-party multi-issues negotiations.
 
-APS502H1: Financial Engineering
+APS502H1 - Financial Engineering
 Roy Kwon
 This course will focus on capital budgeting, financial optimization, and project evaluation models and their solution techniques. In particular, linear, non-linear, and integer programming models and their solutions techniques will be studied. The course will give engineering students a background in modern capital budgeting and financial techniques that are relevant in practical engineering and commercial settings.
 
@@ -2184,7 +2254,7 @@ The Fall Term will is a good opportunity to take this seminar, given that it may
 Since the long-term goal of this seminar is to establish the foundation of a stable platform for promoting Fin-Tech research, we want to extend here an open invitation to all students of the Winter 22 and the Fall 23 editions of this course, to keep attending its future editions as active speakers, so that this event may transcend its condition of being "one more course in Finance" to become a functional and growing community of professionals interested in Fin-Tech.
 Summarizing, APS 1053 focuses on the application of advanced artificial intelligence techniques to more than 20 solved case studies in stock trading and hedging strategies, portfolio construction, modelling options strategies, investor’s modelling, financial news and building Robotic-Advisors. The advanced techniques include the incorporation of recently open-sourced libraries for the calculation and evaluation of financial indicators, the incorporation of custom functions for cross-validation, evaluation and model selection, the reformulation of problems in terms of reinforcement learning and the implementation in Python of reinforcement learning solutions and the analysis of situations where reinforcement learning fails. Only basic coding skills (preferably in Python) and a very basic familiarity with Finance terminology will be needed for the course.
 
-APS510H1: Innovative Technologies and Organizations in Global Energy Systems
+APS510H1 - Innovative Technologies and Organizations in Global Energy Systems
 Nitish Sarker
 A broad range of global energy systems are presented including electricity generation, electricity end use, transportation and infrastructure. Discussions are based on two key trends: (a) the increasing ability to deploy technologies and engineering systems globally, and (b) innovative organizations, many driven by entrepreneurship (for profit and social) and entrepreneurial finance techniques. The course considers these types of innovations in the context of developed economies, rapidly developing economies such as India and China, and the developing world. The course will interweave a mix of industry examples and more in-depth case studies. The examples and cases are examined with various engineering, business and environmental/sustainability analysis perspectives.
 

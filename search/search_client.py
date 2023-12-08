@@ -1,7 +1,7 @@
 import chromadb
 from chromadb.config import Settings
 
-def searchRAG(query, level='undergrad_collection', n_results=10, return_description=True):
+def searchRAG(query, level='undergrad_collection', n_results=10, return_description=False):
     chroma_client = chromadb.HttpClient(
         host="localhost",
         port=8000,
@@ -31,3 +31,6 @@ def searchRAG(query, level='undergrad_collection', n_results=10, return_descript
         courseStr += "\n\n"
     print(courseStr)
     return courseStr
+
+
+searchRAG("ECE1543")
