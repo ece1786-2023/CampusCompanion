@@ -16,6 +16,7 @@ from .prompts import (
     intro_prompt,
     rag_prompt,
     recommend_prompt,
+    cot_recommend_prompt,
     extract_prompt,
     candid_prompt,
 )
@@ -38,7 +39,7 @@ def Intro(question, llm, memory, student=None):
     memory.save_context({"question": question}, {"output": res.content})
 
     criterion = {
-        "question": "Does the output contains degree program, department, interests, goals, course taken and experience?"
+        "question": "Does the output contains degree program, department, interest, goal, experience and course taken?"
     }
     evaluator = load_evaluator(EvaluatorType.CRITERIA, criteria=criterion)
     eval_result = evaluator.evaluate_strings(prediction=res.content, input=question)
@@ -132,7 +133,7 @@ def Recommend(question, course_context, student_context, llm, memory):
             chat_history=RunnableLambda(memory.load_memory_variables)
             | itemgetter("recommend_history")
         )
-        | recommend_prompt
+        | cot_recommend_prompt
         | llm
     )
     inputs = {"input_documents": context, "question": question}
