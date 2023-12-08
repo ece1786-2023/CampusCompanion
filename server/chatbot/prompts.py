@@ -80,6 +80,35 @@ Fail!
     input_variables=["input_documents", "question"],
 )
 
+cot_recommend_prompt = ChatPromptTemplate(
+    messages=[
+        SystemMessagePromptTemplate.from_template(
+            """Act as an advisor at the University of Toronto. You select five courses from the provided course list as recommended course candidates. You should consider if the student meet the PREREQUSITE of the course, its alignment with the student's personal interests, relevance to the student's academic goals and suitability to the student's experience. Next, you score all the course candidates between 0 and 100. Finally, output the sorted list of courses and their corresponding scores. The course cannot be something the student has already taken, if the course name sounds very similar do not include it as it is probably a match. Do not ask questions or provide anything else.
+At last, Output in the following format if you can make recommendations:
+Success!
+[1. {{course code #1}} {{course name #1}}; {{score #1}}; {{reason #1}}
+2; {{course code #2}}; {{course name #2}}; {{score #2}}; {{reason #2}}
+...
+5; {{course code #5}}; {{course name #5}}; {{score #5}}; {{reason #5}}
+]
+Otherwise, use the following format:
+Fail!
+{{Other information you need to make recommendations.}}
+
+Example:
+
+
+{input_documents}
+
+"""
+        ),
+        # The `variable_name` here is what must align with memory
+        MessagesPlaceholder(variable_name="chat_history"),
+        HumanMessagePromptTemplate.from_template("{question}"),
+    ],
+    input_variables=["input_documents", "question"],
+)
+
 extract_prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(

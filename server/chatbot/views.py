@@ -123,6 +123,7 @@ class Chat(APIView):
                     if course_names[i].split("-")[0] in candids
                 ]
             )
+            print("candid_course_context:", candid_course_context)
             res, recomend_flag, recommend_memory = Recommend(
                 user_input, candid_course_context, student_ctx, llm, recommend_memory
             )

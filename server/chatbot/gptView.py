@@ -38,7 +38,7 @@ def Intro(question, llm, memory, student=None):
     memory.save_context({"question": question}, {"output": res.content})
 
     criterion = {
-        "question": "Does the output contain a summary of a student's interests, goals and experience?"
+        "question": "Does the output contains degree program, department, interests, goals, course taken and experience?"
     }
     evaluator = load_evaluator(EvaluatorType.CRITERIA, criteria=criterion)
     eval_result = evaluator.evaluate_strings(prediction=res.content, input=question)
