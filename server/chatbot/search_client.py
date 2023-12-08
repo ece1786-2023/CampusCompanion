@@ -32,3 +32,7 @@ def searchRAG(query, level='undergrad_collection', n_results=10, return_descript
         courseStr += "\n\n"
     print(courseStr)
     return courseStr
+
+if __name__ == "__main__":
+    q = "BA, International Relations, Political Science, Global affairs, Diplomacy, Political theory, Public speaking, Debate, United Nations, NGO, Diplomatic service, International policy, Peace and conflict studies"
+    print(searchRAG(q))

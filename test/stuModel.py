@@ -16,11 +16,15 @@ W = {"interest": 0.3, "goal": 0.3, "experience": 0.3, "extra_info": 0.1}
 
 
 class StuModel:
-    def __init__(self, llm, eval_llm, profile):
+    def __init__(self, llm, eval_llm, profile: dict):
         self.degree_program = profile["degree_program"]
         self.department = profile["department"]
-        self.course_taken = [course.strip() for course in profile["course_taken"].split(";")]
-        self.course_to_take = [course.strip() for course in profile["course_to_take"].split(";")]
+        self.course_taken = [
+            course.strip() for course in profile["course_taken"].split(";")
+        ]
+        self.course_to_take = [
+            course.strip() for course in profile["course_to_take"].split(";")
+        ]
         self.interest = profile["interest"]
         self.goal = profile["goal"]
         self.experience = profile["experience"]
@@ -57,17 +61,28 @@ class StuModel:
             | self.llm
         )
 
+    def getProfileForRAG(self) -> str:
+        return f"{self.degree_program} {self.department} {self.interest} {self.goal}"
+
     def getProfileWithoutCourse(self) -> str:
         return f"{self.degree_program} {self.department} {self.interest} {self.goal} {self.experience}"
-    
+
     def getProfileWithTakenCourse(self) -> str:
         return f"{self.degree_program} {self.department} {self.interest} {self.goal} {self.experience} {' '.join(self.course_taken)}"
-    
+
     def getProfile(self) -> str:
         return f"{self.degree_program} {self.department} {self.interest} {self.goal} {self.experience} {' '.join(self.course_taken)} {' '.join(self.course_to_take)}"
 
     def getProfileDict(self) -> dict:
-        return {"program": self.degree_program, "department": self.department, "interest": self.interest, "goal": self.goal, "experience": self.experience, "course_taken": self.course_taken, "course_to_take": self.course_to_take}
+        return {
+            "program": self.degree_program,
+            "department": self.department,
+            "interest": self.interest,
+            "goal": self.goal,
+            "experience": self.experience,
+            "course_taken": self.course_taken,
+            "course_to_take": self.course_to_take,
+        }
 
     def getResponse(self, message):
         response = self.chain.invoke({"input": message})
@@ -90,7 +105,7 @@ Score 10: The answer is completely accurate and aligns perfectly with the refere
             "labeled_score_string", criteria=accuracy_criteria, llm=self.eval_llm
         )
         interest_result = evaluator.evaluate_strings(
-            prediction=profile["interests"],
+            prediction=profile["interest"],
             reference=self.interest,
             input="What's the interest of the student?",
         )
@@ -117,7 +132,7 @@ Score 10: The answer is completely accurate and aligns perfectly with the refere
         )
         return score
 
-    def eval_recommd(self, recommend_list):
+    def eval_recommd(self, recommend_list: list[dict]) -> tuple[int, int]:
         criterion = {
             "contain": "Does the name of the input course contained in the output?"
         }

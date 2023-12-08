@@ -14,8 +14,7 @@ import sys
 import time
 
 sys.path.append("..")
-from prompts.ragPrompt import getRAGQuery
-from search.search_client import searchRAG
+from server.chatbot import getRAGQuery, searchRAG
 
 
 class studentInfo(BaseModel):
@@ -63,7 +62,7 @@ OPENAI_TEMPLATE = PromptTemplate(input_variables=["example"], template="{example
 
 
 def generate(num_runs=2, file_path="student_info.json"):
-    llm = ChatOpenAI(model="gpt-4-1106-preview", temperature=0.9)
+    llm = ChatOpenAI(model="gpt-4-1106-preview")
 
     prompt_template = FewShotPromptTemplate(
         prefix=SYNTHETIC_FEW_SHOT_PREFIX,
@@ -81,7 +80,7 @@ def generate(num_runs=2, file_path="student_info.json"):
 
     synthetic_results = synthetic_data_generator.generate(
         subject="studentInfo",
-        extra="degree_program should be bachelor. Interest can include subjects of interest; learning styles. Goals can include academic goals; career goals; desired grades; learning objectives; future study plans. Courses_taken should include more than 6 courses taken in university. Experience can include related work experience; research experience; volunteer experience. Course_to_take should include more than 5 courses other than those in course_taken according to the student's interest, goaland experience.",
+        extra="degree_program should be bachelor. Interest can include subjects of interest; learning styles. Goals can include academic goals; career goals; desired grades; learning objectives; future study plans. Courses_taken should include more than 6 courses taken in university. Experience can include related work experience; research experience; volunteer experience. Course_to_take should include the five courses that student is most likely to choose based on their interests, goals, and experience, ensuring no duplication with courses already taken.",
         runs=num_runs,
     )
 
@@ -94,12 +93,18 @@ def generate(num_runs=2, file_path="student_info.json"):
     with open(file_path, "w") as f:
         f.write("[\n")
         for i, stu in enumerate(synthetic_results):
-            query = getRAGQuery(stu.degree_program + stu.department + stu.course_taken)
+            query = getRAGQuery(
+                stu.degree_program + stu.department + stu.course_taken, llm
+            )
             lowercased_query = query.lower()
-            is_graduate = "graduate" in lowercased_query or "grad" in lowercased_query or  "master" in lowercased_query
+            # is_graduate = (
+            #     "graduate" in lowercased_query
+            #     or "grad" in lowercased_query
+            #     or "master" in lowercased_query
+            # )
             level = "undergrad_collection"
-            if (is_graduate):
-                level = "grad_collection"
+            # if is_graduate:
+            #     level = "grad_collection"
             course_pool = searchRAG(query, level, 50, return_description=False)
             chain = getCoursePrompt | llm
             formal_course_taken = chain.invoke(
@@ -108,7 +113,7 @@ def generate(num_runs=2, file_path="student_info.json"):
             stu.course_taken = formal_course_taken.content
 
             query = getRAGQuery(
-                stu.degree_program + stu.department + stu.course_to_take
+                stu.degree_program + stu.department + stu.course_to_take, llm
             )
             course_pool = searchRAG(query, level, 50, return_description=False)
             formal_course_to_take = chain.invoke(
@@ -130,6 +135,9 @@ def generate(num_runs=2, file_path="student_info.json"):
                     cnt += 1
             stu.course_to_take = to_take_str
 
+            if cnt < 3:
+                continue
+
             print(stu)
             if i != 0:
                 f.write(",\n")
@@ -142,5 +150,5 @@ def generate(num_runs=2, file_path="student_info.json"):
 
 
 if __name__ == "__main__":
-    res = generate(num_runs=10, file_path="ba.json")
+    res = generate(num_runs=20, file_path="ba_12.8.json")
     print(res)

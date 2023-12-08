@@ -6,8 +6,7 @@ from django.http import JsonResponse
 from django.core.files.storage import default_storage
 import os
 import json
-import time
-from .gptView import Intro, RAGQuery, Recommend, ExtractCourse, getCandid
+from .gptView import getIntro, getRAGQuery, Recommend, ExtractCourse, getCandid
 from .search_client import searchRAG
 
 from langchain.chat_models import ChatOpenAI
@@ -88,10 +87,10 @@ class Chat(APIView):
         print(state)
 
         if state == "INTRO":
-            res, end_flag, intro_memory = Intro(user_input, llm, intro_memory)
+            res, end_flag, intro_memory = getIntro(user_input, llm, intro_memory)
             # End quiry
             if end_flag == True:
-                query = RAGQuery(res, llm)
+                query = getRAGQuery(res, llm)
                 
                 level = "undergrad_collection"
                 if (is_graduate_student):
