@@ -50,7 +50,8 @@
         "reason": "The interdisciplinary nature of this course will enhance your understanding of energy and environmental issues, which is important for your future work in environmental policy and sustainability."
       }
     ],
-    "score": 0.0
+    "score": 0.0,
+    "hit": 5
   },
   {
     "program": "Bachelor of Arts in International Relations",
@@ -104,7 +105,8 @@
         "reason": "The course explores international relations through a critical, contemporary lens, which could add a unique dimension to your understanding of global affairs and benefit your participation in debate forums and Model UN conferences."
       }
     ],
-    "score": 0.3333333333333333
+    "score": 0.3333333333333333,
+    "hit": 5
   },
   {
     "program": "Bachelor of Science in Computer Science",
@@ -157,7 +159,8 @@
         "reason": "This course provides a different perspective by applying machine learning in finance, which could diversify your skill set and appeal to tech companies with financial applications. Although less directly related to AI, it remains a field with significant growth and job opportunities."
       }
     ],
-    "score": 0.3333333333333333
+    "score": 0.3333333333333333,
+    "hit": 4
   },
   {
     "program": "Bachelor of Science in Environmental Science",
@@ -207,7 +210,8 @@
         "reason": "Although more community-focused, this research course offers an action-based approach that can provide practical skills and experience, contributing to your work as an environmental research assistant and organizer for sustainability initiatives on campus."
       }
     ],
-    "score": 0.6666666666666666
+    "score": 0.6666666666666666,
+    "hit": 5
   },
   {
     "program": "Bachelor of Science in Electrical Engineering",
@@ -257,7 +261,8 @@
         "reason": "This advanced seminar course will allow you to practice research at a high level, which is suitable for your academic performance and aspirations for graduate studies, albeit less focused on your specific interests in energy systems."
       }
     ],
-    "score": 0.3333333333333333
+    "score": 0.3333333333333333,
+    "hit": 2
   },
   {
     "program": "Bachelor of Arts in International Relations",
@@ -310,7 +315,8 @@
         "reason": "Although not a traditional classroom setting, this course offers practical international experience and aligns with your interest in study abroad opportunities, which is beneficial for a career in international relations."
       }
     ],
-    "score": 0.0
+    "score": 0.0,
+    "hit": 5
   },
   {
     "program": "Bachelor of Science in Computer Science",
@@ -363,7 +369,8 @@
         "reason": "While not directly related to AI, this course will strengthen your programming skills and understanding of software systems."
       }
     ],
-    "score": 0.6666666666666666
+    "score": 0.6666666666666666,
+    "hit": 4
   },
   {
     "program": "Bachelor of Science in Biotechnology",
@@ -416,6 +423,7 @@
         "reason": "Although not counting towards CSB programs, this course expands on your knowledge of biotechnology applications, relevant to your academic and career goals, and complements your previous coursework."
       }
     ],
-    "score": 0.6666666666666666
+    "score": 0.6666666666666666,
+    "hit": 5
   }
 ]

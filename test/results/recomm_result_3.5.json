@@ -50,7 +50,8 @@
         "reason": "This course applies microeconomic techniques to environmental problems, which aligns with your interest in environmental policy. It provides a rigorous analysis of various environmental issues."
       }
     ],
-    "score": 0.3333333333333333
+    "score": 0.3333333333333333,
+    "hit": 4
   },
   {
     "program": "Bachelor of Arts in International Relations",
@@ -104,7 +105,8 @@
         "reason": "suitable for advanced students of international relations"
       }
     ],
-    "score": 0.0
+    "score": 0.0,
+    "hit": 0
   },
   {
     "program": "Bachelor of Science in Computer Science",
@@ -157,7 +159,8 @@
         "reason": "Relevant to your interest in algorithm challenges and software development projects."
       }
     ],
-    "score": 0.0
+    "score": 0.0,
+    "hit": 4
   },
   {
     "program": "Bachelor of Science in Environmental Science",
@@ -207,7 +210,8 @@
         "reason": "Combination of sustainability and design principles."
       }
     ],
-    "score": 0.3333333333333333
+    "score": 0.3333333333333333,
+    "hit": 4
   },
   {
     "program": "Bachelor of Science in Electrical Engineering",
@@ -257,7 +261,8 @@
         "reason": "provides practical experience in the environmental sector"
       }
     ],
-    "score": 0.3333333333333333
+    "score": 0.3333333333333333,
+    "hit": 2
   },
   {
     "program": "Bachelor of Arts in International Relations",
@@ -310,7 +315,8 @@
         "reason": "review contemporary world affairs and the politics of foreign policy decision-making"
       }
     ],
-    "score": 0.0
+    "score": 0.0,
+    "hit": 5
   },
   {
     "program": "Bachelor of Science in Computer Science",
@@ -363,7 +369,8 @@
         "reason": "interest in algorithm design and analysis"
       }
     ],
-    "score": 0.0
+    "score": 0.0,
+    "hit": 3
   },
   {
     "program": "Bachelor of Science in Biotechnology",
@@ -416,6 +423,7 @@
         "reason": "This course allows further exploration of biotechnology applications and their role in society. It complements your interests in genetic engineering and biotech startups."
       }
     ],
-    "score": 0.6666666666666666
+    "score": 0.6666666666666666,
+    "hit": 5
   }
 ]
